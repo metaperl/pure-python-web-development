@@ -6,8 +6,6 @@ Avoid the CSS/JS/HTML soup - develop web apps entirely in Python
 
 https://www.reddit.com/r/Python/comments/lnu1r9/i_made_a_covid19_immunityvaccination_tracker_and/
 
-## Skulpt
-https://skulpt.org/
 
 ## JustPy
 https://justpy.io/
@@ -37,7 +35,8 @@ https://github.com/dewball345/ryact
 ## Epyk
 https://epyk-ui.readthedocs.io/en/latest/index.html
 
-
+## Dashborg 
+https://www.dashborg.net/
 
 
 ## IDOM 
@@ -64,6 +63,9 @@ https://github.com/atsepkov/RapydScript
 https://github.com/kovidgoyal/rapydscript-ng
 
 
+## Skulpt
+https://skulpt.org/
+
 ## Brython
 https://brython.info/
 
@@ -71,9 +73,9 @@ https://brython.info/
 https://github.com/wasmerio/wasmer-python - A complete and mature WebAssembly runtime for Python.
 
 
-## Scientific and Analytical 
+# Scientific and Analytical 
 
-### pyodide 
+## pyodide 
 https://pyodide.org/en/stable/
 
 Python with the scientific stack, compiled to WebAssembly.
@@ -88,13 +90,10 @@ Pyodide provides transparent conversion of objects between Javascript and Python
 ## Dash  
 https://link.medium.com/GtsQEdqt7eb
 
-### Streamlit 
+## Streamlit 
 https://streamlit.io/
 
-# Some HTML but no JS
 
-## Dashborg 
-https://www.dashborg.net/
 
 
 # Defunct, No recent releases
