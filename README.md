@@ -41,12 +41,7 @@ https://github.com/dewball345/ryact
 https://epyk-ui.readthedocs.io/en/latest/index.html
 
 
-
-https://epyk-ui.readthedocs.io/en/latest/
-
-Dashborg https://www.dashborg.net/
-
-pyodide 
+## pyodide 
 
  IDOM https://github.com/idom-team/idom
 
@@ -67,7 +62,7 @@ https://github.com/BrainStormYourWayIn/sierra
 
 Reahl 
 
-Nagare 
+ 
 
 Rapydscript
 
@@ -79,12 +74,19 @@ Brython
 
 https://github.com/wasmerio/wasmer-python
 
-# Defunct
+# Some HTML but no JS
+
+## Dashborg 
+https://www.dashborg.net/
+
+
+# Defunct, No recent releases
 ## AnPyLar
 Anpylar https://www.anpylar.com/
 Muntjac (defunct but powerful) Vaadin for Python
 
-
+## Nagare
+Nagare was the first framework to eliminate HTML and JS. But It did not adapt to the modern web.
 
 # Articles 
 
