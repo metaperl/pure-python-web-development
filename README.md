@@ -4,7 +4,6 @@ Avoid the CSS/JS/HTML soup - develop web apps entirely in Python
 
 
 
-https://www.reddit.com/r/Python/comments/lnu1r9/i_made_a_covid19_immunityvaccination_tracker_and/
 
 
 ## JustPy
@@ -93,6 +92,8 @@ https://link.medium.com/GtsQEdqt7eb
 ## Streamlit 
 https://streamlit.io/
 
+
+https://www.reddit.com/r/Python/comments/lnu1r9/i_made_a_covid19_immunityvaccination_tracker_and/
 
 
 
