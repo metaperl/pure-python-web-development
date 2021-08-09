@@ -53,22 +53,23 @@ https://h2oai.github.io/wave/
 ## Remi
 https://github.com/dddomodossola/remi
 
-
-
-
-Reahl 
-
+## Reahl 
+https://www.reahl.org/
  
 
-Rapydscript
+# Rapydscript
+https://github.com/atsepkov/RapydScript
 
-Rapydscripy-ng
+## Rapydscript-ng - a fork of RapydScript
+https://github.com/kovidgoyal/rapydscript-ng
 
 
-Brython
+## Brython
+https://brython.info/
 
+##  WASMer for Python
+https://github.com/wasmerio/wasmer-python - A complete and mature WebAssembly runtime for Python.
 
-https://github.com/wasmerio/wasmer-python
 
 ## Scientific and Analytical 
 
@@ -103,7 +104,8 @@ Anpylar https://www.anpylar.com/
 Muntjac (defunct but powerful) Vaadin for Python
 
 ## Nagare
-Nagare was the first framework to eliminate HTML and JS. But It did not adapt to the modern web.
+
+http://naga.re - Nagare was the first framework to eliminate HTML and JS. But It did not adapt to the modern web.
 
 ## PyJS (formerly PyJamas)
 http://pyjs.org/
@@ -113,7 +115,6 @@ http://pyjs.org/
 https://analyticsindiamag.com/streamlit-vs-plotlydash-comparison-with-python-examples/
 
 # HTML/CSS only
-
 
 https://github.com/BrainStormYourWayIn/sierra
 
