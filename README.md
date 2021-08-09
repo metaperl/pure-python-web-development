@@ -4,9 +4,6 @@ Avoid the CSS/JS/HTML soup - develop web apps entirely in Python
 
 
 
-## Streamlit 
-https://streamlit.io/
-
 https://www.reddit.com/r/Python/comments/lnu1r9/i_made_a_covid19_immunityvaccination_tracker_and/
 
 ## Skulpt
@@ -41,24 +38,23 @@ https://github.com/dewball345/ryact
 https://epyk-ui.readthedocs.io/en/latest/index.html
 
 
-## pyodide 
-
- IDOM https://github.com/idom-team/idom
-
-Dash  https://link.medium.com/GtsQEdqt7eb
-
- Pywebio
 
 
-wave https://h2oai.github.io/wave/
+## IDOM 
+https://github.com/idom-team/idom
 
-Pyjamas
+## PyWebIO
+https://pywebio.readthedocs.io/en/latest/
 
-Remi
 
-Htmx
+## Wave 
+https://h2oai.github.io/wave/
 
-https://github.com/BrainStormYourWayIn/sierra
+## Remi
+https://github.com/dddomodossola/remi
+
+
+
 
 Reahl 
 
@@ -74,6 +70,26 @@ Brython
 
 https://github.com/wasmerio/wasmer-python
 
+## Scientific and Analytical 
+
+### pyodide 
+https://pyodide.org/en/stable/
+
+Python with the scientific stack, compiled to WebAssembly.
+
+Pyodide may be used in any context where you want to run Python inside a web browser.
+
+Pyodide brings the Python 3.9 runtime to the browser via WebAssembly, along with the Python scientific stack including NumPy, Pandas, Matplotlib, SciPy, and scikit-learn. Over 75 packages are currently available. In addition it’s possible to install pure Python wheels from PyPi.
+
+Pyodide provides transparent conversion of objects between Javascript and Python. When used inside a browser, Python has full access to the Web APIs.
+
+
+## Dash  
+https://link.medium.com/GtsQEdqt7eb
+
+### Streamlit 
+https://streamlit.io/
+
 # Some HTML but no JS
 
 ## Dashborg 
@@ -81,12 +97,16 @@ https://www.dashborg.net/
 
 
 # Defunct, No recent releases
+
 ## AnPyLar
 Anpylar https://www.anpylar.com/
 Muntjac (defunct but powerful) Vaadin for Python
 
 ## Nagare
 Nagare was the first framework to eliminate HTML and JS. But It did not adapt to the modern web.
+
+## PyJS (formerly PyJamas)
+http://pyjs.org/
 
 # Articles 
 
