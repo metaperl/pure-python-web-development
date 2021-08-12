@@ -1,6 +1,21 @@
 # 100% end-to-end Python Web Development
 
-Avoid the CSS/JS/HTML soup - develop web apps entirely in Python
+
+> It is no exaggeration to regard this as the most fundamental idea in programming:
+> 
+>    The evaluator, which determines the meaning of expressions in a programming language, is just another program.
+>
+> To appreciate this point is to change our images of ourselves as programmers. We come to see ourselves as designers of languages, rather than only users of languages designed by > others.
+> -- [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-25.html#%_chap_4), Chapter 4.
+
+
+By developing web apps entirely in Python, Python serves as a metalanguage generating the target languages of CSS/HTML/JS. This greatly simplifies and abstracts web application development. Prior to the web, graphical applications were largely developed in just a single language. And text applications are still this way. Web application has gone through some phases, that [I have discussed elsewhere](https://metacpan.org/pod/HTML::Seamstress#A-BRIEF-HISTORY-of-Dynamic-HTML-Generation-(Templating)):
+1. server side includes
+2. CGI scripts
+3. Java applets
+4. client-server partial page reloaded apps developed with a back-end and front-end
+
+Stage 4 is where we are. But stage 3 was a more unified approach to GUI development, very similar to the way X-windows and C/TCL/Smalltalk were used to develop GUI apps prior to the web.
 
 
 
