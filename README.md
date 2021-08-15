@@ -35,11 +35,11 @@ GUI development, very similar to the way X-windows and C/TCL/Smalltalk
 were used to develop GUI apps prior to the web. 
 
 The problem we have exists because the web was never really meant for applications:
-it was designed to make information browseable for anyone. Applications were
+it was designed to make information browsable for anyone. Applications were
 something you downloaded and installed on your personal machine. But before we knew
 it, people were adding more and more functionality to websites by sticking in a 
 little JQuery here or some PHP there. And before we knew it, the line between
-web site and web application became blurry.
+website and web application became blurry.
 
 While data storage technologies have changed fairly slowly, the best way to develop
 in Javascript and even CSS changes quite a 
@@ -47,24 +47,30 @@ bit [as you can see](https://github.com/kamranahmedse/developer-roadmap).
 
 The need for robust software development was left behind in a frenzy of creating
 a soup of technologies. But some people saw the pitfall and started working on
-alternative solutions. In java we saw zk and Vaadin. In Scala we saw 
+alternative solutions. 
+In Java, we saw [zk](https://www.zkoss.org/) and [Vaadin](https://vaadin.com/). 
+In Scala, we saw 
 [mind-blowing](https://www.youtube.com/watch?v=Ksoi6AG9nbA)
-live coding in [ScalaJS](http://www.scala-js.org/).
-And in Smalltalk we saw [Seaside](http://seaside.st/). 
+live coding in [ScalaJS](http://www.scala-js.org/) 
+and in Smalltalk we saw [Seaside](http://seaside.st/). 
 
 But most impressively we saw [UrWeb](http://impredicative.com/ur/) - a 
 metalanguage inspired by ML that generated typesafe back-end and front-end code,
-thereby preventing all of the things that adhoc modern web development suffers from:
+thereby preventing all the things that 
+adhoc-tossed-salad modern web development 
+suffers from:
 
 * code-injection attacks
 * invalid HTML
 * Dead intra-application links
-* mismatches between HTML forms and the fields expected by their handlers
-*  client-side code that makes incorrect assumptions about the "AJAX"-style services that the remote web server provides
+* mismatches between HTML forms, and the fields expected by their handlers
+* client-side code that makes incorrect assumptions about the 
+  AJAX-style services that the remote web server provides
 * invalid SQL queries
-* improper marshaling or unmarshaling in communication with SQL databases or between browsers and web servers
+* improper marshaling or unmarshalling in communication with 
+  SQL databases or between browsers and web servers
 
-## And thus we see why Pure Python Web Development is a necssity:
+## We thus see why Pure Python Web Development is a necessity:
 
 * security
 * ease of development
@@ -236,13 +242,6 @@ asyncio but can be integrated with blocking code seamlessly.
 
 https://www.reddit.com/r/Python/comments/p109o0/lona_a_web_framework_for_responsive_web_apps_in/
 
-## Enaml-Web
-
-https://github.com/codelv/enaml-web
-
-
-## Ryact
-https://github.com/dewball345/ryact
 
 ## Epyk
 [Epyk](https://epyk-ui.readthedocs.io/en/latest/) is compatible with  
@@ -251,18 +250,11 @@ package embeds a Flask app as it is easier to install and ready to use.
 
 It has good documentation and a nice gallery of working programs.
 
-
-## IDOM 
-https://github.com/idom-team/idom is a work in progress.
-
-
-
 ## PyWebIO
 https://pywebio.readthedocs.io/en/latest/ is a builder with documented
 integration for Tornado, Flask, Django and aiohttp. It can also
 execute standalone. It is surprisingly procedural, yet offers decent
 support for nested rendering using functions instead of objects and methods.
-
 
 ## Wave 
 https://h2oai.github.io/wave/ is good at building realtime streaming dashboards.
@@ -271,17 +263,23 @@ but has no examples or express concern for integration with Flask or Django, eve
 though 
 [they feel it probably should work](https://github.com/h2oai/wave/discussions/934).
 
+## Enaml-Web
+https://github.com/codelv/enaml-web
 
+## Ryact
+https://github.com/dewball345/ryact
+
+## IDOM 
+https://github.com/idom-team/idom is a work in progress.
 
 # Not a Builder but Self-contained and limited
 
-
 ## Streamlit 
 https://streamlit.io/ is very powerful, but adding features that you expect in a 
-full-blown web app is [hard and hackish](https://discuss.streamlit.io/t/user-authentication/612/18)
+full-blown web app 
+is [hard and hackish](https://discuss.streamlit.io/t/user-authentication/612/18)
 
 ### Discussions
-
 https://www.reddit.com/r/Python/comments/lnu1r9/i_made_a_covid19_immunityvaccination_tracker_and/
 
 ## Remi
