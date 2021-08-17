@@ -263,6 +263,28 @@ but has no examples or express concern for integration with Flask or Django, eve
 though 
 [they feel it probably should work](https://github.com/h2oai/wave/discussions/934).
 
+I installed Wave and played around with the tour. I had problems getting some of
+the examples to work on Windows. Even so,
+I find Wave to be very succinct and very powerful.
+
+It is modular and dynamic. By modular, I mean, that building a website is as simple
+as populating Python data structures with objects. By dynamic, I mean 
+I was impressed by *the ability to edit a live 
+website directly from the Python REPL*.  Just think: a live site could have updates
+from cron jobs.
+
+I was a bit put-off by having to learn two different ways to use Wave:
+[one for scripts and one for apps](https://wave.h2o.ai/docs/tutorial-counter). To
+make things simple for myself, I would just always write apps. Also, the tutorial
+would do well to have 2 directories - one for scripts and one for apps instead of
+putting all Python examples in an apps directory.
+    
+I also did not like the way to model was initialized in the rendering method.
+I started [a discussion about that](https://github.com/h2oai/wave/discussions/964).
+
+
+
+
 ## Enaml-Web
 https://github.com/codelv/enaml-web
 
