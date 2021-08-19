@@ -256,6 +256,10 @@ integration for Tornado, Flask, Django and aiohttp. It can also
 execute standalone. It is surprisingly procedural, yet offers decent
 support for nested rendering using functions instead of objects and methods.
 
+### Sample code
+
+[Tokyo Olympics country's performance ranking](https://demo.pyweb.io/olympics/)
+
 ## Wave 
 https://h2oai.github.io/wave/ is good at building realtime streaming dashboards.
 It has [support for OpenID and Basic Auth](https://wave.h2o.ai/docs/security)
