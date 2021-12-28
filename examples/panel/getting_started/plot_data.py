@@ -1,18 +1,8 @@
-from matplotlib.figure import Figure
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_agg import FigureCanvas
 import numpy as np
-
-# %matplotlib inline
-
-
-def mpl_plot(avg, highlight):
-    fig = Figure()
-    FigureCanvas(fig)  # not needed in mpl >= 3.1
-    ax = fig.add_subplot()
-    avg.plot(ax=ax)
-    if len(highlight): highlight.plot(style='o', ax=ax)
-    return fig
+import panel as pn
+import load_data
 
 def my_mpl_plot(avg, highlight):
     fig, ax = plt.subplots()
@@ -20,15 +10,12 @@ def my_mpl_plot(avg, highlight):
     if len(highlight): highlight.plot(style='o', ax=ax)
     return fig
 
-def find_outliers(data, variable='Temperature', window=30, sigma=10, view_fn=mpl_plot):
+
+def find_outliers(data=None, variable='Temperature', window=30, sigma=10, view_fn=my_mpl_plot):
+    if data is None:
+        data = load_data.data
     avg = data[variable].rolling(window=window).mean()
     residual = data[variable] - avg
     std = residual.rolling(window=window).std()
     outliers = (np.abs(residual) > std * sigma)
     return view_fn(avg, avg[outliers])
-
-
-import load_data
-f = find_outliers(load_data.data, variable='Temperature', window=20, sigma=10, view_fn=my_mpl_plot)
-plt.show()
-input()
