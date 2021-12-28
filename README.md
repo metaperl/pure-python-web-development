@@ -301,7 +301,12 @@ https://github.com/codelv/enaml-web
 https://github.com/dewball345/ryact
 
 ## IDOM 
-https://github.com/idom-team/idom is a work in progress.
+https://github.com/idom-team/idom 
+
+And I quote:
+
+> IDOM is a Python web framework for building interactive websites without needing a single line of Javascript. This is accomplished by breaking down complex applications into nestable and reusable chunks of code called “components” that allow you to focus on what your application does rather than how it does it.
+> Ecosystem independence is also a core feature of IDOM. It can be added to existing applications built on a variety of sync and async web servers, as well as integrated with other frameworks like Django, Jupyter, and Plotly Dash. Not only does this mean you’re free to choose what technology stack to run on, but on top of that, you can run the exact same components wherever you need them. For example, you can take a component originally developed in a Jupyter Notebook and embed it in your production application without changing anything about the component itself.
 
 # Not a Builder but Self-contained and limited
 
