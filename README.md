@@ -196,6 +196,8 @@ to focus on JS/HTML.
 
 # Builders
 
+## Bokeh
+With [Bokeh](https://bokeh.org/), you can create JavaScript-powered visualizations without writing any JavaScript yourself.
 
 ## Dash  
 https://dash.plotly.com/ is built on top of flask and 
