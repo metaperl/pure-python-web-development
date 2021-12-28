@@ -4,7 +4,6 @@ from matplotlib.backends.backend_agg import FigureCanvas
 import numpy as np
 import panel as pn
 
-import load_data
 import plot_data
 
 
