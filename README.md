@@ -1,4 +1,4 @@
-# Pure Python Web Development: **NO** CSS, JSS, or HTML Needed or Wanted!
+# Pure Python Web Development: **NO** CSS, JS, or HTML Needed or Wanted!
 
 
 > It is no exaggeration to regard this as the most fundamental idea in programming:
