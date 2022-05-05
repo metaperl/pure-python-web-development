@@ -3,6 +3,7 @@ from bokeh.sampledata.autompg import autompg
 import param
 import panel as pn
 
+
 def autompg_plot(x='mpg', y='hp', color='#058805'):
     return autompg.hvplot.scatter(x, y, c=color, padding=0.1)
 
@@ -22,5 +23,6 @@ class MPGExplorer(param.Parameterized):
 
 explorer = MPGExplorer()
 
-pn.Row(explorer.param, explorer.plot)
+pn.Row(explorer.param, explorer.plot).servable()
+
 
