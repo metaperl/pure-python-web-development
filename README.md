@@ -2,7 +2,14 @@
 
 I originally started this as [a markdown document](ARTICLE.md) but over time I needed something to make editing easier for me.
 
-## The Markdown article is dead.
+## This Markdown article is dead.
 
-Please refer to this Google Doc for the latest and greatest data on **PURE PYTHON WEB DEVELOPMENT**
-https://docs.google.com/document/d/13da40zzfEZmA-LfsfISPmILpbmgpLZHJJVNdQmhT7Gs/edit?usp=sharing
+
+## This Google Doc is dead too.
+this is dead -> https://docs.google.com/document/d/13da40zzfEZmA-LfsfISPmILpbmgpLZHJJVNdQmhT7Gs/edit?usp=sharing
+
+
+# HERE IS THE HOME OF THE PURE PYTHON WEB APPLICATION LIBRARY SURVEY
+
+https://may69.com/purepython
+
