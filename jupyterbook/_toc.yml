@@ -1,0 +1,13 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: practical-guide.md
+- file: class-a.md
+- file: class-b.md
+- file: class-other.md
+- file: class-c.md
+- file: class-defunct.md
+- file: end-notes.md
