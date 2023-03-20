@@ -134,8 +134,9 @@ Also, when running a Pynecone app in production mode, you can use NextJS SSG to 
 ### Reference links
 Official site github
 
-## Application Gallery
+### Application Gallery
 https://pynecone.io/docs/gallery
+
 ### Discussion
 https://www.reddit.com/r/Python/comments/zh0pmy/pynecone_web_apps_in_pure_python/
 “Show HN Dec 14 2022“
