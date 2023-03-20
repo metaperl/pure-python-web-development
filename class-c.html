@@ -1,0 +1,694 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Class C: Solutions that may one day be Class B or Class A &#8212; Pure Python Web Development</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'class-c';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Class Defunct: defunct products" href="class-defunct.html" />
+    <link rel="prev" title="Class Other: Pure Python Products for Specific Limited Use Cases" href="class-other.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/pure-python-logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/pure-python-logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Pure Python Web Development
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="practical-guide.html">Practical Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="class-a.html">Class A Frameworks: fully-featured, rock-solid, industrial-grade frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="class-b.html">Class B Frameworks - Perfect for limited-scope projects, but don’t complain when you lack features!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="class-other.html">Class Other: Pure Python Products for Specific Limited Use Cases</a></li>
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Class C: Solutions that may one day be Class B or Class A</a></li>
+<li class="toctree-l1"><a class="reference internal" href="class-defunct.html">Class Defunct: defunct products</a></li>
+<li class="toctree-l1"><a class="reference internal" href="end-notes.html">End Notes</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/metaperl/pure-python-web-development" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/metaperl/pure-python-web-development/issues/new?title=Issue%20on%20page%20%2Fclass-c.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/class-c.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Class C: Solutions that may one day be Class B or Class A</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enaml-web">Enaml-Web</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyscript">PyScript</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q-a">Q&amp;A</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#related-publications">Related Publications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-on-pyodide">Built on pyodide</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uidom">UiDOm</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gooey">Gooey</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wooey">Wooey</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#remi">Remi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#abstracloud">Abstracloud</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#publications">Publications</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rapydscript">Rapydscript</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rapydscript-ng-a-fork-of-rapydscript">Rapydscript-ng – a fork of RapydScript</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ryact-and-breact">Ryact and Breact</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-on-rapydscript-and-brython">Built on rapydscript and Brython</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#domonic">Domonic</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-is-domonic-rated-so-low">Why is Domonic rated so low?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wave">Wave</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="class-c-solutions-that-may-one-day-be-class-b-or-class-a">
+<h1>Class C: Solutions that may one day be Class B or Class A<a class="headerlink" href="#class-c-solutions-that-may-one-day-be-class-b-or-class-a" title="Permalink to this heading">#</a></h1>
+<section id="enaml-web">
+<h2>Enaml-Web<a class="headerlink" href="#enaml-web" title="Permalink to this heading">#</a></h2>
+<p>Enaml web is part of a very broad ecosystem:</p>
+<p>There is plain old Enaml which can succinctly build desktop applications using their python-powered DSL
+There is Enaml-web which is a variant of Enaml for the web
+There is atom-db, which is their asynchronous ORM
+And there is Atom, which is a very capable object system for Python. Their object system has observers and data validation. It is almost as good as Traitlets, which is slightly more powerful because you can generate command-line interfaces from Traitlets classes easily.
+Enaml-web has a couple of demo projects. Why is it class C?</p>
+<p>you can do the simple things that it can do with simpler tools and less code
+no roadmap or facilities to do complex world-class web apps
+the user base is apparently small
+the developer base is apparently small
+to it’s merit, the code is frequently updated
+very few real world examples. just two sample projects</p>
+</section>
+<section id="pyscript">
+<h2>PyScript<a class="headerlink" href="#pyscript" title="Permalink to this heading">#</a></h2>
+<p>PyScript is developed by Anaconda. Superficially, and only superficially, PyScript seems to be just like Brython – you embed Python in some tags in HTML and walla, dynamic web pages with Python not Javascript.</p>
+<p>But PyScript sets itself apart from Brython because it is based on Pyodide. In the words of the co-author:</p>
+<blockquote>
+<div><p>Pyodide is the same <em>CPython</em> interpreter you run on your laptop, but compiled to target WebAssembly. (Just as CPython is compiled to target x86 or M1 assembly on your laptop.)
+This is why the various native C/C++ extensions for Python can also be supported: they are compiled to target WebAssembly as well.
+This has nothing to do with Javascript. It’s certainly not the case that “Pyodide is Python written in JS” — that is more like Brython. (Such an approach could never import numpy, pandas, scipy, etc. without also rewriting all of those in Javascript as well.)</p>
+<p>– Peter Wang, CEO of Anaconda
+Since Anaconda has already developed Panel, one would wonder why PyScript. Wang states:</p>
+</div></blockquote>
+<blockquote>
+<div><p>This is a broader and more fundamental capability than Panel. You can run just about any Python in the browser. And you can wrap Javascript libraries. So we have examples showing interaction with Three.JS, with d3, etc.</p>
+</div></blockquote>
+<p>According to Wang, the intent of PyScript is:</p>
+<blockquote>
+<div><p>… to empower programming for millions of people who find existing stuff too complex. Learning even a single language is hard enough. These folks will not be able to learn all the complexity of JS, modern web dev and devops, etc etc.</p>
+<p>With PyScript, they just write in a single language, with a little bit of HTML, and they have something that they can share with any friends and colleagues, with zero deployment complexity. They can email them the file, or copy it on a thumb drive.</p>
+<p>– Peter Wang, CEO of Anaconda</p>
+</div></blockquote>
+<p>Currently the interest in PyScript far outstrips its ability to offer a productive solution to prospective users. However, the strong corporate backing and large team of developers for the product indicate that it may well be a Class A system in the next year or so. It has tremendous potential. As the author of htag has stated:</p>
+<p>This thing is the most incredible thing I’ve seen for some years … In the JavaScript and python world</p>
+<p>It opens/unlocks a lot of things …</p>
+<p>Coming from brython, it unlocks full python … In the right way (thanks wasm)</p>
+<p>Sure, there are a lot of improvements/gaps, before it could be supported natively in VM browsers … But it’s the way to go …</p>
+<p>But the promise is here … You can code python (and pip any libs you want), with just a js include … For now ! Can’t imagine all the things which will come soon … Pretty excited !</p>
+<p>manatlan</p>
+<section id="q-a">
+<h3>Q&amp;A<a class="headerlink" href="#q-a" title="Permalink to this heading">#</a></h3>
+<p>Can you pass objects between JS and Python?
+Passing objects is supported. In the OpenAI API example, you will see js -&gt; py with:</p>
+<p>from js import localStorage, document, console, XMLHttpRequest</p>
+<p>“from js import…” imports js objects directly into PyScript’s Python.
+Going in the other direction (py -&gt; js), you can use PyScript.runtime.globals.get(‘my_variable_name’)</p>
+<p>XMLHttpRequest is what I used to make the HTTP requests as requests is not supported. An alternative would be to use pyodide.http.pyfetch</p>
+</section>
+<section id="references">
+<h3>References:<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://docs.pyscript.net/latest/guides/passing-objects.html">https://docs.pyscript.net/latest/guides/passing-objects.html</a></p>
+<p><a class="reference external" href="https://docs.pyscript.net/latest/guides/http-requests.html">https://docs.pyscript.net/latest/guides/http-requests.html</a></p>
+</section>
+<section id="related-publications">
+<h3>Related Publications<a class="headerlink" href="#related-publications" title="Permalink to this heading">#</a></h3>
+<p>“I made an interactive Pandas cheat sheet using PyScript“
+“Using the Azure SDK for Python in Pyodide and PyScript”
+<a class="reference external" href="https://www.reddit.com/r/Python/comments/ug1pf6/python_in_html_new_project_by_anaconda_with_all/">https://www.reddit.com/r/Python/comments/ug1pf6/python_in_html_new_project_by_anaconda_with_all/</a>
+<a class="reference external" href="https://www.reddit.com/r/Python/comments/uhbby4/whats_the_difference_between_pyscript_template/">https://www.reddit.com/r/Python/comments/uhbby4/whats_the_difference_between_pyscript_template/</a>
+<a class="reference external" href="https://www.reddit.com/r/Python/comments/ugl19x/anaconda_new_from_anaconda_python_in_the_browser/">https://www.reddit.com/r/Python/comments/ugl19x/anaconda_new_from_anaconda_python_in_the_browser/</a>
+<a class="reference external" href="https://www.reddit.com/r/Python/comments/uhm1oe/meet_pyscript_new_framework_from_anaconda_that/">https://www.reddit.com/r/Python/comments/uhm1oe/meet_pyscript_new_framework_from_anaconda_that/</a>
+<a class="reference external" href="https://www.reddit.com/r/Python/comments/ujicyq/i_tested_pyscript_and_you_can_literally_write/">https://www.reddit.com/r/Python/comments/ujicyq/i_tested_pyscript_and_you_can_literally_write/</a>
+<a class="reference external" href="https://bas.codes/posts/pyscript-todo">https://bas.codes/posts/pyscript-todo</a></p>
+</section>
+<section id="built-on-pyodide">
+<h3>Built on pyodide<a class="headerlink" href="#built-on-pyodide" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="uidom">
+<h2>UiDOm<a class="headerlink" href="#uidom" title="Permalink to this heading">#</a></h2>
+<p>UIdom official repo</p>
+<p>Built on dominate</p>
+</section>
+<section id="gooey">
+<h2>Gooey<a class="headerlink" href="#gooey" title="Permalink to this heading">#</a></h2>
+<p>And I plagiarize:</p>
+<p>Gooey converts your Console Applications into end-user-friendly GUI applications. It lets you focus on building robust, configurable programs in a familiar way, all without having to worry about how it will be presented to and interacted with by your average user.</p>
+<p>Why?
+Because as much as we love the command prompt, the rest of the world looks at it like an ugly relic from the early ’80s. On top of that, more often than not programs need to do more than just one thing, and that means giving options, which previously meant either building a GUI, or trying to explain how to supply arguments to a Console Application. Gooey was made to (hopefully) solve those problems. It makes programs easy to use, and pretty to look at!</p>
+<p>Who is this for?
+If you’re building utilities for yourself, other programmers, or something which produces a result that you want to capture and pipe over to another console application (e.g. *nix philosophy utils), Gooey probably isn’t the tool for you. However, if you’re building ‘run and done,’ around-the-office-style scripts, things that shovel bits from point A to point B, or simply something that’s targeted at a non-programmer, Gooey is the perfect tool for the job. It lets you build as complex of an application as your heart desires all while getting the GUI side for free.</p>
+</section>
+<section id="wooey">
+<h2>Wooey<a class="headerlink" href="#wooey" title="Permalink to this heading">#</a></h2>
+<p>per the Wooey docs:</p>
+<p>Wooey is a simple web interface to run command line Python scripts. Think of it as an easy way to get your scripts up on the web for routine data analysis, file processing, or anything else.</p>
+</section>
+<section id="remi">
+<h2>Remi<a class="headerlink" href="#remi" title="Permalink to this heading">#</a></h2>
+<p>It breaks my heart to put Remi in the Class C section. The author works very hard on his product and is very responsive.</p>
+<p>It offers a class-based approach to user interface generation. It operates using an internal webserver and has limited support for traditional authentication and authorization.</p>
+<p>It primarily is good at building user interfaces for personal use. It is far older than Gradio.</p>
+</section>
+<section id="abstracloud">
+<h2>Abstracloud<a class="headerlink" href="#abstracloud" title="Permalink to this heading">#</a></h2>
+<p>Abstracloud reminds me of Gradio but with commercial restrictions. The pricing model and non-FOSS distribution method seem to be a bit limiting. For instance, comparing their pricing model with Anvil’s, we see that we can have 50,000 data table rows in the free account at Anvil whereas any storage requires a jump up to the paid plan.</p>
+<section id="publications">
+<h3>Publications<a class="headerlink" href="#publications" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://www.reddit.com/r/Python/comments/wg13qr/lib_that_generates_web_uis_for_your_scripts_they/">https://www.reddit.com/r/Python/comments/wg13qr/lib_that_generates_web_uis_for_your_scripts_they/</a>
+###Deliverables
+<a class="reference external" href="https://www.reddit.com/r/Python/comments/wg4ml7/i_made_a_simple_weight_tracker_that_displays/">https://www.reddit.com/r/Python/comments/wg4ml7/i_made_a_simple_weight_tracker_that_displays/</a></p>
+</section>
+</section>
+<section id="rapydscript">
+<h2>Rapydscript<a class="headerlink" href="#rapydscript" title="Permalink to this heading">#</a></h2>
+<p><a class="github reference external" href="https://github.com/atsepkov/RapydScript">atsepkov/RapydScript</a> is a Class C system primarily because it is not Python and it is not Javascript. They do have an impressive set of gallery examples but the mailing list and source code have no activity since May 2021. When one attempts to make a new language, one must first have users as well as libraries and if there is any attrition in either, then the language becomes less desirable over time. We’ve seen it happen with Coffeescript as well as Cappucino and Objective-J. To be sure, Python has warts and Javascript has even more warts but I once saw an IRC chat where someone was arguing about rewriting Emacs in Common Lisp and the other person said: “your opinion is no substitute for millions of lines of working code”. In other words, a perfect language is nothing without libraries an userbase.</p>
+</section>
+<section id="rapydscript-ng-a-fork-of-rapydscript">
+<h2>Rapydscript-ng – a fork of RapydScript<a class="headerlink" href="#rapydscript-ng-a-fork-of-rapydscript" title="Permalink to this heading">#</a></h2>
+<p><a class="github reference external" href="https://github.com/kovidgoyal/rapydscript-ng">kovidgoyal/rapydscript-ng</a> is a fork of the Rapydscript ng. there have been no commit to the repo since Dec 2021. To fork a language to create even another variant means that rapydscript-ng shares the same hazards of adoption as Rapydscript itelf</p>
+</section>
+<section id="ryact-and-breact">
+<h2>Ryact and Breact<a class="headerlink" href="#ryact-and-breact" title="Permalink to this heading">#</a></h2>
+<p>Ryact and Breact are emulations of react. Ryact is built on rapydscript and is 10x faster than Breact, which is built on Brython. As a single author, he has not been able to keep up with all the demands of industrial-grade software engineering in his projects.</p>
+<section id="built-on-rapydscript-and-brython">
+<h3>Built on rapydscript and Brython<a class="headerlink" href="#built-on-rapydscript-and-brython" title="Permalink to this heading">#</a></h3>
+<p>WASMer for Python: Pyodide’s little brother?
+<a class="github reference external" href="https://github.com/wasmerio/wasmer-python">wasmerio/wasmer-python</a> – is a WebAssembly runtime for Python. It seems to have less popularity as a builder than Pyodide. Also the development team and userbase appear to be smaller.</p>
+</section>
+</section>
+<section id="domonic">
+<h2>Domonic<a class="headerlink" href="#domonic" title="Permalink to this heading">#</a></h2>
+<p>Domonic is a builder also. It contains quite a few sub-packages, some of which might be better elsewhere:</p>
+<ul class="simple">
+<li><p>html : Generate html with python 3 😎</p></li>
+<li><p>dom : DOM API in python 3 😲</p></li>
+<li><p>javascript : js API in python 3 😳</p></li>
+<li><p>terminal || cmd : call terminal commands with python3 😱 (see at the end)</p></li>
+<li><p>JSON : utils for loading / decorating / transformin</p></li>
+<li><p>SVG : Generate svg using python</p></li>
+<li><p>aframe || x3d tags : auto generate 3d worlds with aframe.</p></li>
+<li><p>The author also has a stripped down package called htmlx that will be discussed in the HTML only section.</p></li>
+</ul>
+<section id="why-is-domonic-rated-so-low">
+<h3>Why is Domonic rated so low?<a class="headerlink" href="#why-is-domonic-rated-so-low" title="Permalink to this heading">#</a></h3>
+<p>Well, the doc and the source code repo are very current, so that cannot be why. Basically it is an unfinished project with very few deliverables. For example in the docs about the d3 interface, he states ‘WARNING: this package is still in dev. expect bugs ‘. The approach to pure Python web development seems a bit less elegant than other projects. For instance, the need to manually wrap d3 and then do an incomplete job of it shows how much more limited this project is than Transcrypt which can use any Javascript library without any particular wrapping.</p>
+<p>The author also developed htmlx, which is a stripped down version of domonic, limited primarily to rendering HTML.</p>
+</section>
+</section>
+<section id="wave">
+<h2>Wave<a class="headerlink" href="#wave" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://h2oai.github.io/wave/">https://h2oai.github.io/wave/</a> is good at building realtime streaming dashboards. It has support for OpenID and Basic Auth but has no examples or express concern for integration with Flask or Django, even though they feel it probably should work.</p>
+<p>I installed Wave and played around with the tour. I had problems getting some of the examples to work on Windows. Even so, I find Wave to be very succinct and very powerful.</p>
+<p>It is modular and dynamic. By modular, I mean, that building a website is as simple as populating Python data structures with objects. By dynamic, I mean I was impressed by the ability to edit a live website directly from the Python REPL. Just think: a live site could have updates from cron jobs.</p>
+<p>I was a bit put-off by having to learn two different ways to use Wave: one for scripts and one for apps. To make things simple for myself, I would just always write apps. Also, the tutorial would do well to have 2 directories – one for scripts and one for apps instead of putting all Python examples in an apps directory.</p>
+<p>I also did not like the way to model was initialized in the rendering method. I started a discussion about that.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="class-other.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Class Other: Pure Python Products for Specific Limited Use Cases</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="class-defunct.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Class Defunct: defunct products</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enaml-web">Enaml-Web</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyscript">PyScript</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q-a">Q&amp;A</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#related-publications">Related Publications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-on-pyodide">Built on pyodide</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uidom">UiDOm</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gooey">Gooey</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wooey">Wooey</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#remi">Remi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#abstracloud">Abstracloud</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#publications">Publications</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rapydscript">Rapydscript</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rapydscript-ng-a-fork-of-rapydscript">Rapydscript-ng – a fork of RapydScript</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ryact-and-breact">Ryact and Breact</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-on-rapydscript-and-brython">Built on rapydscript and Brython</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#domonic">Domonic</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-is-domonic-rated-so-low">Why is Domonic rated so low?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wave">Wave</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Terrence-Monroe: Brannon
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div></div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

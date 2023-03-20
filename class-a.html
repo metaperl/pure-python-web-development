@@ -1,0 +1,756 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Class A Frameworks: fully-featured, rock-solid, industrial-grade frameworks &#8212; Pure Python Web Development</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'class-a';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Class B Frameworks - Perfect for limited-scope projects, but don’t complain when you lack features!" href="class-b.html" />
+    <link rel="prev" title="Practical Guide" href="practical-guide.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/pure-python-logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/pure-python-logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Pure Python Web Development
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="practical-guide.html">Practical Guide</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Class A Frameworks: fully-featured, rock-solid, industrial-grade frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="class-b.html">Class B Frameworks - Perfect for limited-scope projects, but don’t complain when you lack features!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="class-other.html">Class Other: Pure Python Products for Specific Limited Use Cases</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="class-c.html">Class C: Solutions that may one day be Class B or Class A</a></li>
+<li class="toctree-l1"><a class="reference internal" href="class-defunct.html">Class Defunct: defunct products</a></li>
+<li class="toctree-l1"><a class="reference internal" href="end-notes.html">End Notes</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/metaperl/pure-python-web-development" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/metaperl/pure-python-web-development/issues/new?title=Issue%20on%20page%20%2Fclass-a.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/class-a.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Class A Frameworks: fully-featured, rock-solid, industrial-grade frameworks</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anvil">Anvil</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-on-skulpt">Built on skulpt</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#publications">Publications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application-gallery">Application Gallery</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panel">Panel</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dash">Dash</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-on-plotly-and-reactjs">Built on plotly and ReactJS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">Resources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion-and-publications">Discussion and Publications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#from-class-c-to-class-a">From Class C to Class A</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nicegui">NiceGUI</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-thanks-streamlit">“No thanks Streamlit”</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-on-fastapi">built on FastAPI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#non-linkable-anchor-tags">Non-linkable anchor tags:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Application Gallery</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussions">Discussions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#idom">IDOM</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-on-reactjs">Built on ReactJS</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#epyk">Epyk</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flet">Flet</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Discussions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pynecone">Pynecone</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scalability-a-go-go">Scalability-a-go-go!</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reference-links">Reference links</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Application Gallery</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lona">Lona</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Discussions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nagare">Nagare</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reahl">Reahl</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="class-a-frameworks-fully-featured-rock-solid-industrial-grade-frameworks">
+<h1>Class A Frameworks: fully-featured, rock-solid, industrial-grade frameworks<a class="headerlink" href="#class-a-frameworks-fully-featured-rock-solid-industrial-grade-frameworks" title="Permalink to this heading">#</a></h1>
+<p>Class A: Industrial Strength Rock-solid Products
+In this section, we list products that are solving real-world problems and are ready for production deployment… just download, install and follow the instructions to whip out a solution to your issue PRONTO, because hundreds of other have already done the same.</p>
+<section id="anvil">
+<h2>Anvil<a class="headerlink" href="#anvil" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="http://anvil.works">http://anvil.works</a> is an abstraction over all web development provided in a cloud web-based environment. It is a freemium product.</p>
+<p>Someone really likes Anvil:</p>
+<p>For me, the final choice is about productivity. Anvil isn’t an isolated tool to ‘generate HTML and JS’. It’s an integrated suite of *all the tools needed to build and deploy complete, full stack software projects, with pure Python: database and visual UI builder, server and client functionality, with essential features (user management, email, web APIs, PDF printing, Git integration and version management, Google services integration, etc.), all built in. It’s the simplicity enabled by Anvil’s overall design, the scope of its APIs, the deployment capabilities, and all the features it brings together (far beyond HTML, CSS, and JS generation), together with the breadth of capability enabled by the full Python ecosystem available natively, which makes it ridiculously productive, like no other system I’ve ever seen (writing code for 40+ years).</p>
+<section id="built-on-skulpt">
+<h3>Built on skulpt<a class="headerlink" href="#built-on-skulpt" title="Permalink to this heading">#</a></h3>
+<p>Anvil uses skulpt under the hood.</p>
+</section>
+<section id="publications">
+<h3>Publications<a class="headerlink" href="#publications" title="Permalink to this heading">#</a></h3>
+<p>“Turning a Jupyter Notebook into a Web App“</p>
+</section>
+<section id="application-gallery">
+<h3>Application Gallery<a class="headerlink" href="#application-gallery" title="Permalink to this heading">#</a></h3>
+<p>“Prototyping a YC Startup Each Day – Meter Feeder (YC Winter 16)“</p>
+<p>YC Prototypes #2: Building Magic in 2.4 hours</p>
+</section>
+</section>
+<section id="panel">
+<h2>Panel<a class="headerlink" href="#panel" title="Permalink to this heading">#</a></h2>
+<p>Panel is part of an impressive tool stack. It is focused on making visualization simple and powerful.</p>
+<p>Built on Bokeh
+Application Gallery
+Awesome Panel</p>
+</section>
+<section id="dash">
+<h2>Dash<a class="headerlink" href="#dash" title="Permalink to this heading">#</a></h2>
+<p>Dash has several eye-catching bulletpoints about it:</p>
+<p>Instead of passive dashboards, one can build truly interactive analytical apps: apps can have forms and buttons to take input and update the graphical dashboard in realtime.
+Ready for desktop and mobile and can produce print-ready PDFs on demand: has 2 (competing?) standards for responsive UI development: dash mantine and dash bootstrap.
+there is Dash and Dash Enterprise. The enterprise version has other advanced features such as allowing an end-user to run GPU accelerated workflows to process hundreds of millions of records asynchronously.</p>
+<section id="built-on-plotly-and-reactjs">
+<h3>Built on plotly and ReactJS<a class="headerlink" href="#built-on-plotly-and-reactjs" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="resources">
+<h3>Resources<a class="headerlink" href="#resources" title="Permalink to this heading">#</a></h3>
+<p>Ann Marie Ward has over 30 repositories with beginner and advanced Dash material. She is Co-author of “The Book of Dash“. A few highlights:</p>
+<p>Multi-page app examples – modern Dash has evolved beyond having singe page apps.
+django-plotly-dash – Expose plotly dash apps as Django tags. Multiple Dash apps can then be embedded into a single web page, persist and share internal state, and also have access to the current user and session variables.</p>
+</section>
+<section id="discussion-and-publications">
+<h3>Discussion and Publications<a class="headerlink" href="#discussion-and-publications" title="Permalink to this heading">#</a></h3>
+<p>“Pip Install Plotly-Dash | Top 10 Useful Resources for Learning / Building Dashboards within the Framework” – highly recommended video and YouTube channel.</p>
+<p>“Dash Dashboards, Multi-Paged Quick Development with Python &amp; React Tutorial“</p>
+<p><a class="reference external" href="https://link.medium.com/GtsQEdqt7eb">https://link.medium.com/GtsQEdqt7eb</a></p>
+<p>“A quick introduction to Dash“</p>
+<p>“Dash is React for Python, R, and Julia“</p>
+</section>
+<section id="applications">
+<h3>Applications<a class="headerlink" href="#applications" title="Permalink to this heading">#</a></h3>
+<p>“Plotly/Dash is the Best Framework for Frontend Development IMO“</p>
+</section>
+<section id="from-class-c-to-class-a">
+<h3>From Class C to Class A<a class="headerlink" href="#from-class-c-to-class-a" title="Permalink to this heading">#</a></h3>
+<p>The goal is this guide is to rate frameworks that make simple web jobs simple AND allows you to scale out to develop the next top-100 web property if necessary. The class-grading-system was setup so that only highly reliable, robust AND feature-complete products were class A. At one point, Dash was nearly class C because my research revealed that one former user said:</p>
+<p>If it’s a simple project, sure.</p>
+<p>Otherwise it’s terrible. We switched from dash to fastapi + React. No regrets ever since.</p>
+<p>TheGuyWithoutName
+but a recent post to reddit showed that Dash can do it all – simple things, Jupyter things and yes, top 100 web property things as well.</p>
+</section>
+</section>
+<section id="nicegui">
+<h2>NiceGUI<a class="headerlink" href="#nicegui" title="Permalink to this heading">#</a></h2>
+<p>NiceGUI has a very clean and well-documented API and the authors have built nice deliverables on top of it such as rosys.</p>
+<p>One of the contributors gives us a great overview of the current inner workings NiceGUI:</p>
+<section id="no-thanks-streamlit">
+<h3>“No thanks Streamlit”<a class="headerlink" href="#no-thanks-streamlit" title="Permalink to this heading">#</a></h3>
+<p>Streamlit is gaining major adoption in the Class B space but taking a fresh look at Streamlit revealed</p>
+<p>it does too much magic when it comes to state handling.</p>
+<p>The NiceGUI author provides a deeper dive into the drawbacks of Streamlit here.</p>
+</section>
+<section id="built-on-fastapi">
+<h3>built on FastAPI<a class="headerlink" href="#built-on-fastapi" title="Permalink to this heading">#</a></h3>
+<p>The authors of NiceGUI chose FastAPI for some specific reasons even though my personal research would have me reach for Starlite. Now you can write fully featured web applications in NiceGUI.</p>
+</section>
+<section id="non-linkable-anchor-tags">
+<h3>Non-linkable anchor tags:<a class="headerlink" href="#non-linkable-anchor-tags" title="Permalink to this heading">#</a></h3>
+<p>It is laudable that the NiceGUI website is implemented in NiceGUI itself. That being said, the anchor tags generated by NiceGUI do not have a name attribute and thus you cannot link to parts of a page generated by NiceGUI directly.</p>
+</section>
+<section id="id1">
+<h3>Application Gallery<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<p>Interactive images – discussion and demo link</p>
+<p>Execute custom JS – discussion and link to demo</p>
+</section>
+<section id="discussions">
+<h3>Discussions<a class="headerlink" href="#discussions" title="Permalink to this heading">#</a></h3>
+<p>“NiceGUI: Let any browser be the frontend for your Python code“</p>
+<p>NiceGUI versus JustPy – very informative discussion.</p>
+</section>
+</section>
+<section id="idom">
+<h2>IDOM<a class="headerlink" href="#idom" title="Permalink to this heading">#</a></h2>
+<p><a class="github reference external" href="https://github.com/idom-team/idom">idom-team/idom</a> might be the quintessential builder library – it integrates with Flask, Django, FastAPI and 4 other frameworks… and the same IDOM component can run in all of these frameworks without modifications.</p>
+<p>IDOM connects your Python web framework of choice to a ReactJS frontend, allowing you to create interactive websites without needing JavaScript!</p>
+<p><a class="github reference external" href="https://github.com/idom-team/idom">idom-team/idom</a>
+The documentation for this project is a thorough as it gets. And they have an active discussion board. And the git repo is frequently updated. Definitely a compelling Class A approach to pure python web application development.</p>
+<section id="built-on-reactjs">
+<h3>Built on ReactJS<a class="headerlink" href="#built-on-reactjs" title="Permalink to this heading">#</a></h3>
+<p>Discussions
+In this discussion we learned that IDOM does not transpile to JavaScript. This allows pure component functions to be fully compatible and portable to any Python web framework that supports websockets.</p>
+</section>
+</section>
+<section id="epyk">
+<h2>Epyk<a class="headerlink" href="#epyk" title="Permalink to this heading">#</a></h2>
+<p>Epyk is compatible with most common Web Python Frameworks (i.e., Flask and Django). By default, the server package embeds a Flask app as it is easier to install and ready to use.</p>
+<p>It has good documentation and a nice gallery of working programs</p>
+</section>
+<section id="flet">
+<h2>Flet<a class="headerlink" href="#flet" title="Permalink to this heading">#</a></h2>
+<p>Flet allows you to to build Flutter apps in Python. And that’s a big deal because</p>
+<p>Flutter is an open source framework by Google for building beautiful, natively compiled, multi-platform applications from a single codebase.</p>
+<p>We are talking real power here. It’s basically a corporate supported version of Htag, which is a monumental single-developer effort with similar capability. Another much older product it resembles is Muntjac, which is a port of Vaadin to Python and no longer actively supported.</p>
+<section id="id2">
+<h3>Discussions<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<p>“Combining Flet with FastAPI“
+“Python is great for GUI (UI)/Front End Design . If you really want to give your boring Python Script a nice looking User Interface, then you definitely should check out this 30-min Tutorial. A Flutter for Python Library called Flet will be used here. And it is Cross Platformed !“</p>
+</section>
+</section>
+<section id="pynecone">
+<h2>Pynecone<a class="headerlink" href="#pynecone" title="Permalink to this heading">#</a></h2>
+<p>Pynecone  compiles to a traditional React (NextJS flavor) app. Wrapping React components is quite straightforward. The authors had used Streamlit in the past, and found it great to get started with but for more complex apps found it limiting in terms of components, styling, and performance. In Pynecone, the frontend compiles down to a NextJS app, so you have full customizability on how the app looks. Streamlit can also be slow in some cases as it reruns the entire script on user events, whereas in Pynecone only the state deltas are transmitted. Also for performance and SEO nextjs is great.</p>
+<section id="scalability-a-go-go">
+<h3>Scalability-a-go-go!<a class="headerlink" href="#scalability-a-go-go" title="Permalink to this heading">#</a></h3>
+<p>Pynecone has excellent scalability: you can horizontally scale and connect your servers to a Redis instance so they can access the user state. The authors use FastAPI for their Python server behind the scenes for handling frontend events and sending back state deltas.</p>
+<p>Also, when running a Pynecone app in production mode, you can use NextJS SSG to prerender the entire frontend to html.</p>
+</section>
+<section id="reference-links">
+<h3>Reference links<a class="headerlink" href="#reference-links" title="Permalink to this heading">#</a></h3>
+<p>Official site github</p>
+</section>
+</section>
+<section id="id3">
+<h2>Application Gallery<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://pynecone.io/docs/gallery">https://pynecone.io/docs/gallery</a></p>
+<section id="discussion">
+<h3>Discussion<a class="headerlink" href="#discussion" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://www.reddit.com/r/Python/comments/zh0pmy/pynecone_web_apps_in_pure_python/">https://www.reddit.com/r/Python/comments/zh0pmy/pynecone_web_apps_in_pure_python/</a>
+“Show HN Dec 14 2022“</p>
+</section>
+</section>
+<section id="lona">
+<h2>Lona<a class="headerlink" href="#lona" title="Permalink to this heading">#</a></h2>
+<p><a class="github reference external" href="https://github.com/fscherf/lona">fscherf/lona</a> supports usage of Django models and the Django auth system.</p>
+<p>To account for big HTML trees written in python, Lona supports widgets to encapsulate smaller trees an their functionalities. That makes components reusable.</p>
+<p>Lona has an async approach which allows one to write whole views in one function and one context. The author feels it leads to much cleaner code.</p>
+<p>According to the author Lona is based on aiohttp and uses asyncio internally. The Lona API is completely synchronous to make development easier. In contrast, with asyncio its possible to block the core event loop of the entire service without even noticing it. therefore Lona defines an API that feels like asyncio but can be integrated with blocking code seamlessly.</p>
+<section id="id4">
+<h3>Discussions<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://www.reddit.com/r/Python/comments/ptcje9/lona_a_web_framework_for_responsive_web_apps_in/">https://www.reddit.com/r/Python/comments/ptcje9/lona_a_web_framework_for_responsive_web_apps_in/</a>
+<a class="reference external" href="https://www.reddit.com/r/Python/comments/p109o0/lona_a_web_framework_for_responsive_web_apps_in/">https://www.reddit.com/r/Python/comments/p109o0/lona_a_web_framework_for_responsive_web_apps_in/</a>
+<a class="reference external" href="https://www.reddit.com/r/Python/comments/qasyxe/true_multi_user_applications_with_lona_174/">https://www.reddit.com/r/Python/comments/qasyxe/true_multi_user_applications_with_lona_174/</a>
+<a class="reference external" href="https://www.reddit.com/r/lona_web_org/">https://www.reddit.com/r/lona_web_org/</a></p>
+</section>
+</section>
+<section id="nagare">
+<h2>Nagare<a class="headerlink" href="#nagare" title="Permalink to this heading">#</a></h2>
+<p>Nagare has earned a class A ranking. It has been around for over a decade and was one of the first frameworks to offer a pure python approach to web application development. It is very complete and their consulting firm has delivered several impressive large-scale apps. They were very supportive of me when I deployed an application to a Fortune 500 company using it. It is very much a work of art and creativity.</p>
+<p>That being said, it has simple JS to Python transpilation only, primarily limited to the “onclick” event of a link/button..</p>
+<p>It was inspired by the Seaside framework for smalltalk.</p>
+<p>It is based on component-based OO instead of inheritance.</p>
+<p>It is not designed to leverage all the power in Javascript to create reactive, highly interactive apps.</p>
+<p>That being said, if your desire is object-oriented HTML production interfaced to an object-relational store on the back (SQLAlchemy), it is very Zen for this purpose.</p>
+<p>It is categorized as class A because it can solve problems. It borders on Class B because it cannot offer all javascript functionality. Also, the author of nagare did not make good on his promise to integrate muntjac into Nagare. Muntjac was a Python program that brought the entire Vaadin widget set into Python, making for good-looking professional web apps.</p>
+</section>
+<section id="reahl">
+<h2>Reahl<a class="headerlink" href="#reahl" title="Permalink to this heading">#</a></h2>
+<p>Reahl is another tool barely hanging onto Class A rating. The main positive attribute of this framework is that it has tons of widgets out of the box for everything to do full-fledged web applications. I used it on a consulting project and did not have to look outside of it for anything.</p>
+<p>The authors are very intelligent and responsive. I would encourage you to study it’s approach to web application development carefully before choosing it. Also read the discussion group and closed issues. To be frank, I do not see eye-to-eye with the developers on certain choices. But all in all, I have nothing but praise for how much rapid support they gave me on a corporate project I did with Reahl that was completed successfully. While both Nagare and Reahl are object-oriented super-mature systems, they embrace OO Python in drastically different ways.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="practical-guide.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Practical Guide</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="class-b.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Class B Frameworks - Perfect for limited-scope projects, but don’t complain when you lack features!</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anvil">Anvil</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-on-skulpt">Built on skulpt</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#publications">Publications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application-gallery">Application Gallery</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panel">Panel</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dash">Dash</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-on-plotly-and-reactjs">Built on plotly and ReactJS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">Resources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion-and-publications">Discussion and Publications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#from-class-c-to-class-a">From Class C to Class A</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nicegui">NiceGUI</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-thanks-streamlit">“No thanks Streamlit”</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-on-fastapi">built on FastAPI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#non-linkable-anchor-tags">Non-linkable anchor tags:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Application Gallery</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussions">Discussions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#idom">IDOM</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-on-reactjs">Built on ReactJS</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#epyk">Epyk</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flet">Flet</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Discussions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pynecone">Pynecone</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scalability-a-go-go">Scalability-a-go-go!</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reference-links">Reference links</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Application Gallery</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lona">Lona</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Discussions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nagare">Nagare</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reahl">Reahl</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Terrence-Monroe: Brannon
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div></div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

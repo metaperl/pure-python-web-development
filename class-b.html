@@ -1,0 +1,804 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Class B Frameworks - Perfect for limited-scope projects, but don’t complain when you lack features! &#8212; Pure Python Web Development</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'class-b';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Class Other: Pure Python Products for Specific Limited Use Cases" href="class-other.html" />
+    <link rel="prev" title="Class A Frameworks: fully-featured, rock-solid, industrial-grade frameworks" href="class-a.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/pure-python-logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/pure-python-logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Pure Python Web Development
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="practical-guide.html">Practical Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="class-a.html">Class A Frameworks: fully-featured, rock-solid, industrial-grade frameworks</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Class B Frameworks - Perfect for limited-scope projects, but don’t complain when you lack features!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="class-other.html">Class Other: Pure Python Products for Specific Limited Use Cases</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="class-c.html">Class C: Solutions that may one day be Class B or Class A</a></li>
+<li class="toctree-l1"><a class="reference internal" href="class-defunct.html">Class Defunct: defunct products</a></li>
+<li class="toctree-l1"><a class="reference internal" href="end-notes.html">End Notes</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/metaperl/pure-python-web-development" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/metaperl/pure-python-web-development/issues/new?title=Issue%20on%20page%20%2Fclass-b.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/class-b.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Class B Frameworks - Perfect for limited-scope projects, but don’t complain when you lack features!</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradio">Gradio</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#related-publications">Related Publications</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shiny-for-python">Shiny for Python</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#htag">Htag</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#demo">Demo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussions">Discussions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron">Neutron</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vue-py">Vue.Py</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#justpy-another-vue-js-wrapper">JustPy – another Vue.js wrapper</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#justpys-backend-is-built-using">JustPy’s backend is built using:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-nicegui">Built NiceGUI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#publications">Publications:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyfyre">PyFyre</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Discussions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-on-brython">Built on Brython</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transcrypt">Transcrypt</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zython">Zython</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussions-and-articles">Discussions and articles</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bokeh">Bokeh</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyodide">pyodide</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-block-for">Building Block for</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#articles">Articles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contact">Contact</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pywebio">PyWebIO</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-code">Sample code</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skulpt-and-brython">Skulpt and Brython</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#related-reading">Related Reading</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Building block for….</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyweb3d">PyWeb3D</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Built on: Brython</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brython">Brython</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#streamlit">Streamlit</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application-gallery">Application Gallery</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gallery">Gallery</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Discussions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Articles</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="class-b-frameworks-perfect-for-limited-scope-projects-but-don-t-complain-when-you-lack-features">
+<h1>Class B Frameworks - Perfect for limited-scope projects, but don’t complain when you lack features!<a class="headerlink" href="#class-b-frameworks-perfect-for-limited-scope-projects-but-don-t-complain-when-you-lack-features" title="Permalink to this heading">#</a></h1>
+<section id="gradio">
+<h2>Gradio<a class="headerlink" href="#gradio" title="Permalink to this heading">#</a></h2>
+<p>Gradio can wrap almost any Python function with an easy-to-use user interface. The function could be anything from image enhancer to a tax calculator  but most commonly is the prediction function of a pre-trained machine learning model.</p>
+<p>Gradio allows one to quickly create interfaces (either from the console or a Jupyter notebook or <a class="reference external" href="https://huggingface.co/spaces">https://huggingface.co/spaces</a>)  and <code class="docutils literal notranslate"><span class="pre">launch()</span></code> them.</p>
+<p>But it is also possible to customize how UI components look and/or behave.</p>
+<p>From my perspective, the weaknesses are:</p>
+<p>It is not clear how to integrate output from Gradio into a full-blown web-app.
+It offers password-based authentication only.
+No support for authorization</p>
+<section id="related-publications">
+<h3>Related Publications<a class="headerlink" href="#related-publications" title="Permalink to this heading">#</a></h3>
+<p>“Making Neural Search Queries Accessible to Everyone with Gradio”</p>
+<p>“Dashboard for audio summarization, sentiment analysis, and more!” – article link</p>
+</section>
+</section>
+<section id="shiny-for-python">
+<h2>Shiny for Python<a class="headerlink" href="#shiny-for-python" title="Permalink to this heading">#</a></h2>
+<p>Shiny for Python has a clean API and good documentation. Like many class B solutions, it lacks the features for complete web applications – authentication, authorization and sessioning.</p>
+</section>
+<section id="htag">
+<h2>Htag<a class="headerlink" href="#htag" title="Permalink to this heading">#</a></h2>
+<p>Htag is a very powerful and elegantly implemented pure-python-web-dev solution. It is the most recent solution by a prolific, talented and motivated author. He gained a lot of experience from his previous products, Gtag and Wyc.</p>
+<p>The reason it is Class B is because it is a builder. A very flexible and powerful builder with the ability to be run in ALL of following deployment scenarios:</p>
+<p>For a desktop app : You can use the PyWebView runner, which will run the UI in a pywebview container (or “ChromeApp runner”, in a local chrome app mode).
+For a web app : You can use the WebHTTP runner, which will run the UI in a web server, and serve the UI on client side, in a browser.
+For a android app : You can use the AndroidApp runner, which will run the UI in a kiwi webview thru tornado webserver, and can be embedded in an apk (recipes)
+For a pyscript app : you can use the PyScript runner, which will run completly in client side
+In fact any display portal which can render html/js/css, whether it be a browser, a pywebview, an android/apk, or anything based on cef, just needs an htag runner for htag to be able to render to it.</p>
+<p>As the author states:</p>
+<p>Yes … the promise is here : it’s a GUI toolkit for building “beautiful” applications for mobile, web, and desktop from a single codebase.</p>
+<p><a class="github reference external" href="https://github.com/manatlan/htag#readme">manatlan/htag</a></p>
+<section id="demo">
+<h3>Demo<a class="headerlink" href="#demo" title="Permalink to this heading">#</a></h3>
+<p>A very impressive and expressive demo once it loads.</p>
+</section>
+<section id="discussions">
+<h3>Discussions<a class="headerlink" href="#discussions" title="Permalink to this heading">#</a></h3>
+<p>“Using htag to create a <strong>matplotlib</strong> app for desktop, web or mobile”
+“HTag : an IRL mobile app for android : a tricount clone … using py3“
+HTag : A new GUI tookit for web/desktop/android from a single codebaseFirst frontend lib for pyscript ;-)”
+“htag 0.4.7 (a gui/frontend lib which works very well in pyscript)”</p>
+</section>
+</section>
+<section id="neutron">
+<h2>Neutron<a class="headerlink" href="#neutron" title="Permalink to this heading">#</a></h2>
+<p>Neutron allows developers to build native Python apps along with CSS and HTML for frontend design. Based on pywebview for it’s native GUI window and JavaScript-Python communication.</p>
+</section>
+<section id="vue-py">
+<h2><a class="reference external" href="http://Vue.Py">Vue.Py</a><a class="headerlink" href="#vue-py" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="http://Vue.py">Vue.py</a> wraps Vue.js. <a class="reference external" href="http://Vue.py">Vue.py</a> is based on Brython and the author is clear about what limitations that currently imposes. The lack of a gallery of applications and small userbase lead to this being a Class B solution.</p>
+</section>
+<section id="justpy-another-vue-js-wrapper">
+<h2>JustPy – another Vue.js wrapper<a class="headerlink" href="#justpy-another-vue-js-wrapper" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://justpy.io/">https://justpy.io/</a></p>
+<p>Justpy frees the developer from being concerned about the difference between front-end and back-end development. From the <a class="reference external" href="https://github.com/elimintz/justpy">README</a>:</p>
+<section id="justpys-backend-is-built-using">
+<h3>JustPy’s backend is built using:<a class="headerlink" href="#justpys-backend-is-built-using" title="Permalink to this heading">#</a></h3>
+<p>starlette – “a lightweight ASGI framework/toolkit, which is ideal for building high performance asyncio services”.
+uvicorn – “a lightning-fast ASGI server, built on uvloop and httptools“.
+JustPy’s frontend (which is transparent to JustPy developers) is built using:</p>
+<p>Vue.js – “The Progressive JavaScript Framework”
+The way JustPy removes the frontend/backend distinction is by intercepting the relevant events on the frontend and sending them to the backend to be processed.</p>
+<p>I would rate JustPy over <a class="reference external" href="http://Vue.py">Vue.py</a> for a Vue solution based on apparent maturity. But neither provides solutions for the common issues of a fully mature web application framework.</p>
+<p>A recent reddit post shows the commitment of the original author to long-term support of the project. That being said, the lack of response by the author did lead to a significant fork based of JustPy based on Svelte instead of Vue.js.</p>
+</section>
+<section id="built-nicegui">
+<h3>Built NiceGUI<a class="headerlink" href="#built-nicegui" title="Permalink to this heading">#</a></h3>
+<p>JustPy was the library underlying NiceGUI.</p>
+</section>
+<section id="publications">
+<h3>Publications:<a class="headerlink" href="#publications" title="Permalink to this heading">#</a></h3>
+<p>“justpy open source community is growing”</p>
+</section>
+</section>
+<section id="pyfyre">
+<h2>PyFyre<a class="headerlink" href="#pyfyre" title="Permalink to this heading">#</a></h2>
+<p>And I plagiarize from the official Github:</p>
+<p>Component-based framework. Developers who have experience in using other frontend frameworks should feel quite at home when using PyFyre.
+Truly reactive. PyFyre’s virtual DOM allows for simple and efficient state management.
+Quick navigation. Navigation between pages is quick with PyFyre’s single-page application design.
+Pythonic code with static typing. Developing with PyFyre is much easier with its type hinting and Pythonic style of coding.
+Asynchronous programming. Run non-blocking functions out of the box.
+CPython interoperability. Developers can limitedly use CPython packages on the client-side web.
+JavaScript interoperability. Allowing developers to leverage NPM packages and integrate with existing JavaScript applications.
+Pure Python. Build web apps without ever touching other languages like HTML and JavaScript.
+And more!</p>
+<section id="id1">
+<h3>Discussions<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<p>Python Frontend Framework for Building Websites</p>
+</section>
+<section id="built-on-brython">
+<h3>Built on Brython<a class="headerlink" href="#built-on-brython" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="transcrypt">
+<h2>Transcrypt<a class="headerlink" href="#transcrypt" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="http://transcrypt.org/">http://transcrypt.org/</a> is a Javascript generator that opts for integration with Javascript libraries instead of Python libraries. The book React to Python demonstrates how to use Transcrypt as the basis for full-blown applications. The sample gallery of applications is impressive. My personal nitpick is that they attempted to make some of numpy available within Transcrypt, breaking with their philosophy to leverage the Javascript ecosystem instead of Python. The clear separation of duties in a web application demands that they leave numpy and related libraries to a back-end API.</p>
+<p>Nonetheless, Transcrypt is a polished mature product that anyone wishing the advantages of Python over Javascript is encouraged to use as a DSL for Js/Css/HTML.</p>
+<p>By no means should you think every single aspect of CPython is available in Transcrypt: their docs tell you otherwise:</p>
+<p>Note that Transcrypt avoids constructs that cannot be made to perform in the browser. This means that Transcrypt and CPython are playing in different leagues. Transcrypt makes it possible for Python programmers to take a lot of their skills to the browser, but it is in no way a replacement for CPython. The two should be regarded as complementary.</p>
+<p>Transcrypt documentation.</p>
+</section>
+<section id="zython">
+<h2>Zython<a class="headerlink" href="#zython" title="Permalink to this heading">#</a></h2>
+<p>Zython is a webassembly project with a completely different implementation than python-wasm and pyodide, which are both based on emscripten and therefore suffer certain drawbacks that zython is not limited by.</p>
+<p>The stated goal of the project is “…to create a WebAssembly build of the core Python and dependent packages, which runs both on the command line with Node.js and in the major web browsers (via npm modules that you can include via webpack). “</p>
+<p>I find it unfortunate that the package name python-wasm ` is used in this project: it seems like it creates un-necessary confusion.</p>
+<section id="discussions-and-articles">
+<h3>Discussions and articles<a class="headerlink" href="#discussions-and-articles" title="Permalink to this heading">#</a></h3>
+<p>official discussion forum
+<a class="reference external" href="https://www.reddit.com/r/Python/comments/xy4ah5/github_sagemathinczython_webassembly_python_for/">https://www.reddit.com/r/Python/comments/xy4ah5/github_sagemathinczython_webassembly_python_for/</a></p>
+</section>
+</section>
+<section id="bokeh">
+<h2>Bokeh<a class="headerlink" href="#bokeh" title="Permalink to this heading">#</a></h2>
+<p>With Bokeh, you can create JavaScript-powered visualizations without writing any JavaScript yourself. It is also possible to use Bokeh output in traditional frameworks like Django or Flask.</p>
+<p>For me, the big question is: what good is a solution that is focused only on abstracting javascript visualizations? Aren’t there other things you can use Javascript for? Why would I choose this when I’m going to need another solution for other Javascript concerns?</p>
+<p>The answer lies in the holoviz framework, which provides programmatic access to Bokeh and more.</p>
+</section>
+<section id="pyodide">
+<h2>pyodide<a class="headerlink" href="#pyodide" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://pyodide.org/en/stable/">https://pyodide.org/en/stable/</a></p>
+<p>Python with the scientific stack, compiled to WebAssembly.</p>
+<p>Pyodide may be used in any context where you want to run Python inside a web browser.</p>
+<p>Pyodide brings the Python 3.9 runtime to the browser via WebAssembly, along with the Python scientific stack including NumPy, Pandas, Matplotlib, SciPy, and scikit-learn. Over 75 packages are currently available. In addition it’s possible to install pure Python wheels from PyPi.</p>
+<p>Pyodide provides transparent conversion of objects between Javascript and Python. When used inside a browser, Python has full access to the Web APIs.</p>
+<section id="building-block-for">
+<h3>Building Block for<a class="headerlink" href="#building-block-for" title="Permalink to this heading">#</a></h3>
+<p>It is what PyScript is built on.</p>
+</section>
+<section id="articles">
+<h3>Articles<a class="headerlink" href="#articles" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://testdriven.io/blog/python-webassembly/">https://testdriven.io/blog/python-webassembly/</a></p>
+</section>
+<section id="contact">
+<h3>Contact<a class="headerlink" href="#contact" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://pyodide.org/en/stable/project/about.html#communication">https://pyodide.org/en/stable/project/about.html#communication</a></p>
+</section>
+<section id="pywebio">
+<h3>PyWebIO<a class="headerlink" href="#pywebio" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://pywebio.readthedocs.io/en/latest/">https://pywebio.readthedocs.io/en/latest/</a> is a builder with documented integration for Tornado, Flask, Django and aiohttp. It can also execute standalone. It is surprisingly procedural, yet offers decent support for nested rendering using functions instead of objects and methods.</p>
+</section>
+<section id="sample-code">
+<h3>Sample code<a class="headerlink" href="#sample-code" title="Permalink to this heading">#</a></h3>
+<p>Tokyo Olympics country’s performance ranking</p>
+</section>
+</section>
+<section id="skulpt-and-brython">
+<h2>Skulpt and Brython<a class="headerlink" href="#skulpt-and-brython" title="Permalink to this heading">#</a></h2>
+<p>are both in-browser Python implementations. But they have different objectives as well as strength and weaknesses. Brython is faster. However Skulpt requires slower execution and load times because it aims for full python compliance. The objective of the products is different: Brython is aiming to be a replacement for Javascript while Skulpt aims to be a Python distribution that has a web browser execution target.</p>
+<p>i found a nice chart on this site as well as this site. I dont know who is plagiarizing from who, but the table does give a nice overview of the various low-level solutions;</p>
+<section id="related-reading">
+<h3>Related Reading<a class="headerlink" href="#related-reading" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://www.reddit.com/r/Python/comments/2yli88/whats_the_best_implementation_of_a_python/">https://www.reddit.com/r/Python/comments/2yli88/whats_the_best_implementation_of_a_python/</a>
+Skulpt
+<a class="reference external" href="https://skulpt.org/">https://skulpt.org/</a></p>
+</section>
+<section id="id2">
+<h3>Building block for….<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<p>Skulpt is what Anvil, a Class A pure-python-web-dev solution is based on.</p>
+</section>
+</section>
+<section id="pyweb3d">
+<h2>PyWeb3D<a class="headerlink" href="#pyweb3d" title="Permalink to this heading">#</a></h2>
+<p>PyWeb3D allows you to use the three.js library without writing a JavaScript. As I voiced in my review of Bokeh, one wonders what to do when needing to abstract other aspects of Javascript/HTML/CSS.</p>
+<section id="id3">
+<h3>Built on: Brython<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<p>Articles and Applications
+“Meet PyWeb3D — Three.js With Python Syntax”</p>
+</section>
+</section>
+<section id="brython">
+<h2>Brython<a class="headerlink" href="#brython" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://brython.info/">https://brython.info/</a></p>
+</section>
+<section id="streamlit">
+<h2>Streamlit<a class="headerlink" href="#streamlit" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://streamlit.io/">https://streamlit.io/</a> is very powerful and very popular, but adding features that you expect in a full-blown web app is hard and hackish or messy depending on who you talk to. However, apparently they have been bought out by Snowlake so they have a strong backing moving forward.</p>
+<section id="application-gallery">
+<h3>Application Gallery<a class="headerlink" href="#application-gallery" title="Permalink to this heading">#</a></h3>
+<p>“Made a Streamlit app to show demographic breakdowns by age, race, gender, and education in the biggest 100 US metro areas.”</p>
+<p>“Streamlit for Machine Learning Cheat Sheet“</p>
+<p>“How to Build a Dividend Investing Dashboard in Python and Streamlit“</p>
+<p>“NFT and Metadata Generator – Python &amp; Streamlit“</p>
+<p>“I created a Streamlit UI for OpenAI’s Whisper and added some basic scaffolding for transcript summarization“</p>
+</section>
+<section id="gallery">
+<h3>Gallery<a class="headerlink" href="#gallery" title="Permalink to this heading">#</a></h3>
+<p>“Easy Monitoring of dbt Cloud jobs with Streamlit “</p>
+<p>“Plotting all public transport in NL livestream using Streamlit”</p>
+<p>“I was unhappy with Spotify recommendations, so I used Python+Spotify’s API to make more than 1,000. See the bottom from a Streamlit app to find your playlist.”</p>
+<p>SQL Formatter</p>
+</section>
+<section id="id4">
+<h3>Discussions<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://www.reddit.com/r/Python/comments/lnu1r9/i_made_a_covid19_immunityvaccination_tracker_and/">https://www.reddit.com/r/Python/comments/lnu1r9/i_made_a_covid19_immunityvaccination_tracker_and/</a></p>
+</section>
+<section id="id5">
+<h3>Articles<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<p>“New Streamlit tutorial, 68 pages, 35 minimal app examples, focus on SQL+Streamlit”</p>
+<p>“Build Real-time Data Applications Quickly Using Streamlit And Prisma“</p>
+<p><a class="reference external" href="https://analyticsindiamag.com/streamlit-vs-plotlydash-comparison-with-python-examples/">https://analyticsindiamag.com/streamlit-vs-plotlydash-comparison-with-python-examples/</a></p>
+<p>“I was excited about YOLOv7, so I built a sharable object detection application with VDP and Streamlit.“</p>
+<p>“Streamlit User and API Authentication with Auth0 Next.js SDK‘</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="class-a.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Class A Frameworks: fully-featured, rock-solid, industrial-grade frameworks</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="class-other.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Class Other: Pure Python Products for Specific Limited Use Cases</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradio">Gradio</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#related-publications">Related Publications</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shiny-for-python">Shiny for Python</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#htag">Htag</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#demo">Demo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussions">Discussions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron">Neutron</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vue-py">Vue.Py</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#justpy-another-vue-js-wrapper">JustPy – another Vue.js wrapper</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#justpys-backend-is-built-using">JustPy’s backend is built using:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-nicegui">Built NiceGUI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#publications">Publications:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyfyre">PyFyre</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Discussions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-on-brython">Built on Brython</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transcrypt">Transcrypt</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zython">Zython</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussions-and-articles">Discussions and articles</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bokeh">Bokeh</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyodide">pyodide</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-block-for">Building Block for</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#articles">Articles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contact">Contact</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pywebio">PyWebIO</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-code">Sample code</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skulpt-and-brython">Skulpt and Brython</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#related-reading">Related Reading</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Building block for….</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyweb3d">PyWeb3D</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Built on: Brython</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brython">Brython</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#streamlit">Streamlit</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application-gallery">Application Gallery</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gallery">Gallery</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Discussions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Articles</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Terrence-Monroe: Brannon
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div></div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
