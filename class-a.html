@@ -403,6 +403,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lona">Lona</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-on-top-of-jinja2-and-aiohttp">Built on top of Jinja2 and aiohttp.</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Discussions</a></li>
 </ul>
 </li>
@@ -582,17 +583,19 @@ In this discussion we learned that IDOM does not transpile to JavaScript. This a
 <section id="lona">
 <h2>Lona<a class="headerlink" href="#lona" title="Permalink to this heading">#</a></h2>
 <p>A distinguishing feature of Lona is that It abstracts web on the DOM level. This way you can build whatever you can think of, and not only use the widgets, the developers provide.</p>
-<p>it comes with a powerful component system, to create high-level components for specialized use-cases.</p>
-<p><a class="reference external" href="https://lona-web.org/1.x/contrib/lona-picocss/index.html">https://lona-web.org/1.x/contrib/lona-picocss/index.html</a></p>
-<p><a class="reference external" href="https://lona-web.org/1.x/contrib/chartjs/index.html">https://lona-web.org/1.x/contrib/chartjs/index.html</a></p>
-<p>Lona is a single-page-application framework, and only replaces the parts of a page which actually changed.</p>
-<p><a class="reference external" href="https://lona-web.org/1.x/tutorial/02-html/index.html#view-show">https://lona-web.org/1.x/tutorial/02-html/index.html#view-show</a></p>
-<p>Lona is build on top of Jinja2 and aiohttp. Traditional templating is still possible if wanted. The Lona HTML API also comes with a HTML parser, that converts HTML strings into Lona node trees, that than can be manipulated. This is very similar what the browser does with its DOM API</p>
-<p><a class="reference external" href="https://lona-web.org/1.x/tutorial/02-html/index.html#html-strings">https://lona-web.org/1.x/tutorial/02-html/index.html#html-strings</a></p>
-<p><a class="github reference external" href="https://github.com/fscherf/lona">fscherf/lona</a> supports usage of Django models and the Django auth system.</p>
-<p>To account for big HTML trees written in python, Lona supports widgets to encapsulate smaller trees an their functionalities. That makes components reusable.</p>
-<p>Lona has an async approach which allows one to write whole views in one function and one context. The author feels it leads to much cleaner code.</p>
+<p>It comes with a powerful component system, to create high-level components for specialized use-cases:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://lona-web.org/1.x/contrib/lona-picocss/index.html">https://lona-web.org/1.x/contrib/lona-picocss/index.html</a></p></li>
+<li><p><a class="reference external" href="https://lona-web.org/1.x/contrib/chartjs/index.html">https://lona-web.org/1.x/contrib/chartjs/index.html</a></p></li>
+</ul>
+<p>Lona is a single-page-application framework, and <a class="reference external" href="https://lona-web.org/1.x/tutorial/02-html/index.html#view-show">only replaces the parts of a page which actually changed</a>.</p>
+<p>Lona can use Django models and the Django auth system.</p>
+<section id="built-on-top-of-jinja2-and-aiohttp">
+<h3>Built on top of Jinja2 and aiohttp.<a class="headerlink" href="#built-on-top-of-jinja2-and-aiohttp" title="Permalink to this heading">#</a></h3>
 <p>According to the author Lona is based on aiohttp and uses asyncio internally. The Lona API is completely synchronous to make development easier. In contrast, with asyncio its possible to block the core event loop of the entire service without even noticing it. therefore Lona defines an API that feels like asyncio but can be integrated with blocking code seamlessly.</p>
+<p>Traditional templating is still possible if wanted. The Lona HTML API also <a class="reference external" href="https://lona-web.org/1.x/tutorial/02-html/index.html#html-strings">comes with a HTML parser, that converts HTML strings into Lona node trees, that than can be manipulated</a>. This is very similar what the browser does with its DOM API</p>
+<p>Lona has an async approach which allows one to write whole views in one function and one context. The author feels it leads to much cleaner code.</p>
+</section>
 <section id="id5">
 <h3>Discussions<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
 <p><a class="reference external" href="https://www.reddit.com/r/Python/comments/ptcje9/lona_a_web_framework_for_responsive_web_apps_in/">https://www.reddit.com/r/Python/comments/ptcje9/lona_a_web_framework_for_responsive_web_apps_in/</a>
@@ -724,6 +727,7 @@ In this discussion we learned that IDOM does not transpile to JavaScript. This a
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lona">Lona</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-on-top-of-jinja2-and-aiohttp">Built on top of Jinja2 and aiohttp.</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Discussions</a></li>
 </ul>
 </li>
