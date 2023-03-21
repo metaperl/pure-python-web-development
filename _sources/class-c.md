@@ -77,6 +77,8 @@ https://www.reddit.com/r/Python/comments/uhm1oe/meet_pyscript_new_framework_from
 https://www.reddit.com/r/Python/comments/ujicyq/i_tested_pyscript_and_you_can_literally_write/
 https://bas.codes/posts/pyscript-todo
 ### Built on pyodide
+
+
 ## UiDOm
 UIdom official repo
 
