@@ -28,6 +28,26 @@ Built on Bokeh
 Application Gallery
 Awesome Panel
 
+## Atri
+
+Atri *can* be a pure python framework and it meets all Class A requirements. But at the same time, it is not limited to Python.
+
+On the surface Atri reminds me of Anvil (which is built on Skulpt) because of the visual GUI builder. But one difference is the customization of the UI is done via React in Atri but done via Python in Anvil.
+
+Atri is also more flexible about backend development. Currently, they support Python for backend development but they are planning to add support for NodeJS soon.
+
+Using Atri framework, developers **do not need to write and document REST APIs. Instead, they rely upon the object model which acts as a single source of truth.** This also has other benefits as well such as reducing compliance breaches.
+
+### Application Gallery
+
+https://atrilabs.com/showcase
+
+### Built on - FastAPI, React
+
+Being built on FastAPI is a question mark for me because [Starlite seems better designed](https://may69.com/starlite/).
+
+
+
 ## Dash
 Dash has several eye-catching bulletpoints about it:
 
@@ -142,6 +162,23 @@ https://www.reddit.com/r/Python/comments/zh0pmy/pynecone_web_apps_in_pure_python
 “Show HN Dec 14 2022“
 
 ## Lona
+
+A distinguishing feature of Lona is that It abstracts web on the DOM level. This way you can build whatever you can think of, and not only use the widgets, the developers provide.
+
+ it comes with a powerful component system, to create high-level components for specialized use-cases.
+
+https://lona-web.org/1.x/contrib/lona-picocss/index.html
+
+https://lona-web.org/1.x/contrib/chartjs/index.html
+
+Lona is a single-page-application framework, and only replaces the parts of a page which actually changed.
+
+https://lona-web.org/1.x/tutorial/02-html/index.html#view-show
+
+Lona is build on top of Jinja2 and aiohttp. Traditional templating is still possible if wanted. The Lona HTML API also comes with a HTML parser, that converts HTML strings into Lona node trees, that than can be manipulated. This is very similar what the browser does with its DOM API
+
+https://lona-web.org/1.x/tutorial/02-html/index.html#html-strings
+
 https://github.com/fscherf/lona supports usage of Django models and the Django auth system.
 
 To account for big HTML trees written in python, Lona supports widgets to encapsulate smaller trees an their functionalities. That makes components reusable.
