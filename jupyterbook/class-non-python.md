@@ -1,7 +1,7 @@
 # Class Non-Python: Compelling metalanguages for web development outside of Python
 
 ## UrWeb
-https://github.com/urweb/urweb is a single, strongly-typed language that compiles into a single binary that can issue SQL and Javascript.
+https://github.com/urweb/urweb is a single, strongly-typed language that compiles into a single binary that can execute SQL and Javascript (and of course render HTML/CSS).
 
 ## Vaadin
 https://vaadin.com/ is a java-based product with tons of widgets that allows a Java developer to have all the interactivity with none of the headache of dealing with Javascript.
