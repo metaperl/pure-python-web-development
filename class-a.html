@@ -161,9 +161,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Class A Frameworks: fully-featured, rock-solid, industrial-grade frameworks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="class-b.html">Class B Frameworks - Perfect for limited-scope projects, but don’t complain when you lack features!</a></li>
 <li class="toctree-l1"><a class="reference internal" href="class-other.html">Class Other: Pure Python Products for Specific Limited Use Cases</a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="class-c.html">Class C: Solutions that may one day be Class B or Class A</a></li>
 <li class="toctree-l1"><a class="reference internal" href="class-defunct.html">Class Defunct: defunct products</a></li>
+<li class="toctree-l1"><a class="reference internal" href="class-non-python.html">Class Non-Python: Compelling metalanguages for web development outside of Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="end-notes.html">End Notes</a></li>
 </ul>
 
@@ -594,7 +594,6 @@ In this discussion we learned that IDOM does not transpile to JavaScript. This a
 <h3>Built on top of Jinja2 and aiohttp.<a class="headerlink" href="#built-on-top-of-jinja2-and-aiohttp" title="Permalink to this heading">#</a></h3>
 <p>According to the author Lona is based on aiohttp and uses asyncio internally. The Lona API is completely synchronous to make development easier. In contrast, with asyncio its possible to block the core event loop of the entire service without even noticing it. therefore Lona defines an API that feels like asyncio but can be integrated with blocking code seamlessly.</p>
 <p>Traditional templating is still possible if wanted. The Lona HTML API also <a class="reference external" href="https://lona-web.org/1.x/tutorial/02-html/index.html#html-strings">comes with a HTML parser, that converts HTML strings into Lona node trees, that than can be manipulated</a>. This is very similar what the browser does with its DOM API</p>
-<p>Lona has an async approach which allows one to write whole views in one function and one context. The author feels it leads to much cleaner code.</p>
 </section>
 <section id="id5">
 <h3>Discussions<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>

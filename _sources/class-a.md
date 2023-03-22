@@ -180,7 +180,7 @@ According to the author Lona is based on aiohttp and uses asyncio internally. Th
 
 Traditional templating is still possible if wanted. The Lona HTML API also [comes with a HTML parser, that converts HTML strings into Lona node trees, that than can be manipulated](https://lona-web.org/1.x/tutorial/02-html/index.html#html-strings). This is very similar what the browser does with its DOM API
 
-Lona has an async approach which allows one to write whole views in one function and one context. The author feels it leads to much cleaner code.
+
 
 
 
