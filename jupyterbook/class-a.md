@@ -165,27 +165,24 @@ https://www.reddit.com/r/Python/comments/zh0pmy/pynecone_web_apps_in_pure_python
 
 A distinguishing feature of Lona is that It abstracts web on the DOM level. This way you can build whatever you can think of, and not only use the widgets, the developers provide.
 
- it comes with a powerful component system, to create high-level components for specialized use-cases.
+It comes with a powerful component system, to create high-level components for specialized use-cases:
+* https://lona-web.org/1.x/contrib/lona-picocss/index.html
+* https://lona-web.org/1.x/contrib/chartjs/index.html
 
-https://lona-web.org/1.x/contrib/lona-picocss/index.html
+Lona is a single-page-application framework, and [only replaces the parts of a page which actually changed](https://lona-web.org/1.x/tutorial/02-html/index.html#view-show).
 
-https://lona-web.org/1.x/contrib/chartjs/index.html
+Lona can use Django models and the Django auth system.
 
-Lona is a single-page-application framework, and only replaces the parts of a page which actually changed.
 
-https://lona-web.org/1.x/tutorial/02-html/index.html#view-show
-
-Lona is build on top of Jinja2 and aiohttp. Traditional templating is still possible if wanted. The Lona HTML API also comes with a HTML parser, that converts HTML strings into Lona node trees, that than can be manipulated. This is very similar what the browser does with its DOM API
-
-https://lona-web.org/1.x/tutorial/02-html/index.html#html-strings
-
-https://github.com/fscherf/lona supports usage of Django models and the Django auth system.
-
-To account for big HTML trees written in python, Lona supports widgets to encapsulate smaller trees an their functionalities. That makes components reusable.
-
-Lona has an async approach which allows one to write whole views in one function and one context. The author feels it leads to much cleaner code.
+### Built on top of Jinja2 and aiohttp. 
 
 According to the author Lona is based on aiohttp and uses asyncio internally. The Lona API is completely synchronous to make development easier. In contrast, with asyncio its possible to block the core event loop of the entire service without even noticing it. therefore Lona defines an API that feels like asyncio but can be integrated with blocking code seamlessly.
+
+Traditional templating is still possible if wanted. The Lona HTML API also [comes with a HTML parser, that converts HTML strings into Lona node trees, that than can be manipulated](https://lona-web.org/1.x/tutorial/02-html/index.html#html-strings). This is very similar what the browser does with its DOM API
+
+
+
+
 
 ### Discussions
 https://www.reddit.com/r/Python/comments/ptcje9/lona_a_web_framework_for_responsive_web_apps_in/

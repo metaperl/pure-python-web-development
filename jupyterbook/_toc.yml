@@ -10,4 +10,5 @@ chapters:
 - file: class-other.md
 - file: class-c.md
 - file: class-defunct.md
+- file: class-non-python.md
 - file: end-notes.md
