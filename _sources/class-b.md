@@ -17,6 +17,9 @@ No support for authorization
 
 “Dashboard for audio summarization, sentiment analysis, and more!” – article link
 
+
+
+
 ## Shiny for Python
 Shiny for Python has a clean API and good documentation. Like many class B solutions, it lacks the features for complete web applications – authentication, authorization and sessioning.
 

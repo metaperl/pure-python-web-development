@@ -161,6 +161,35 @@ https://pynecone.io/docs/gallery
 https://www.reddit.com/r/Python/comments/zh0pmy/pynecone_web_apps_in_pure_python/
 “Show HN Dec 14 2022“
 
+
+## ReactPy
+
+ReactPy is a library for building user interfaces in Python without having to write Javascript. ReactPy interfaces are made from components which look and behave similar to those found in ReactJS.
+
+In order to maintain full compatibility with all Python packages, [ReactPy is server side rendered](https://www.reddit.com/r/Python/comments/1274w68/comment/jee45m8/?utm_source=share&utm_medium=web2x&context=3). So all Python packages will work exactly as you expect. The only data that gets transmitted to the client is the current HTML document (with a little bit of extra magic).
+
+We don't transpile between languages, so Python code gets to stay pure. Our ReactPy hooks and rendering logic are functionally equivalent to ReactJS, except we use Python asyncio to keep things moving.
+
+### Tons of backends to use!
+
+ReactPy has official support for the following backends: Flask, FastAPI, Sanic, Tornado, Django, Jupyter, Plotly-Dash.
+
+
+
+
+
+### Discussions
+
+https://www.reddit.com/r/Python/comments/1274w68/reactpy_build_reactjs_interfaces_in_pure_python/
+
+### FAQs
+
+#### How would this work if I was to make a database call in a component? What happens under the hood?
+
+https://www.reddit.com/r/Python/comments/1274w68/comment/jee100p/?utm_source=share&utm_medium=web2x&context=3
+
+
+
 ## Lona
 
 A distinguishing feature of Lona is that It abstracts web on the DOM level. This way you can build whatever you can think of, and not only use the widgets, the developers provide.

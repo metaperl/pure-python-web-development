@@ -402,9 +402,18 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reactpy">ReactPy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tons-of-backends-to-use">Tons of backends to use!</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Discussions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#faqs">FAQs</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-would-this-work-if-i-was-to-make-a-database-call-in-a-component-what-happens-under-the-hood">How would this work if I was to make a database call in a component? What happens under the hood?</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lona">Lona</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-on-top-of-jinja2-and-aiohttp">Built on top of Jinja2 and aiohttp.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Discussions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Discussions</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nagare">Nagare</a></li>
@@ -580,6 +589,27 @@ In this discussion we learned that IDOM does not transpile to JavaScript. This a
 “Show HN Dec 14 2022“</p>
 </section>
 </section>
+<section id="reactpy">
+<h2>ReactPy<a class="headerlink" href="#reactpy" title="Permalink to this heading">#</a></h2>
+<p>ReactPy is a library for building user interfaces in Python without having to write Javascript. ReactPy interfaces are made from components which look and behave similar to those found in ReactJS.</p>
+<p>In order to maintain full compatibility with all Python packages, <a class="reference external" href="https://www.reddit.com/r/Python/comments/1274w68/comment/jee45m8/?utm_source=share&amp;utm_medium=web2x&amp;context=3">ReactPy is server side rendered</a>. So all Python packages will work exactly as you expect. The only data that gets transmitted to the client is the current HTML document (with a little bit of extra magic).</p>
+<p>We don’t transpile between languages, so Python code gets to stay pure. Our ReactPy hooks and rendering logic are functionally equivalent to ReactJS, except we use Python asyncio to keep things moving.</p>
+<section id="tons-of-backends-to-use">
+<h3>Tons of backends to use!<a class="headerlink" href="#tons-of-backends-to-use" title="Permalink to this heading">#</a></h3>
+<p>ReactPy has official support for the following backends: Flask, FastAPI, Sanic, Tornado, Django, Jupyter, Plotly-Dash.</p>
+</section>
+<section id="id5">
+<h3>Discussions<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://www.reddit.com/r/Python/comments/1274w68/reactpy_build_reactjs_interfaces_in_pure_python/">https://www.reddit.com/r/Python/comments/1274w68/reactpy_build_reactjs_interfaces_in_pure_python/</a></p>
+</section>
+<section id="faqs">
+<h3>FAQs<a class="headerlink" href="#faqs" title="Permalink to this heading">#</a></h3>
+<section id="how-would-this-work-if-i-was-to-make-a-database-call-in-a-component-what-happens-under-the-hood">
+<h4>How would this work if I was to make a database call in a component? What happens under the hood?<a class="headerlink" href="#how-would-this-work-if-i-was-to-make-a-database-call-in-a-component-what-happens-under-the-hood" title="Permalink to this heading">#</a></h4>
+<p><a class="reference external" href="https://www.reddit.com/r/Python/comments/1274w68/comment/jee100p/?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3">https://www.reddit.com/r/Python/comments/1274w68/comment/jee100p/?utm_source=share&amp;utm_medium=web2x&amp;context=3</a></p>
+</section>
+</section>
+</section>
 <section id="lona">
 <h2>Lona<a class="headerlink" href="#lona" title="Permalink to this heading">#</a></h2>
 <p>A distinguishing feature of Lona is that It abstracts web on the DOM level. This way you can build whatever you can think of, and not only use the widgets, the developers provide.</p>
@@ -595,8 +625,8 @@ In this discussion we learned that IDOM does not transpile to JavaScript. This a
 <p>According to the author Lona is based on aiohttp and uses asyncio internally. The Lona API is completely synchronous to make development easier. In contrast, with asyncio its possible to block the core event loop of the entire service without even noticing it. therefore Lona defines an API that feels like asyncio but can be integrated with blocking code seamlessly.</p>
 <p>Traditional templating is still possible if wanted. The Lona HTML API also <a class="reference external" href="https://lona-web.org/1.x/tutorial/02-html/index.html#html-strings">comes with a HTML parser, that converts HTML strings into Lona node trees, that than can be manipulated</a>. This is very similar what the browser does with its DOM API</p>
 </section>
-<section id="id5">
-<h3>Discussions<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<section id="id6">
+<h3>Discussions<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
 <p><a class="reference external" href="https://www.reddit.com/r/Python/comments/ptcje9/lona_a_web_framework_for_responsive_web_apps_in/">https://www.reddit.com/r/Python/comments/ptcje9/lona_a_web_framework_for_responsive_web_apps_in/</a>
 <a class="reference external" href="https://www.reddit.com/r/Python/comments/p109o0/lona_a_web_framework_for_responsive_web_apps_in/">https://www.reddit.com/r/Python/comments/p109o0/lona_a_web_framework_for_responsive_web_apps_in/</a>
 <a class="reference external" href="https://www.reddit.com/r/Python/comments/qasyxe/true_multi_user_applications_with_lona_174/">https://www.reddit.com/r/Python/comments/qasyxe/true_multi_user_applications_with_lona_174/</a>
@@ -725,9 +755,18 @@ In this discussion we learned that IDOM does not transpile to JavaScript. This a
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reactpy">ReactPy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tons-of-backends-to-use">Tons of backends to use!</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Discussions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#faqs">FAQs</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-would-this-work-if-i-was-to-make-a-database-call-in-a-component-what-happens-under-the-hood">How would this work if I was to make a database call in a component? What happens under the hood?</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lona">Lona</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-on-top-of-jinja2-and-aiohttp">Built on top of Jinja2 and aiohttp.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Discussions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Discussions</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nagare">Nagare</a></li>
