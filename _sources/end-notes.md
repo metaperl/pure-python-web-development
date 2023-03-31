@@ -1,7 +1,13 @@
 # End Notes
 
 ## React in Python –
-### IDOM vs. Transcrypt (Ryact and Breact omitted)
+
+### Transcrypt
+
+[An entire book](https://pyreact.com) has been written on using React from Transcrypt. That being said,
+Transcrypt is [suffering from some maintenance issues](https://may69.com/downgrades-and-upgrades-to-the-rating-of-pure-python-web-application-solutions/).
+
+### IDOM  
 Both IDOM and Transcrypt have solutions for using React purely in Python. However because IDOM does not transpile to JavaScript, pure component functions are fully compatible and portable to any Python web framework that supports websockets.
 
 ### enter Pynecone
@@ -11,11 +17,13 @@ Pynecone is a new project that compiles to the NextJS flavor of React. It has an
 
 https://www.reddit.com/r/Python/comments/1274w68/reactpy_build_reactjs_interfaces_in_pure_python/
 
-### Tangential Products
-Reacton
+### (Ryact and Breact omitted)
+
+#### Tangential Products
+##### Reacton
 React is now available in ipywidgets thanks to Reacton
 
-### py-react
+##### py-react
 py-react supports running Python in the browser via Pyodide. That being said, it does not appear to be aspiring to be a web application toolkit like other python-in-the-browser products (skulpt, brython, pyscript). Thus py-react is listed here in the tangential section. You may try it out here.
 
 #### Discussion threads for this product:
