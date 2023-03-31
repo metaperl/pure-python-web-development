@@ -115,20 +115,37 @@ Execute custom JS – discussion and link to demo
 
 NiceGUI versus JustPy – very informative discussion.
 
-## IDOM
-https://github.com/idom-team/idom might be the quintessential builder library – it integrates with Flask, Django, FastAPI and 4 other frameworks… and the same IDOM component can run in all of these frameworks without modifications.
+## ReactPy
 
-IDOM connects your Python web framework of choice to a ReactJS frontend, allowing you to create interactive websites without needing JavaScript!
+ReactPy is a library for building user interfaces in Python without having to write Javascript. ReactPy interfaces are made from components which look and behave similar to those found in ReactJS.
 
-https://github.com/idom-team/idom
-The documentation for this project is a thorough as it gets. And they have an active discussion board. And the git repo is frequently updated. Definitely a compelling Class A approach to pure python web application development.
+In order to maintain full compatibility with all Python packages, [ReactPy is server side rendered](https://www.reddit.com/r/Python/comments/1274w68/comment/jee45m8/?utm_source=share&utm_medium=web2x&context=3). So all Python packages will work exactly as you expect. The only data that gets transmitted to the client is the current HTML document (with a little bit of extra magic).
 
-### Built on ReactJS
-Discussions
-In this discussion we learned that IDOM does not transpile to JavaScript. This allows pure component functions to be fully compatible and portable to any Python web framework that supports websockets.
+We don't transpile between languages, so Python code gets to stay pure. Our ReactPy hooks and rendering logic are functionally equivalent to ReactJS, except we use Python asyncio to keep things moving.
+
+### Tons of backends to use!
+
+ReactPy has official support for the following backends: Flask, FastAPI, Sanic, Tornado, Django, Jupyter, Plotly-Dash.
+
+
+
+
+
+### Discussions
+
+https://www.reddit.com/r/Python/comments/1274w68/reactpy_build_reactjs_interfaces_in_pure_python/
+
+### FAQs
+
+#### How would this work if I was to make a database call in a component? What happens under the hood?
+
+https://www.reddit.com/r/Python/comments/1274w68/comment/jee100p/?utm_source=share&utm_medium=web2x&context=3
+
+
+
 
 ## Epyk
-Epyk is compatible with most common Web Python Frameworks (i.e., Flask and Django). By default, the server package embeds a Flask app as it is easier to install and ready to use.
+[Epyk](https://github.com/epykure/epyk-ui) is compatible with most common Web Python Frameworks (i.e., Flask and Django). By default, the server package embeds a Flask app as it is easier to install and ready to use.
 
 It has good documentation and a nice gallery of working programs
 
@@ -161,32 +178,6 @@ https://pynecone.io/docs/gallery
 https://www.reddit.com/r/Python/comments/zh0pmy/pynecone_web_apps_in_pure_python/
 “Show HN Dec 14 2022“
 
-
-## ReactPy
-
-ReactPy is a library for building user interfaces in Python without having to write Javascript. ReactPy interfaces are made from components which look and behave similar to those found in ReactJS.
-
-In order to maintain full compatibility with all Python packages, [ReactPy is server side rendered](https://www.reddit.com/r/Python/comments/1274w68/comment/jee45m8/?utm_source=share&utm_medium=web2x&context=3). So all Python packages will work exactly as you expect. The only data that gets transmitted to the client is the current HTML document (with a little bit of extra magic).
-
-We don't transpile between languages, so Python code gets to stay pure. Our ReactPy hooks and rendering logic are functionally equivalent to ReactJS, except we use Python asyncio to keep things moving.
-
-### Tons of backends to use!
-
-ReactPy has official support for the following backends: Flask, FastAPI, Sanic, Tornado, Django, Jupyter, Plotly-Dash.
-
-
-
-
-
-### Discussions
-
-https://www.reddit.com/r/Python/comments/1274w68/reactpy_build_reactjs_interfaces_in_pure_python/
-
-### FAQs
-
-#### How would this work if I was to make a database call in a component? What happens under the hood?
-
-https://www.reddit.com/r/Python/comments/1274w68/comment/jee100p/?utm_source=share&utm_medium=web2x&context=3
 
 
 
