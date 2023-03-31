@@ -5,7 +5,11 @@
 Both IDOM and Transcrypt have solutions for using React purely in Python. However because IDOM does not transpile to JavaScript, pure component functions are fully compatible and portable to any Python web framework that supports websockets.
 
 ### enter Pynecone
-Pynecone is a new project that compiles to the NextJS flavor of react it has an impressive gallery.
+Pynecone is a new project that compiles to the NextJS flavor of React. It has an impressive gallery.
+
+### Now ReactPy
+
+https://www.reddit.com/r/Python/comments/1274w68/reactpy_build_reactjs_interfaces_in_pure_python/
 
 ### Tangential Products
 Reacton
