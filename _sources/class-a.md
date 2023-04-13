@@ -3,6 +3,17 @@
 Class A: Industrial Strength Rock-solid Products
 In this section, we list products that are solving real-world problems and are ready for production deployment… just download, install and follow the instructions to whip out a solution to your issue PRONTO, because hundreds of other have already done the same.
 
+## Datapane
+
+
+[Datapane](https://docs.datapane.com) can be embedded in Flask or Django.
+
+I'd be curious to see how it compares with [Panel](https://panel.holoviz.org)
+
+### Discussion
+
+[Datapane - Build internal data products in 100% Python](https://www.reddit.com/r/Python/comments/125lyru/datapane_build_internal_data_products_in_100/)
+
 ## NiceGUI
 NiceGUI has a very clean and well-documented API. NiceGUI is not just limited to web applications. It was initially designed for use of micro-devices. The [1.12 release has made it possible to have desktop apps as well.](https://www.reddit.com/r/Python/comments/127kiep/nicegui_12_paves_the_way_for_electronlike/). 
 
