@@ -1,5 +1,7 @@
 # Class B Frameworks - Perfect for limited-scope projects, but don't complain when you lack features!
 
+
+
 ## Gradio
 Gradio can wrap almost any Python function with an easy-to-use user interface. The function could be anything from image enhancer to a tax calculator  but most commonly is the prediction function of a pre-trained machine learning model.
 
