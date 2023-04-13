@@ -7,4 +7,9 @@ https://github.com/urweb/urweb is a single, strongly-typed language that compile
 https://vaadin.com/ is a java-based product with tons of widgets that allows a Java developer to have all the interactivity with none of the headache of dealing with Javascript.
 
 ## HTMX
-Many people who wish to remain in Django/Flask land [opt for HTMX](https://news.ycombinator.com/item?id=33926029) to give them the power of Javascript .
+Many people who wish to remain in Django/Flask land [opt for HTMX](https://news.ycombinator.com/item?id=33926029) to give them the power of Javascript.
+
+Through HTMX, a web framework has access to AJAX, CSS Transitions, WebSockets and Server Sent Events directly in HTML, through [attributes](https://htmx.org/reference/#attributes).
+
+Relevant articles:
+* ["A 'No JS' Solution for Dynamic Search in Django"](https://fly.io/blog/a-no-js-solution-for-dynamic-search-in-django/)
