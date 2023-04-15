@@ -358,16 +358,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datapane">Datapane</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
-</ul>
-</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nicegui">NiceGUI</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#handling-resource-intensive-tasks">Handling resource intensive tasks</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-thanks-streamlit">“No thanks Streamlit”</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-on-fastapi">built on FastAPI</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#non-linkable-anchor-tags">Non-linkable anchor tags:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application-gallery">Application Gallery</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussions">Discussions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datapane">Datapane</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#faqs">FAQs</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#why-vue-please-use-web-components">why Vue? Please use Web Components.</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#is-it-possible-to-integrate-this-with-libraries-like-plotly-or-bokeh">Is it possible to integrate this with libraries like plotly or bokeh?</a></li>
@@ -442,19 +443,15 @@ document.write(`
 <h1>Class A Frameworks: fully-featured, rock-solid, industrial-grade frameworks<a class="headerlink" href="#class-a-frameworks-fully-featured-rock-solid-industrial-grade-frameworks" title="Permalink to this heading">#</a></h1>
 <p>Class A: Industrial Strength Rock-solid Products
 In this section, we list products that are solving real-world problems and are ready for production deployment… just download, install and follow the instructions to whip out a solution to your issue PRONTO, because hundreds of other have already done the same.</p>
-<section id="datapane">
-<h2>Datapane<a class="headerlink" href="#datapane" title="Permalink to this heading">#</a></h2>
-<p><a class="reference external" href="https://docs.datapane.com">Datapane</a> can be embedded in Flask or Django.</p>
-<p>I’d be curious to see how it compares with <a class="reference external" href="https://panel.holoviz.org">Panel</a></p>
-<section id="discussion">
-<h3>Discussion<a class="headerlink" href="#discussion" title="Permalink to this heading">#</a></h3>
-<p><a class="reference external" href="https://www.reddit.com/r/Python/comments/125lyru/datapane_build_internal_data_products_in_100/">Datapane - Build internal data products in 100% Python</a></p>
-</section>
-</section>
 <section id="nicegui">
 <h2>NiceGUI<a class="headerlink" href="#nicegui" title="Permalink to this heading">#</a></h2>
-<p>NiceGUI has a very clean and well-documented API. NiceGUI is not just limited to web applications. It was initially designed for use of micro-devices. The <a class="reference external" href="https://www.reddit.com/r/Python/comments/127kiep/nicegui_12_paves_the_way_for_electronlike/">1.12 release has made it possible to have desktop apps as well.</a>.</p>
+<p>NiceGUI has a very clean and well-documented API. NiceGUI is not just limited to web applications. It was initially designed for use of micro-devices and robots. The <a class="reference external" href="https://www.reddit.com/r/Python/comments/127kiep/nicegui_12_paves_the_way_for_electronlike/">1.12 release has made it possible to have desktop apps as well.</a>.</p>
 <p>They post regularly in reddit-python and also have <a class="reference external" href="https://www.reddit.com/r/NiceGUI/">their own subreddit</a>.</p>
+<p>NiceGUI  <a class="reference external" href="https://www.reddit.com/r/Python/comments/12m03v5/comment/jg949bq/?utm_source=share&amp;utm_medium=web2x&amp;context=3">breaks with the common frontend/backend distinction</a>. You simply create python objects which are synced to the browser and called upon for user interactions. Thereby there is no “form submit” system. You can simply <a class="reference external" href="https://nicegui.io/documentation#bindings">bind</a> to a data model. Or read the values from the elements, as shown in <a class="reference external" href="https://github.com/zauberzeug/nicegui/blob/a4fe698876f21b848d77828e00da55d2c3ab0559/examples/authentication/main.py#L45">their auth example</a>.</p>
+<section id="handling-resource-intensive-tasks">
+<h3>Handling resource intensive tasks<a class="headerlink" href="#handling-resource-intensive-tasks" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://www.reddit.com/r/Python/comments/12m03v5/comment/jg9bg1j/?utm_source=share&amp;utm_medium=web2x&amp;context=3">NiceGUI is designed to “just work” with other, normal Python libs</a>. Including file access, Sqlalchemy, sqlite, USB camera, GPIO pins etc. The only thing you need to keep in mind is that we are running an event loop with asyncio. So cpu intensive tasks must be scheduled into sub-processes and io intensive tasks into threads. But asyncio has good APIs for that</p>
+</section>
 <section id="no-thanks-streamlit">
 <h3>“No thanks Streamlit”<a class="headerlink" href="#no-thanks-streamlit" title="Permalink to this heading">#</a></h3>
 <p>Streamlit is gaining major adoption in the Class B space but taking a fresh look at Streamlit revealed it does too much magic when it comes to state handling.</p>
@@ -462,7 +459,8 @@ In this section, we list products that are solving real-world problems and are r
 </section>
 <section id="built-on-fastapi">
 <h3>built on FastAPI<a class="headerlink" href="#built-on-fastapi" title="Permalink to this heading">#</a></h3>
-<p>The authors of NiceGUI chose FastAPI for some specific reasons even though my personal research would have me reach for Starlite. Now you can write fully featured web applications in NiceGUI.</p>
+<p>The authors of NiceGUI chose FastAPI for some specific reasons even though my personal research would have me reach for Sanic or even <a class="reference external" href="https://www.may69.com/starlite">Starlite/Litestar</a>. Now you can write fully featured web applications in NiceGUI.</p>
+<p><a class="reference external" href="https://www.reddit.com/r/Python/comments/12m03v5/comment/jg93jlk/?utm_source=share&amp;utm_medium=web2x&amp;context=3">NiceGUI delivers all resources from the same route</a>. So it’s completely offline (as is required for all the mobile robots they build).</p>
 </section>
 <section id="non-linkable-anchor-tags">
 <h3>Non-linkable anchor tags:<a class="headerlink" href="#non-linkable-anchor-tags" title="Permalink to this heading">#</a></h3>
@@ -475,8 +473,18 @@ In this section, we list products that are solving real-world problems and are r
 </section>
 <section id="discussions">
 <h3>Discussions<a class="headerlink" href="#discussions" title="Permalink to this heading">#</a></h3>
+<p>“<a class="reference external" href="https://www.reddit.com/r/Python/comments/12m03v5/release_nicegui_127_with_uidownload_easier_color/">Release: NiceGUI 1.2.7</a> with ui.download, easier color definitions, “aggrid from pandas dataframe” and much mor”</p>
 <p>“NiceGUI: Let any browser be the frontend for your Python code“</p>
 <p>NiceGUI versus JustPy – very informative discussion.</p>
+</section>
+</section>
+<section id="datapane">
+<h2>Datapane<a class="headerlink" href="#datapane" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://docs.datapane.com">Datapane</a> can be embedded in Flask or Django.</p>
+<p>I’d be curious to see how it compares with <a class="reference external" href="https://panel.holoviz.org">Panel</a></p>
+<section id="discussion">
+<h3>Discussion<a class="headerlink" href="#discussion" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://www.reddit.com/r/Python/comments/125lyru/datapane_build_internal_data_products_in_100/">Datapane - Build internal data products in 100% Python</a></p>
 </section>
 <section id="faqs">
 <h3>FAQs<a class="headerlink" href="#faqs" title="Permalink to this heading">#</a></h3>
@@ -763,16 +771,17 @@ but a recent post to reddit showed that Dash can do it all – simple things, Ju
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datapane">Datapane</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
-</ul>
-</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nicegui">NiceGUI</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#handling-resource-intensive-tasks">Handling resource intensive tasks</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-thanks-streamlit">“No thanks Streamlit”</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-on-fastapi">built on FastAPI</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#non-linkable-anchor-tags">Non-linkable anchor tags:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application-gallery">Application Gallery</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussions">Discussions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datapane">Datapane</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#faqs">FAQs</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#why-vue-please-use-web-components">why Vue? Please use Web Components.</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#is-it-possible-to-integrate-this-with-libraries-like-plotly-or-bokeh">Is it possible to integrate this with libraries like plotly or bokeh?</a></li>

@@ -26,7 +26,24 @@ py-react supports running Python in the browser via Pyodide. That being said, it
 #### Discussion threads for this product:
 
 “Python code running in the browser using react-py“
-## Compelling Non-Python Products
+
+## Let's talk Streamlit
+
+Streamlit is by far the most widely used pure Python web application framework. But it has serious drawbacks:
+
+### It collects a lot of data by default without advance notice
+
+https://www.reddit.com/r/Python/comments/121pvdy/warning_streamlit_collects_a_lot_of_data/
+
+### NiceGUI passed on it
+
+https://github.com/zauberzeug/nicegui/discussions/21
+
+
+
+
+
+## Impressive Non-Python Products
 ### UrWeb
 UrWeb is a single, strongly-typed language that compiles into a single binary that can issue SQL and Javascript.
 
