@@ -1,6 +1,46 @@
 # Class B Frameworks - Perfect for limited-scope projects, but don't complain when you lack features!
 
+## Streamsync 
 
+Let's first see [what streamsync has to say about itself](https://github.com/ramedina86/streamsync):
+
+
+Streamsync is an open-source framework for creating data apps. Build user interfaces using a visual editor; write the backend code in Python. Check out a [live demo](https://hello.streamsync.cloud/) of an app.
+
+![Streamsync Builder screenshot](https://github.com/ramedina86/streamsync/blob/master/docs/docs/public/sc1.png)
+
+### It's fast.
+
+- Streamsync enables significantly lower response times, when compared to Streamlit.
+- It only runs the user script once.
+- It uses WebSockets to keep frontend and backend states in sync.
+
+### It's neat.
+
+- Streamsync uses state-driven, reactive user interfaces. A data app's user interface is strictly separated from its logic.
+- It uses a consistent yet customisable UI design system.
+- No caching needed; the script runs once and things remain in memory. You can use globals and module attributes to store app-wide data.
+- Predictable flow of execution. Event handlers are plain, easily testable Python functions. No re-runs, no strange decorators.
+
+### Documentation
+
+Documentation is available online at [streamsync.cloud](https://streamsync.cloud).
+
+### Now for my impressions
+
+Streamsync is not the first product to offer a visual UI for building apps. [Anvil](https://anvil.works) is a mature framework that offers that and is a Class A framework.
+
+Anvil handles user sessions out of the box in a seamless fashion, [Streamsync does not](https://www.reddit.com/r/Python/comments/135i584/comment/jim5ptr/?utm_source=share&utm_medium=web2x&context=3). 
+
+[Datapane](https://docs.datapane.com) allows one to build data apps and it can be embedded in Flask or Django easily. Streamsync cannot. 
+
+[Atri](https://metaperl.github.io/pure-python-web-development/class-a.html#atri) is a Class A framework that allows for visual UI building. 
+
+### Resources and Discussion
+
+* ["Streamsync: UI editor + Python"](https://www.reddit.com/r/Python/comments/135i584/streamsync_ui_editor_python/)
+* ["Like Streamlit, but faster and with a visual UI editor. Streamsync."](https://medium.com/@ramiromedina/streamsync-like-streamlit-but-faster-and-with-a-visual-ui-editor-9f98ad17adf)
+* [Someone asked about how Streamsync compares with NiceGUI. Someone more experienced than me is requested to enter the conversation.](https://www.reddit.com/r/nicegui/comments/136jj4u/someone_asked_about_how_streamsync_compares_with/)
 
 ## Gradio
 Gradio can wrap almost any Python function with an easy-to-use user interface. The function could be anything from image enhancer to a tax calculator  but most commonly is the prediction function of a pre-trained machine learning model.
