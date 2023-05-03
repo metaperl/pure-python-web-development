@@ -358,6 +358,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#streamsync">Streamsync</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#it-s-fast">It’s fast.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#it-s-neat">It’s neat.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentation">Documentation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-for-my-impressions">Now for my impressions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resources-and-discussion">Resources and Discussion</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradio">Gradio</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#related-publications">Related Publications</a></li>
 </ul>
@@ -425,6 +433,48 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="class-b-frameworks-perfect-for-limited-scope-projects-but-don-t-complain-when-you-lack-features">
 <h1>Class B Frameworks - Perfect for limited-scope projects, but don’t complain when you lack features!<a class="headerlink" href="#class-b-frameworks-perfect-for-limited-scope-projects-but-don-t-complain-when-you-lack-features" title="Permalink to this heading">#</a></h1>
+<section id="streamsync">
+<h2>Streamsync<a class="headerlink" href="#streamsync" title="Permalink to this heading">#</a></h2>
+<p>Let’s first see <a class="reference external" href="https://github.com/ramedina86/streamsync">what streamsync has to say about itself</a>:</p>
+<p>Streamsync is an open-source framework for creating data apps. Build user interfaces using a visual editor; write the backend code in Python. Check out a <a class="reference external" href="https://hello.streamsync.cloud/">live demo</a> of an app.</p>
+<p><img alt="Streamsync Builder screenshot" src="https://github.com/ramedina86/streamsync/blob/master/docs/docs/public/sc1.png" /></p>
+<section id="it-s-fast">
+<h3>It’s fast.<a class="headerlink" href="#it-s-fast" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Streamsync enables significantly lower response times, when compared to Streamlit.</p></li>
+<li><p>It only runs the user script once.</p></li>
+<li><p>It uses WebSockets to keep frontend and backend states in sync.</p></li>
+</ul>
+</section>
+<section id="it-s-neat">
+<h3>It’s neat.<a class="headerlink" href="#it-s-neat" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Streamsync uses state-driven, reactive user interfaces. A data app’s user interface is strictly separated from its logic.</p></li>
+<li><p>It uses a consistent yet customisable UI design system.</p></li>
+<li><p>No caching needed; the script runs once and things remain in memory. You can use globals and module attributes to store app-wide data.</p></li>
+<li><p>Predictable flow of execution. Event handlers are plain, easily testable Python functions. No re-runs, no strange decorators.</p></li>
+</ul>
+</section>
+<section id="documentation">
+<h3>Documentation<a class="headerlink" href="#documentation" title="Permalink to this heading">#</a></h3>
+<p>Documentation is available online at <a class="reference external" href="https://streamsync.cloud">streamsync.cloud</a>.</p>
+</section>
+<section id="now-for-my-impressions">
+<h3>Now for my impressions<a class="headerlink" href="#now-for-my-impressions" title="Permalink to this heading">#</a></h3>
+<p>Streamsync is not the first product to offer a visual UI for building apps. <a class="reference external" href="https://anvil.works">Anvil</a> is a mature framework that offers that and is a Class A framework.</p>
+<p>Anvil handles user sessions out of the box in a seamless fashion, <a class="reference external" href="https://www.reddit.com/r/Python/comments/135i584/comment/jim5ptr/?utm_source=share&amp;utm_medium=web2x&amp;context=3">Streamsync does not</a>.</p>
+<p><a class="reference external" href="https://docs.datapane.com">Datapane</a> allows one to build data apps and it can be embedded in Flask or Django easily. Streamsync cannot.</p>
+<p><a class="reference external" href="https://metaperl.github.io/pure-python-web-development/class-a.html#atri">Atri</a> is a Class A framework that allows for visual UI building.</p>
+</section>
+<section id="resources-and-discussion">
+<h3>Resources and Discussion<a class="headerlink" href="#resources-and-discussion" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.reddit.com/r/Python/comments/135i584/streamsync_ui_editor_python/">“Streamsync: UI editor + Python”</a></p></li>
+<li><p><a class="reference external" href="https://medium.com/&#64;ramiromedina/streamsync-like-streamlit-but-faster-and-with-a-visual-ui-editor-9f98ad17adf">“Like Streamlit, but faster and with a visual UI editor. Streamsync.”</a></p></li>
+<li><p><a class="reference external" href="https://www.reddit.com/r/nicegui/comments/136jj4u/someone_asked_about_how_streamsync_compares_with/">Someone asked about how Streamsync compares with NiceGUI. Someone more experienced than me is requested to enter the conversation.</a></p></li>
+</ul>
+</section>
+</section>
 <section id="gradio">
 <h2>Gradio<a class="headerlink" href="#gradio" title="Permalink to this heading">#</a></h2>
 <p>Gradio can wrap almost any Python function with an easy-to-use user interface. The function could be anything from image enhancer to a tax calculator  but most commonly is the prediction function of a pre-trained machine learning model.</p>
@@ -694,6 +744,14 @@ Skulpt
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#streamsync">Streamsync</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#it-s-fast">It’s fast.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#it-s-neat">It’s neat.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentation">Documentation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-for-my-impressions">Now for my impressions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resources-and-discussion">Resources and Discussion</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gradio">Gradio</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#related-publications">Related Publications</a></li>
 </ul>
