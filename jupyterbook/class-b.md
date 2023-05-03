@@ -7,7 +7,7 @@ Let's first see [what streamsync has to say about itself](https://github.com/ram
 
 Streamsync is an open-source framework for creating data apps. Build user interfaces using a visual editor; write the backend code in Python. Check out a [live demo](https://hello.streamsync.cloud/) of an app.
 
-![Streamsync Builder screenshot](https://github.com/ramedina86/streamsync/blob/master/docs/docs/public/sc1.png)
+![Streamsync Builder screenshot](https://raw.githubusercontent.com/ramedina86/streamsync/master/docs/docs/public/sc1.png)
 
 ### It's fast.
 
