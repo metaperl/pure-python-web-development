@@ -1,5 +1,15 @@
 # Class C: Solutions that may one day be Class B or Class A
 
+## Starfyre
+
+https://github.com/sansyrox/starfyre is a new framework that the author admits
+is unstable. I do not see this making Class A anytime soon and it looks rather
+involved to make even simple apps based on [the code for the calculator](https://github.com/sansyrox/first-starfyre-app)
+
+### Discussions
+
+"Starfyre - [A Python Web Framework for creating frontend web applications](https://www.reddit.com/r/Python/comments/13bloxf/starfyre_a_python_web_framework_for_creating/)"
+
 ## Enaml-Web
 Enaml web is part of a very broad ecosystem:
 
