@@ -1,5 +1,16 @@
 # Class B Frameworks - Perfect for limited-scope projects, but don't complain when you lack features!
 
+## Taipy
+
+[Taipy](https://www.taipy.io) is a strong Class B framework. The enterprise version could qualify as Class A because it supports 
+[authentication and authorization](https://docs.taipy.io/en/release-2.1/manuals/about/).
+
+My one concern is the shorthand for HTML development: can one do full-fledged detailed HTML/CSS development with a Pythonic interface? My skimming of the docs says no, but I could be wrong.
+
+### Resources and discussions
+
+[github link](https://github.com/avaiga/taipy)
+
 ## Streamsync 
 
 Let's first see [what streamsync has to say about itself](https://github.com/ramedina86/streamsync):
