@@ -1,0 +1,2 @@
+git log --pretty=reference
+

@@ -41,18 +41,6 @@ https://github.com/zauberzeug/nicegui/discussions/21
 
 
 
-
-
-## Impressive Non-Python Products
-### UrWeb
-UrWeb is a single, strongly-typed language that compiles into a single binary that can issue SQL and Javascript.
-
-### Vaadin
-Vaadin is a java-based product with tons of widgets that allows a Java developer to have all the interactivity with none of the headache of dealing with Javascript.
-
-### HTMX
-Many people who wish to remain in Django/Flask land opt for HTMX to give them the power of Javascript .
-
 ## Discussion Threads
 
 Though this survey was designed to summarize available options, sometimes it is useful to go back to the discussion threads and see what everyone has to say:

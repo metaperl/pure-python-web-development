@@ -13,3 +13,8 @@ Through HTMX, a web framework has access to AJAX, CSS Transitions, WebSockets an
 
 Relevant articles:
 * ["A 'No JS' Solution for Dynamic Search in Django"](https://fly.io/blog/a-no-js-solution-for-dynamic-search-in-django/)
+
+## Hyperscript (from the same people as HTMX)
+
+Both HTMX and [Hyperscript](https://hyperscript.org) were created by [Big sky software](https://bigsky.software) and their combination is [apparently becoming popular with Djangoists](https://www.reddit.com/r/Python/comments/13ccenx/comment/jjfmijq/?utm_source=share&utm_medium=web2x&context=3).
+
