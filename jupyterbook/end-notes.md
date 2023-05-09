@@ -53,4 +53,8 @@ Vaadin is a java-based product with tons of widgets that allows a Java developer
 ### HTMX
 Many people who wish to remain in Django/Flask land opt for HTMX to give them the power of Javascript .
 
-## Frequently Asked Questions (FAQ)
+## Discussion Threads
+
+Though this survey was designed to summarize available options, sometimes it is useful to go back to the discussion threads and see what everyone has to say:
+
+"After tearing my hair out writing JavaScript the last few days [how close are we to Python in the browser?](https://www.reddit.com/r/Python/comments/13ccenx/after_tearing_my_hair_out_writing_javascript_the/)"
