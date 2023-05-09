@@ -9,7 +9,7 @@ https://vaadin.com/ is a java-based product with tons of widgets that allows a J
 ## HTMX
 Many people who wish to remain in Django/Flask land [opt for HTMX](https://news.ycombinator.com/item?id=33926029) to give them the power of Javascript.
 
-Through HTMX, a web framework has access to AJAX, CSS Transitions, WebSockets and Server Sent Events directly in HTML, through [attributes](https://htmx.org/reference/#attributes).
+Through [HTMX](https://htmx.org), a web framework has access to AJAX, CSS Transitions, WebSockets and Server Sent Events directly in HTML, through [attributes](https://htmx.org/reference/#attributes).
 
 Relevant articles:
 * ["A 'No JS' Solution for Dynamic Search in Django"](https://fly.io/blog/a-no-js-solution-for-dynamic-search-in-django/)
