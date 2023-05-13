@@ -157,10 +157,10 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="practical-guide.html">Practical Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="class-a.html">Class A Frameworks: fully-featured, rock-solid, industrial-grade frameworks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="class-b.html">Class B Frameworks - Perfect for limited-scope projects, but don’t complain when you lack features!</a></li>
-<li class="toctree-l1"><a class="reference internal" href="class-other.html">Class Other: Pure Python Products for Specific Limited Use Cases</a></li>
-<li class="toctree-l1"><a class="reference internal" href="class-c.html">Class C: Solutions that may one day be Class B or Class A</a></li>
+<li class="toctree-l1"><a class="reference internal" href="class-a.html">Class A Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="class-b.html">Class B Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="class-c.html">Class C Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="class-other.html">Class Other</a></li>
 <li class="toctree-l1"><a class="reference internal" href="class-defunct.html">Class Defunct: defunct products</a></li>
 <li class="toctree-l1"><a class="reference internal" href="class-non-python.html">Class Non-Python: Compelling metalanguages for web development outside of Python</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">End Notes</a></li>
@@ -361,13 +361,13 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transcrypt">Transcrypt</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-pynecone">enter Pynecone</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-reactpy">Now ReactPy</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ryact-and-breact-omitted">(Ryact and Breact omitted)</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tangential-products">Tangential Products</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#reacton">Reacton</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#py-react">py-react</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ryact-and-breact-omitted">(Ryact and Breact omitted)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tangential-products">Tangential Products</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reacton">Reacton</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#py-react">py-react</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion-threads-for-this-product">Discussion threads for this product:</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion-threads-for-this-product">Discussion threads for this product:</a></li>
 </ul>
 </li>
 </ul>
@@ -375,15 +375,14 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-talk-streamlit">Let’s talk Streamlit</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#it-collects-a-lot-of-data-by-default-without-advance-notice">It collects a lot of data by default without advance notice</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nicegui-passed-on-it">NiceGUI passed on it</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solara-improved-on-it">Solara improved on it</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#impressive-non-python-products">Impressive Non-Python Products</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#urweb">UrWeb</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vaadin">Vaadin</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#htmx">HTMX</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#performance">Performance</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rendering-large-dataframes">Rendering large dataframes</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frequently-asked-questions-faq">Frequently Asked Questions (FAQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion-threads">Discussion Threads</a></li>
 </ul>
             </nav>
         </div>
@@ -414,20 +413,20 @@ Transcrypt is <a class="reference external" href="https://may69.com/downgrades-a
 </section>
 <section id="ryact-and-breact-omitted">
 <h3>(Ryact and Breact omitted)<a class="headerlink" href="#ryact-and-breact-omitted" title="Permalink to this heading">#</a></h3>
+</section>
 <section id="tangential-products">
-<h4>Tangential Products<a class="headerlink" href="#tangential-products" title="Permalink to this heading">#</a></h4>
+<h3>Tangential Products<a class="headerlink" href="#tangential-products" title="Permalink to this heading">#</a></h3>
 <section id="reacton">
-<h5>Reacton<a class="headerlink" href="#reacton" title="Permalink to this heading">#</a></h5>
-<p>React is now available in ipywidgets thanks to Reacton</p>
+<h4>Reacton<a class="headerlink" href="#reacton" title="Permalink to this heading">#</a></h4>
+<p>Reacton implements the React API in Python, <a class="reference external" href="https://www.reddit.com/r/Python/comments/zkxq1j/reacton_a_pure_python_port_of_react_for_ipywidgets/">overcoming the same problems as web applications in the jQuery era (state transitions being the biggest issue).</a>.</p>
 </section>
 <section id="py-react">
-<h5>py-react<a class="headerlink" href="#py-react" title="Permalink to this heading">#</a></h5>
+<h4>py-react<a class="headerlink" href="#py-react" title="Permalink to this heading">#</a></h4>
 <p>py-react supports running Python in the browser via Pyodide. That being said, it does not appear to be aspiring to be a web application toolkit like other python-in-the-browser products (skulpt, brython, pyscript). Thus py-react is listed here in the tangential section. You may try it out here.</p>
-</section>
-</section>
 <section id="discussion-threads-for-this-product">
-<h4>Discussion threads for this product:<a class="headerlink" href="#discussion-threads-for-this-product" title="Permalink to this heading">#</a></h4>
+<h5>Discussion threads for this product:<a class="headerlink" href="#discussion-threads-for-this-product" title="Permalink to this heading">#</a></h5>
 <p>“Python code running in the browser using react-py“</p>
+</section>
 </section>
 </section>
 </section>
@@ -442,24 +441,23 @@ Transcrypt is <a class="reference external" href="https://may69.com/downgrades-a
 <h3>NiceGUI passed on it<a class="headerlink" href="#nicegui-passed-on-it" title="Permalink to this heading">#</a></h3>
 <p><a class="github reference external" href="https://github.com/zauberzeug/nicegui/discussions/21">zauberzeug/nicegui#21</a></p>
 </section>
-</section>
-<section id="impressive-non-python-products">
-<h2>Impressive Non-Python Products<a class="headerlink" href="#impressive-non-python-products" title="Permalink to this heading">#</a></h2>
-<section id="urweb">
-<h3>UrWeb<a class="headerlink" href="#urweb" title="Permalink to this heading">#</a></h3>
-<p>UrWeb is a single, strongly-typed language that compiles into a single binary that can issue SQL and Javascript.</p>
-</section>
-<section id="vaadin">
-<h3>Vaadin<a class="headerlink" href="#vaadin" title="Permalink to this heading">#</a></h3>
-<p>Vaadin is a java-based product with tons of widgets that allows a Java developer to have all the interactivity with none of the headache of dealing with Javascript.</p>
-</section>
-<section id="htmx">
-<h3>HTMX<a class="headerlink" href="#htmx" title="Permalink to this heading">#</a></h3>
-<p>Many people who wish to remain in Django/Flask land opt for HTMX to give them the power of Javascript .</p>
+<section id="solara-improved-on-it">
+<h3>Solara improved on it<a class="headerlink" href="#solara-improved-on-it" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://solara.dev/docs/tutorial/streamlit">https://solara.dev/docs/tutorial/streamlit</a></p>
 </section>
 </section>
-<section id="frequently-asked-questions-faq">
-<h2>Frequently Asked Questions (FAQ)<a class="headerlink" href="#frequently-asked-questions-faq" title="Permalink to this heading">#</a></h2>
+<section id="performance">
+<h2>Performance<a class="headerlink" href="#performance" title="Permalink to this heading">#</a></h2>
+<p>Python is the second best language for any task and it’s rarely the ideal choice for something that needs to run fast in a single process. That being said, there still need to be some minimum levels of responsiveness to remain useable.</p>
+<section id="rendering-large-dataframes">
+<h3>Rendering large dataframes<a class="headerlink" href="#rendering-large-dataframes" title="Permalink to this heading">#</a></h3>
+<p>Large dataframes <a class="reference external" href="https://www.reddit.com/r/Python/comments/13fegbp/comment/jjxntwe/?utm_source=share&amp;utm_medium=web2x&amp;context=3">appear to be a common performance bottleneck</a> in the pure python web app space.</p>
+</section>
+</section>
+<section id="discussion-threads">
+<h2>Discussion Threads<a class="headerlink" href="#discussion-threads" title="Permalink to this heading">#</a></h2>
+<p>Though this survey was designed to summarize available options, sometimes it is useful to go back to the discussion threads and see what everyone has to say:</p>
+<p>“After tearing my hair out writing JavaScript the last few days <a class="reference external" href="https://www.reddit.com/r/Python/comments/13ccenx/after_tearing_my_hair_out_writing_javascript_the/">how close are we to Python in the browser?</a>”</p>
 </section>
 </section>
 
@@ -519,13 +517,13 @@ Transcrypt is <a class="reference external" href="https://may69.com/downgrades-a
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transcrypt">Transcrypt</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-pynecone">enter Pynecone</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-reactpy">Now ReactPy</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ryact-and-breact-omitted">(Ryact and Breact omitted)</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tangential-products">Tangential Products</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#reacton">Reacton</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#py-react">py-react</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ryact-and-breact-omitted">(Ryact and Breact omitted)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tangential-products">Tangential Products</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reacton">Reacton</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#py-react">py-react</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion-threads-for-this-product">Discussion threads for this product:</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion-threads-for-this-product">Discussion threads for this product:</a></li>
 </ul>
 </li>
 </ul>
@@ -533,15 +531,14 @@ Transcrypt is <a class="reference external" href="https://may69.com/downgrades-a
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-talk-streamlit">Let’s talk Streamlit</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#it-collects-a-lot-of-data-by-default-without-advance-notice">It collects a lot of data by default without advance notice</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nicegui-passed-on-it">NiceGUI passed on it</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solara-improved-on-it">Solara improved on it</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#impressive-non-python-products">Impressive Non-Python Products</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#urweb">UrWeb</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vaadin">Vaadin</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#htmx">HTMX</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#performance">Performance</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rendering-large-dataframes">Rendering large dataframes</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frequently-asked-questions-faq">Frequently Asked Questions (FAQ)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion-threads">Discussion Threads</a></li>
 </ul>
   </nav></div>
 

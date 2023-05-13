@@ -1,4 +1,17 @@
-# Class C: Solutions that may one day be Class B or Class A
+# Class C Frameworks
+
+A class C framework is one that is not currently recommended for production code. These frameworks may one day qualify as Class B or A.
+
+## Solara
+
+Solara bills itself as an Open Source library that lets you use and build data-focused web apps (data apps) using reusable UI components. Your app will work in the Jupyter notebook and production-grade web frameworks (FastAPI, Starlette, Flask, ...).
+
+[Solara](https://solara.dev) is built on [Reacton](https://reacton.solara.dev/en/latest/), which is itself Class B. Reacton is an excellent building block, but Solara itself seems to suffer from a few difficulties as a web development framework, barring it from Class B:
+
+* it lacks route authorization - meaning that there is no way to control access to URLs based on authorization level
+* it does not appear to allow for clean separation of model and view: the user interface building involves tagging data variables with `use_state` or `.reactive()`
+
+What is very laudable is that it shows how easy reuse is [compared to dash](https://solara.dev/docs/tutorial/dash) and they continue with showing how their framework [improves over streamlit](https://solara.dev/docs/tutorial/streamlit).
 
 ## Starfyre
 
