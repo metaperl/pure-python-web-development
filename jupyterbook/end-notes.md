@@ -16,14 +16,15 @@ https://www.reddit.com/r/Python/comments/1274w68/reactpy_build_reactjs_interface
 
 ### (Ryact and Breact omitted)
 
-#### Tangential Products
-##### Reacton
-React is now available in ipywidgets thanks to Reacton
+### Tangential Products
+#### Reacton
+Reacton implements the React API in Python, [overcoming the same problems as web applications in the jQuery era (state transitions being the biggest issue).](https://www.reddit.com/r/Python/comments/zkxq1j/reacton_a_pure_python_port_of_react_for_ipywidgets/).
 
-##### py-react
+
+#### py-react
 py-react supports running Python in the browser via Pyodide. That being said, it does not appear to be aspiring to be a web application toolkit like other python-in-the-browser products (skulpt, brython, pyscript). Thus py-react is listed here in the tangential section. You may try it out here.
 
-#### Discussion threads for this product:
+##### Discussion threads for this product:
 
 “Python code running in the browser using react-py“
 
@@ -39,6 +40,17 @@ https://www.reddit.com/r/Python/comments/121pvdy/warning_streamlit_collects_a_lo
 
 https://github.com/zauberzeug/nicegui/discussions/21
 
+### Solara improved on it
+
+https://solara.dev/docs/tutorial/streamlit
+
+## Performance
+
+Python is the second best language for any task and it's rarely the ideal choice for something that needs to run fast in a single process. That being said, there still need to be some minimum levels of responsiveness to remain useable.
+
+### Rendering large dataframes
+
+Large dataframes [appear to be a common performance bottleneck](https://www.reddit.com/r/Python/comments/13fegbp/comment/jjxntwe/?utm_source=share&utm_medium=web2x&context=3) in the pure python web app space.
 
 
 ## Discussion Threads

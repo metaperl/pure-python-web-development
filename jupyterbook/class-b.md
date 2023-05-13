@@ -1,4 +1,6 @@
-# Class B Frameworks - Perfect for limited-scope projects, but don't complain when you lack features!
+# Class B Frameworks 
+
+Class B frameworks are perfect for limited-scope projects, but don't complain when you lack features!
 
 ## Taipy
 
@@ -10,6 +12,30 @@ My one concern is the shorthand for HTML development: can one do full-fledged de
 ### Resources and discussions
 
 [github link](https://github.com/avaiga/taipy)
+
+## Highcharts for Python
+
+The [Highcharts for Python Toolkit](https://github.com/highcharts-for-python) is a set of Python libraries that provide a Python wrapper for [the Highcharts suite of JavaScript data visualization libraries](https://www.highcharts.com/), with full integration across the Python ecosystem.
+
+The toolkit features native integrations with:
+
+* Jupyter Labs/Notebook. You can now produce high-end and interactive plots and renders using the full suite of Highcharts visualization capabilities.
+* Pandas. Automatically produce data visualizations from your Pandas dataframes
+* PySpark. Automatically produce data visualizations from data in a PySpark dataframe.
+* ...and more library-specific integrations, including GeoPandas, PyShp, Topjson, Geojson, Asana, and more
+
+Highcharts for Python provides Python object representation for all of the JavaScript objects defined in the Highcharts (JavaScript) API. It provides automatic data validation, and exposes simple and standardized methods for serializing those Python objects back-and-forth to JavaScript object literal notation.
+
+
+## Reacton – A pure Python port of React for ipywidgets
+ ipywidgets is a library for writing interactive widgets in the Jupyter notebook.
+
+Reacton is a pure Python library, that implements a similar API as ReactJS. Instead of rendering to the DOM, it renders to ipywidgets. The ipywidget library is then responsible for rendering in the front end (which could use ReactJS, Vue, or even jQuery).
+
+### Discussion
+initial reddit thread.
+“Advance your ipywidget app development with Reacton — A pure Python port of React for faster development”
+
 
 ## Streamsync 
 

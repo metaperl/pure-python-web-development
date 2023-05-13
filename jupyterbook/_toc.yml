@@ -7,8 +7,8 @@ chapters:
 - file: practical-guide.md
 - file: class-a.md
 - file: class-b.md
-- file: class-other.md
 - file: class-c.md
+- file: class-other.md
 - file: class-defunct.md
 - file: class-non-python.md
 - file: end-notes.md
