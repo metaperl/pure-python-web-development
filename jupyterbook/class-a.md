@@ -1,6 +1,6 @@
-# Class A Frameworks: fully-featured, rock-solid, industrial-grade frameworks
+# Class A Frameworks
 
-Class A: Industrial Strength Rock-solid Products
+Class A: Fully-featured, Industrial Strength Rock-solid Products
 In this section, we list products that are solving real-world problems and are ready for production deployment… just download, install and follow the instructions to whip out a solution to your issue PRONTO, because hundreds of other have already done the same.
 
 ## NiceGUI
