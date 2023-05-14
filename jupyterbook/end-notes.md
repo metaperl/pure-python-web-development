@@ -57,4 +57,6 @@ Large dataframes [appear to be a common performance bottleneck](https://www.redd
 
 Though this survey was designed to summarize available options, sometimes it is useful to go back to the discussion threads and see what everyone has to say:
 
+["NiceGUI vs Plotly/Dash"](https://www.reddit.com/r/nicegui/comments/13c23l8/nicegui_vs_plotlydash/)
+
 "After tearing my hair out writing JavaScript the last few days [how close are we to Python in the browser?](https://www.reddit.com/r/Python/comments/13ccenx/after_tearing_my_hair_out_writing_javascript_the/)"
