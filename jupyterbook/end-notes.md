@@ -12,7 +12,7 @@ that NiceGUI operates on, that few other frameworks can boast similar support fo
 
 [Discussion](https://solara.dev/examples/utilities/todo)
 
-[Actual code](https://raw.githubusercontent.com/widgetti/solara/mas
+[Actual code](https://raw.githubusercontent.com/widgetti/solara/master/solara/website/pages/examples/utilities/todo.py)
 
 ## React in Python –
 
