@@ -14,6 +14,11 @@ that NiceGUI operates on, that few other frameworks can boast similar support fo
 
 [Actual code](https://raw.githubusercontent.com/widgetti/solara/master/solara/website/pages/examples/utilities/todo.py)
 
+### TODOMVC in ReactPy
+
+https://github.com/reactive-python/reactpy/discussions/976
+
+
 ## React in Python –
 
 ### Transcrypt
