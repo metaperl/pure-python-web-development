@@ -1,5 +1,27 @@
 # End Notes
 
+## TODOMVC
+
+[TODOMVC](https://todomvc.com) has proven itself useful to see how cleanly a
+framework separates model and view. In most cases if this is done well and a
+framework makes A and A easy, the it is good for most purposes. But here is where
+we see NiceGUI shine: "most purposes" does not include the wide array of devices
+that NiceGUI operates on, that few other frameworks can boast similar support for. But I digress, let's see the TODOMVC offerings in Python:
+
+### TODOMVC in Solara
+
+[Discussion](https://solara.dev/examples/utilities/todo)
+
+[Actual code](https://raw.githubusercontent.com/widgetti/solara/master/solara/website/pages/examples/utilities/todo.py)
+
+### TODOMVC in ReactPy
+
+https://github.com/reactive-python/reactpy/discussions/976
+
+### TODOMVC in Pynecone
+
+If you scroll down [this page](https://pynecone.io/docs/library/layout/foreach) a bit, you will see a TODO example in Pynecone. I [expressed some concerns](https://github.com/pynecone-io/pynecone/discussions/1018#discussioncomment-5911321) about it.
+
 ## React in Python –
 
 ### Transcrypt
@@ -18,7 +40,7 @@ https://www.reddit.com/r/Python/comments/1274w68/reactpy_build_reactjs_interface
 
 ### Tangential Products
 #### Reacton
-Reacton implements the React API in Python, [overcoming the same problems as web applications in the jQuery era (state transitions being the biggest issue).](https://www.reddit.com/r/Python/comments/zkxq1j/reacton_a_pure_python_port_of_react_for_ipywidgets/).
+Reacton implements the React API in Python, [overcoming the same problems as web applications in the jQuery era (state transitions being the biggest issue).](https://www.reddit.com/r/Python/comments/zkxq1j/reacton_a_pure_python_port_of_react_for_ipywidgets/). It has a web framework built on top of it - [Solara](https://solara.dev).
 
 
 #### py-react
@@ -56,5 +78,7 @@ Large dataframes [appear to be a common performance bottleneck](https://www.redd
 ## Discussion Threads
 
 Though this survey was designed to summarize available options, sometimes it is useful to go back to the discussion threads and see what everyone has to say:
+
+["NiceGUI vs Plotly/Dash"](https://www.reddit.com/r/nicegui/comments/13c23l8/nicegui_vs_plotlydash/)
 
 "After tearing my hair out writing JavaScript the last few days [how close are we to Python in the browser?](https://www.reddit.com/r/Python/comments/13ccenx/after_tearing_my_hair_out_writing_javascript_the/)"

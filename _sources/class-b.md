@@ -2,6 +2,17 @@
 
 Class B frameworks are perfect for limited-scope projects, but don't complain when you lack features!
 
+## Solara
+
+Solara bills itself as an Open Source library that lets you use and build data-focused web apps (data apps) using reusable UI components. Your app will work in the Jupyter notebook and production-grade web frameworks (FastAPI, Starlette, Flask, ...).
+
+[Solara](https://solara.dev) is built on [Reacton](https://reacton.solara.dev/en/latest/), which is itself Class B. Reacton is an excellent building block and Solara is showing great promise.
+
+* authorization is possible [via many methods](https://github.com/widgetti/solara/discussions/89) most of which you will need to develop yourself
+* it  allows for [clean separation of model and view](https://github.com/widgetti/solara/discussions/88) and [the todo example](https://solara.dev/examples/utilities/todo) gives a good example of this. 
+
+What is very laudable is that it shows how easy reuse is [compared to dash](https://solara.dev/docs/tutorial/dash) and they continue with showing how their framework [improves over streamlit](https://solara.dev/docs/tutorial/streamlit).
+
 ## Taipy
 
 [Taipy](https://www.taipy.io) is a strong Class B framework. The enterprise version could qualify as Class A because it supports 

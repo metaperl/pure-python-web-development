@@ -358,7 +358,6 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solara">Solara</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#starfyre">Starfyre</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussions">Discussions</a></li>
 </ul>
@@ -404,16 +403,6 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="class-c-frameworks">
 <h1>Class C Frameworks<a class="headerlink" href="#class-c-frameworks" title="Permalink to this heading">#</a></h1>
 <p>A class C framework is one that is not currently recommended for production code. These frameworks may one day qualify as Class B or A.</p>
-<section id="solara">
-<h2>Solara<a class="headerlink" href="#solara" title="Permalink to this heading">#</a></h2>
-<p>Solara bills itself as an Open Source library that lets you use and build data-focused web apps (data apps) using reusable UI components. Your app will work in the Jupyter notebook and production-grade web frameworks (FastAPI, Starlette, Flask, …).</p>
-<p><a class="reference external" href="https://solara.dev">Solara</a> is built on <a class="reference external" href="https://reacton.solara.dev/en/latest/">Reacton</a>, which is itself Class B. Reacton is an excellent building block, but Solara itself seems to suffer from a few difficulties as a web development framework, barring it from Class B:</p>
-<ul class="simple">
-<li><p>it lacks route authorization - meaning that there is no way to control access to URLs based on authorization level</p></li>
-<li><p>it does not appear to allow for clean separation of model and view: the user interface building involves tagging data variables with <code class="docutils literal notranslate"><span class="pre">use_state</span></code> or <code class="docutils literal notranslate"><span class="pre">.reactive()</span></code></p></li>
-</ul>
-<p>What is very laudable is that it shows how easy reuse is <a class="reference external" href="https://solara.dev/docs/tutorial/dash">compared to dash</a> and they continue with showing how their framework <a class="reference external" href="https://solara.dev/docs/tutorial/streamlit">improves over streamlit</a>.</p>
-</section>
 <section id="starfyre">
 <h2>Starfyre<a class="headerlink" href="#starfyre" title="Permalink to this heading">#</a></h2>
 <p><a class="github reference external" href="https://github.com/sansyrox/starfyre">sansyrox/starfyre</a> is a new framework that the author admits
@@ -637,7 +626,6 @@ If you’re building utilities for yourself, other programmers, or something whi
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solara">Solara</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#starfyre">Starfyre</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussions">Discussions</a></li>
 </ul>
