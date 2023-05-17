@@ -18,6 +18,9 @@ that NiceGUI operates on, that few other frameworks can boast similar support fo
 
 https://github.com/reactive-python/reactpy/discussions/976
 
+### TODOMVC in Pynecone
+
+If you scroll down [this page](https://pynecone.io/docs/library/layout/foreach) a bit, you will see a TODO example in Pynecone. I [expressed some concerns](https://github.com/pynecone-io/pynecone/discussions/1018#discussioncomment-5911321) about it.
 
 ## React in Python –
 
