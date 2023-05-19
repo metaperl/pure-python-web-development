@@ -7,7 +7,7 @@ So Class A and Class B are excellent solutions. Class C and Class D are lacking 
 
 ## Requirements of a Class A System
 
-1. that it is FULLY featured either directly or by easy integration with another framework that is fully featured. This requirements is in place so that people don’t get burned with a shiny short-term solution that cannot scale out to evolving requirements. Streamlit, Gradio and others are great for single-user web apps, but they do not provide a path for evolution into full-blown industrial strength web applications. In short: unless a product can directly, or with easy integration do everything in Miguel Grinberg’s Flask Mega-tutorial it is not fully featured.
+1. that it is FULLY featured either directly or by easy integration with another framework that is fully featured. This requirements is in place so that people don’t get burned with a shiny short-term solution that cannot scale out to evolving requirements. Streamlit, Gradio and others are great for single-user web apps, but they do not provide a path for evolution into full-blown industrial strength web applications. **In short: unless a product can directly, or with easy integration do everything in [Miguel Grinberg’s Flask Mega-tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) it is not fully featured.**
 1. well-maintained. anything with no source code updates in more than 1 year cannot be considered well-maintained. If there are serious outstanding issues and pull requests this also factors in.
 1. well-documented – Ideally all major forms of documentation exist – FAQ, tutorial, Guide and Reference.
 1. Good support channels – rapid accurate response to community questions is a must.
