@@ -3,6 +3,19 @@
 Class A: Fully-featured, Industrial Strength Rock-solid Products
 In this section, we list products that are solving real-world problems and are ready for production deployment… just download, install and follow the instructions to whip out a solution to your issue PRONTO, because hundreds of other have already done the same.
 
+## Solara
+
+Solara bills itself as an Open Source library that lets you use and build data-focused web apps (data apps) using reusable UI components. Your app will work in the Jupyter notebook and production-grade web frameworks (FastAPI, Starlette, Flask, ...).
+
+[Solara](https://solara.dev) is built on [Reacton](https://reacton.solara.dev/en/latest/), which is itself Class B. Reacton is an excellent building block and Solara is showing great promise.
+
+* authorization is possible [via many methods](https://github.com/widgetti/solara/discussions/89) most of which you will need to develop yourself
+* it  allows for [clean separation of model and view](https://github.com/widgetti/solara/discussions/88) and [the todo example](https://solara.dev/examples/utilities/todo) gives a good example of this. 
+
+What is very laudable is that it shows how easy reuse is [compared to dash](https://solara.dev/docs/tutorial/dash) and they continue with showing how their framework [improves over streamlit](https://solara.dev/docs/tutorial/streamlit). They are also very clear about why they have [improved over Dash as well](https://solara.dev/docs/tutorial/dash).
+
+They do not have authentication and authorization out of the box, but [they do clearly show](https://github.com/widgetti/solara/discussions/89) how it can be implemented.
+
 ## NiceGUI
 [NiceGUI](https://nicegui.io) has a very clean and well-documented API. NiceGUI is not just limited to web applications. It was initially designed for use of micro-devices and robots. The [1.12 release has made it possible to have desktop apps as well.](https://www.reddit.com/r/Python/comments/127kiep/nicegui_12_paves_the_way_for_electronlike/). 
 
