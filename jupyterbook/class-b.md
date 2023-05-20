@@ -14,6 +14,7 @@ My one concern is the shorthand for HTML development: can one do full-fledged de
 ### Resources and discussions
 
 [github link](https://github.com/avaiga/taipy)
+["Taipy: an Open-Source Python Only Web App Builder Library"](https://www.reddit.com/r/Python/comments/13iawcm/taipy_an_opensource_python_only_web_app_builder/)
 
 ## Highcharts for Python
 
