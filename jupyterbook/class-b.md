@@ -254,6 +254,9 @@ https://brython.info/
 https://streamlit.io/ is very powerful and very popular, but adding features that you expect in a full-blown web app is hard and hackish or messy depending on who you talk to. However, apparently they have been bought out by Snowlake so they have a strong backing moving forward.
 
 ### Application Gallery
+
+In addition to what you see here, the Streamlit forum has a [show the community](https://discuss.streamlit.io/c/streamlit-examples/9) section that boasts 14 posts per week.
+
 “Made a Streamlit app to show demographic breakdowns by age, race, gender, and education in the biggest 100 US metro areas.”
 
 “Streamlit for Machine Learning Cheat Sheet“
@@ -287,3 +290,9 @@ https://analyticsindiamag.com/streamlit-vs-plotlydash-comparison-with-python-exa
 “I was excited about YOLOv7, so I built a sharable object detection application with VDP and Streamlit.“
 
 “Streamlit User and API Authentication with Auth0 Next.js SDK‘
+
+### Resources
+
+[Streamlit Community Cloud](https://streamlit.io/cloud) - Deploy, manage, and share your apps with the world,
+directly from Streamlit — all for free.
+[Streamlit forum](https://discuss.streamlit.io) 
