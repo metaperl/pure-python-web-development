@@ -2,7 +2,16 @@
 
 A class C framework is one that is not currently recommended for production code. These frameworks may one day qualify as Class B or A.
 
+## Carefee Drawboard
 
+[Carefree Drawboard](https://github.com/carefree0910/carefree-drawboard) is extremely powerful and extremely impressive. Using only Python 3.8 and NodeJS, it allows you to build AI/ML pipelines quite easily. It currently lacks thorough documentation. It does come
+with several powerful and impressive examples. As it stands it could never be class A because
+it does not handle all the concerns of web app development. Until the documentation is a
+bit easier to follow, it must remain Class C.
+
+The [carefree creator demo app](https://github.com/carefree0910/carefree-drawboard/tree/dev/examples/carefree_creator) shows how easy it is to provide nine different AI-driven filters. the [stable diffusion outpainting](https://github.com/carefree0910/carefree-drawboard/tree/dev/examples/carefree_creator#stable-diffusion-outpainting) part of the demo is stunning: they use AI to continue the painting of the floor of an image without manually having to paint the floor!
+
+Currently the project needs someone to build out the documentation and make sure that all sites have a good English translation. [The site they have where you can host apps](https://nolibox.com ) definitely needs an English translation.
 
 ## Starfyre
 

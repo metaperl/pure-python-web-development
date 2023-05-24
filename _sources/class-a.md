@@ -3,6 +3,39 @@
 Class A: Fully-featured, Industrial Strength Rock-solid Products
 In this section, we list products that are solving real-world problems and are ready for production deployment… just download, install and follow the instructions to whip out a solution to your issue PRONTO, because hundreds of other have already done the same.
 
+## Lona
+
+A distinguishing feature of Lona is that It abstracts web on the DOM level. This way you can build whatever you can think of, and not only use the widgets, the developers provide.
+
+It comes with a powerful component system, to create high-level components for specialized use-cases:
+* https://lona-web.org/1.x/contrib/lona-picocss/index.html
+* https://lona-web.org/1.x/contrib/chartjs/index.html
+
+Lona is a single-page-application framework, and [only replaces the parts of a page which actually changed](https://lona-web.org/1.x/tutorial/02-html/index.html#view-show).
+
+Lona can use Django models and the Django auth system.
+
+
+### Built on top of Jinja2 and aiohttp. 
+
+According to the author Lona is based on aiohttp and uses asyncio internally. The Lona API is completely synchronous to make development easier. In contrast, with asyncio its possible to block the core event loop of the entire service without even noticing it. therefore Lona defines an API that feels like asyncio but can be integrated with blocking code seamlessly.
+
+Traditional templating is still possible if wanted. The Lona HTML API also [comes with a HTML parser, that converts HTML strings into Lona node trees, that than can be manipulated](https://lona-web.org/1.x/tutorial/02-html/index.html#html-strings). This is very similar what the browser does with its DOM API
+
+
+### Discussions
+
+["Lona 1.14 finally adds support for Channels"](https://www.reddit.com/r/Python/comments/13qfg7s/lona_114_finally_adds_support_for_channels/) 
+
+https://www.reddit.com/r/Python/comments/ptcje9/lona_a_web_framework_for_responsive_web_apps_in/
+
+https://www.reddit.com/r/Python/comments/qasyxe/true_multi_user_applications_with_lona_174/
+
+### Resources
+
+https://www.reddit.com/r/lona_web_org/
+
+
 ## Solara
 
 Solara bills itself as an Open Source library that lets you use and build data-focused web apps (data apps) using reusable UI components. Your app will work in the Jupyter notebook and production-grade web frameworks (FastAPI, Starlette, Flask, ...).
@@ -260,34 +293,6 @@ https://www.reddit.com/r/Python/comments/zh0pmy/pynecone_web_apps_in_pure_python
 
 
 
-## Lona
-
-A distinguishing feature of Lona is that It abstracts web on the DOM level. This way you can build whatever you can think of, and not only use the widgets, the developers provide.
-
-It comes with a powerful component system, to create high-level components for specialized use-cases:
-* https://lona-web.org/1.x/contrib/lona-picocss/index.html
-* https://lona-web.org/1.x/contrib/chartjs/index.html
-
-Lona is a single-page-application framework, and [only replaces the parts of a page which actually changed](https://lona-web.org/1.x/tutorial/02-html/index.html#view-show).
-
-Lona can use Django models and the Django auth system.
-
-
-### Built on top of Jinja2 and aiohttp. 
-
-According to the author Lona is based on aiohttp and uses asyncio internally. The Lona API is completely synchronous to make development easier. In contrast, with asyncio its possible to block the core event loop of the entire service without even noticing it. therefore Lona defines an API that feels like asyncio but can be integrated with blocking code seamlessly.
-
-Traditional templating is still possible if wanted. The Lona HTML API also [comes with a HTML parser, that converts HTML strings into Lona node trees, that than can be manipulated](https://lona-web.org/1.x/tutorial/02-html/index.html#html-strings). This is very similar what the browser does with its DOM API
-
-
-
-
-
-### Discussions
-https://www.reddit.com/r/Python/comments/ptcje9/lona_a_web_framework_for_responsive_web_apps_in/
-https://www.reddit.com/r/Python/comments/p109o0/lona_a_web_framework_for_responsive_web_apps_in/
-https://www.reddit.com/r/Python/comments/qasyxe/true_multi_user_applications_with_lona_174/
-https://www.reddit.com/r/lona_web_org/
 
 ## Nagare
 Nagare has earned a class A ranking. It has been around for over a decade and was one of the first frameworks to offer a pure python approach to web application development. It is very complete and their consulting firm has delivered several impressive large-scale apps. They were very supportive of me when I deployed an application to a Fortune 500 company using it. It is very much a work of art and creativity.
