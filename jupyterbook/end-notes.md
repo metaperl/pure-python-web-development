@@ -12,7 +12,7 @@ that NiceGUI operates on, that few other frameworks can boast similar support fo
 
 [Discussion](https://solara.dev/examples/utilities/todo)
 
-[Actual code](https://raw.githubusercontent.com/widgetti/solara/master/solara/website/pages/examples/utilities/todo.py)
+[Actual code](https://github.com/widgetti/solara/blob/master/solara/website/pages/examples/utilities/todo.py)
 
 ### TODOMVC in ReactPy
 
@@ -21,6 +21,10 @@ https://github.com/reactive-python/reactpy/discussions/976
 ### TODOMVC in Pynecone
 
 If you scroll down [this page](https://pynecone.io/docs/library/layout/foreach) a bit, you will see a TODO example in Pynecone. I [expressed some concerns](https://github.com/pynecone-io/pynecone/discussions/1018#discussioncomment-5911321) about it.
+
+### TODOMVC in NiceGUI
+
+[Actual code](https://github.com/zauberzeug/nicegui/blob/main/examples/todo_list/main.py)
 
 ## React in Python –
 
