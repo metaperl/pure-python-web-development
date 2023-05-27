@@ -143,7 +143,7 @@ w> hile both frameworks use FastAPI for the backend, in NiceGUI you can actually
 
 ## ReactPy
 
-ReactPy is a library for building user interfaces in Python without having to write Javascript. ReactPy interfaces are made from components which look and behave similar to those found in ReactJS.
+[ReactPy](https://github.com/reactive-python/reactpy) is a library for building user interfaces in Python without having to write Javascript. ReactPy interfaces are made from components which look and behave similar to those found in ReactJS.
 
 In order to maintain full compatibility with all Python packages, [ReactPy is server side rendered](https://www.reddit.com/r/Python/comments/1274w68/comment/jee45m8/?utm_source=share&utm_medium=web2x&context=3). So all Python packages will work exactly as you expect. The only data that gets transmitted to the client is the current HTML document (with a little bit of extra magic).
 
