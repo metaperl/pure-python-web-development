@@ -32,7 +32,7 @@ As a result, the WebBot framework encourages reuse,
 concise code, rapid development, and happy developers.
 
 ## Jigna
-Jigna showed great promise in it’s EuroPython 2014 talk. Being based on Enthought Traits and supported by Enthought are also feathers in its cap. However, the source code repo has seen no action for 3 years now, landing it in the defunct category.
+[Jigna](https://github.com/enthought/jigna) showed great promise in it’s EuroPython 2014 talk. Being based on Enthought Traits and supported by Enthought are also feathers in its cap. However, the source code repo has seen no action for 3 years now, landing it in the defunct category.
 
 ## Jiphy
 https://github.com/timothycrosley/jiphy is a nearly-defunct transpiler.
