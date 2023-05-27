@@ -86,20 +86,6 @@ Execute custom JS – discussion and link to demo
 
 NiceGUI versus JustPy – very informative discussion.
 
-
-
-## Datapane
-
-
-[Datapane](https://docs.datapane.com) can be embedded in Flask or Django.
-
-I'd be curious to see how it compares with [Panel](https://panel.holoviz.org)
-
-### Discussion
-
-[Datapane - Build internal data products in 100% Python](https://www.reddit.com/r/Python/comments/125lyru/datapane_build_internal_data_products_in_100/)
-
-
 ### FAQs
 
 #### why Vue? Please use Web Components.
@@ -136,9 +122,23 @@ r-trappe [states](https://www.reddit.com/r/Python/comments/127kiep/comment/jefuv
 
 > NiceGUI uses Vue/Quasar for the frontend while Pynecone is build on NextJS- NiceGUI generates HTML/JS/CSS via templates on the fly while Pynceone has an explicit compile step; so NiceGUI can be run with normal "Python" instead of using a command like "pc"
 
-w> hile both frameworks use FastAPI for the backend, in NiceGUI you can actually use your own App and simply extend it with NiceGUI to provide additional UI; Pynecone hides FastAPI which makes it harder to provide other API endpoints (for example to serve images from memory instead of files).
+while both frameworks use FastAPI for the backend, in NiceGUI you can actually use your own App and simply extend it with NiceGUI to provide additional UI; Pynecone hides FastAPI which makes it harder to provide other API endpoints (for example to serve images from memory instead of files).
 
 > NiceGUI can now run in a native window :-)
+
+
+## Datapane
+
+
+[Datapane](https://docs.datapane.com) can be embedded in Flask or Django.
+
+I'd be curious to see how it compares with [Panel](https://panel.holoviz.org)
+
+### Discussion
+
+[Datapane - Build internal data products in 100% Python](https://www.reddit.com/r/Python/comments/125lyru/datapane_build_internal_data_products_in_100/)
+
+
 
 
 ## ReactPy

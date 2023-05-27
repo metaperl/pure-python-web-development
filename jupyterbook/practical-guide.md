@@ -1,7 +1,8 @@
 # Practical Guide
-The practical guide is divided into “classes”. In many cases a Class B solution can be just as good as a Class A solution. Class A solutions are complete solutions to any functionality you might have to tackle in a world-class webapp serving hundreds of thousands of hits for thousands if not millions of users. Class B solutions solve a particular problem and do it well.
 
-There was a recent post to reddit Python where a person needed a simple UI for uploading files and then running a process. I recommended the Class B solution Gradio and in a few lines of Python he had a nice-looking application that fulfilled the needs for him and his professor.
+TODOMVC examples are an excellent hands-on practical guide to pure python web frameworks. That being said, over time, it seemed beneficial to create a practical divided into “classes”. In many cases a Class B solution can be just as useful as a Class A solution. Class A solutions are complete solutions to any functionality you might have to tackle in a world-class webapp serving hundreds of thousands of hits for thousands if not millions of users. Class B solutions solve a particular problem and do it well. 
+
+There was a recent post to reddit Python where a person needed a simple UI for uploading files and then running a process. I recommended the Class B solution Gradio and in a few lines of Python he had a nice-looking application that fulfilled the needs for him and his professor: he wasnt trying to serve up contents for millions of users. He didn't need A and A. He got what he needed and was happy with this Class B pure python solution.
 
 So Class A and Class B are excellent solutions. Class C and Class D are lacking in some facet but may still find some use.
 
