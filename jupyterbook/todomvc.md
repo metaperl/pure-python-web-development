@@ -1,10 +1,12 @@
 # TODOMVC Examples
 
-For a long time (probably a decade or more), the [todomvc application](https://todomvc.com) has been used as a way to get an idea of how a framework approaches a fairly straightforward model-view-controller problem in Javascript. If a framework cleanly separates model, view and controller and makes A and A possible, then it is good for most purposes. But here is where
+For a long time (probably a decade or more), the [todomvc application](https://todomvc.com) has been used as a way to get an idea of how a framework approaches a fairly straightforward model-view-controller problem in Javascript. If TODOMVC was adequate to demonstrate how a Javascript framework cleanly separates model, view and controller, then it only makes sense that a pure python web framework be able to demonstrate the same thing!
+
+Once a pure python framework shows a good track record on TODOMVC and shows that A and A is possible, then it is good for most purposes. But here is where
 we see NiceGUI shine: "most purposes" does not include the wide array of devices
 that NiceGUI operates on, that few other frameworks can boast similar support for.
 
-Glancing over these TODOMVC examples implemented in pure python web frameworks should give you an idea of whether or not you like the framework's approach to software development. So, with no further adieu, let's take a look at some TODOs!
+But let's get back to the topic at hand. Glancing over these TODOMVC examples implemented in pure python web frameworks should give you an idea of whether or not you like the framework's approach to software development. So, with no further adieu, let's take a look at some TODOs!
 
 
 ## TODOMVC in NiceGUI
