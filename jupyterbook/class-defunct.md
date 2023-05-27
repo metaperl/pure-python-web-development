@@ -13,9 +13,9 @@ So I would say it would not interest me much in the same way that Angular does n
 Other past tools in this vein are OpenLaszlo. A current popular tool like this is HTMX.
 
 ## Muntjac
-Muntjac is an implementation of Vaadin for Python. Vaadin is an enterprise level Java web app framework with a large array of modern clean javascript widgets.
+[Muntjac](https://github.com/rwl/muntjac) is an implementation of Vaadin for Python. Vaadin is an enterprise level Java web app framework with a large array of modern clean javascript widgets.
 
-While Vaadin abstracted away Javascript through Java, Muntjac did the same for Python in an impressive way.
+While [Vaadin](https://vaadin.com) abstracted away Javascript through Java, Muntjac did the same for Python in an impressive way.
 
 ## Timothy Crosley Products
 ### Webbot
