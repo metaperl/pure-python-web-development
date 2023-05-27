@@ -7,8 +7,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; Pure Python Web Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>TODOMVC Examples &#8212; Pure Python Web Development</title>
   
   
   
@@ -60,9 +61,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
-    <link rel="index" title="Index" href="#" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'todomvc';</script>
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Practical Guide" href="practical-guide.html" />
+    <link rel="prev" title="Pure Python Web Development" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -153,8 +156,8 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="todomvc.html">TODOMVC Examples</a></li>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">TODOMVC Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="practical-guide.html">Practical Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="class-a.html">Class A Frameworks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="class-b.html">Class B Frameworks</a></li>
@@ -234,7 +237,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/metaperl/pure-python-web-development/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/metaperl/pure-python-web-development/issues/new?title=Issue%20on%20page%20%2Ftodomvc.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -246,6 +249,54 @@ const thebe_selector_output = ".output, .cell_output"
   </span>
 <span class="btn__text-container">Open issue</span>
 </a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/todomvc.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
 </li>
       
   </ul>
@@ -285,7 +336,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -296,11 +349,22 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1></h1>
+    <h1>TODOMVC Examples</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#todomvc-in-nicegui">TODOMVC in NiceGUI</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#todomvc-in-solara">TODOMVC in Solara</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#todomvc-in-reactpy">TODOMVC in ReactPy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#todomvc-in-pynecone">TODOMVC in Pynecone</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -310,13 +374,50 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
+  <section class="tex2jax_ignore mathjax_ignore" id="todomvc-examples">
+<h1>TODOMVC Examples<a class="headerlink" href="#todomvc-examples" title="Permalink to this heading">#</a></h1>
+<p>For a long time (probably a decade or more), the <a class="reference external" href="https://todomvc.com">todomvc application</a> has been used as a way to get an idea of how a framework approaches a fairly straightforward model-view-controller problem in Javascript. If a framework cleanly separates model, view and controller and makes A and A possible, then it is good for most purposes. But here is where
+we see NiceGUI shine: “most purposes” does not include the wide array of devices
+that NiceGUI operates on, that few other frameworks can boast similar support for.</p>
+<p>Glancing over these TODOMVC examples implemented in pure python web frameworks should give you an idea of whether or not you like the framework’s approach to software development. So, with no further adieu, let’s take a look at some TODOs!</p>
+<section id="todomvc-in-nicegui">
+<h2>TODOMVC in NiceGUI<a class="headerlink" href="#todomvc-in-nicegui" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://github.com/zauberzeug/nicegui/blob/main/examples/todo_list/main.py">Actual code</a></p>
+</section>
+<section id="todomvc-in-solara">
+<h2>TODOMVC in Solara<a class="headerlink" href="#todomvc-in-solara" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://solara.dev/examples/utilities/todo">Discussion</a></p>
+<p><a class="reference external" href="https://github.com/widgetti/solara/blob/master/solara/website/pages/examples/utilities/todo.py">Actual code</a></p>
+</section>
+<section id="todomvc-in-reactpy">
+<h2>TODOMVC in ReactPy<a class="headerlink" href="#todomvc-in-reactpy" title="Permalink to this heading">#</a></h2>
+<p><a class="github reference external" href="https://github.com/reactive-python/reactpy/discussions/976">reactive-python/reactpy#976</a></p>
+</section>
+<section id="todomvc-in-pynecone">
+<h2>TODOMVC in Pynecone<a class="headerlink" href="#todomvc-in-pynecone" title="Permalink to this heading">#</a></h2>
+<p>If you scroll down <a class="reference external" href="https://pynecone.io/docs/library/layout/foreach">this page</a> a bit, you will see a TODO example in Pynecone. I <a class="reference external" href="https://github.com/pynecone-io/pynecone/discussions/1018#discussioncomment-5911321">expressed some concerns</a> about it.</p>
+</section>
+</section>
 
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
-</div>
-
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -326,12 +427,47 @@ document.write(`
                 <footer class="bd-footer-article">
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Pure Python Web Development</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="practical-guide.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Practical Guide</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#todomvc-in-nicegui">TODOMVC in NiceGUI</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#todomvc-in-solara">TODOMVC in Solara</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#todomvc-in-reactpy">TODOMVC in ReactPy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#todomvc-in-pynecone">TODOMVC in Pynecone</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

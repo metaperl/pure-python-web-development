@@ -1,30 +1,5 @@
 # End Notes
 
-## TODOMVC
-
-[TODOMVC](https://todomvc.com) has proven itself useful to see how cleanly a
-framework separates model and view. In most cases if this is done well and a
-framework makes A and A easy, the it is good for most purposes. But here is where
-we see NiceGUI shine: "most purposes" does not include the wide array of devices
-that NiceGUI operates on, that few other frameworks can boast similar support for. But I digress, let's see the TODOMVC offerings in Python:
-
-### TODOMVC in Solara
-
-[Discussion](https://solara.dev/examples/utilities/todo)
-
-[Actual code](https://github.com/widgetti/solara/blob/master/solara/website/pages/examples/utilities/todo.py)
-
-### TODOMVC in ReactPy
-
-https://github.com/reactive-python/reactpy/discussions/976
-
-### TODOMVC in Pynecone
-
-If you scroll down [this page](https://pynecone.io/docs/library/layout/foreach) a bit, you will see a TODO example in Pynecone. I [expressed some concerns](https://github.com/pynecone-io/pynecone/discussions/1018#discussioncomment-5911321) about it.
-
-### TODOMVC in NiceGUI
-
-[Actual code](https://github.com/zauberzeug/nicegui/blob/main/examples/todo_list/main.py)
 
 ## React in Python –
 

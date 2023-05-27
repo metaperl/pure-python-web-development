@@ -157,6 +157,7 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="todomvc.html">TODOMVC Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="practical-guide.html">Practical Guide</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Class A Frameworks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="class-b.html">Class B Frameworks</a></li>
@@ -372,10 +373,6 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#non-linkable-anchor-tags">Non-linkable anchor tags:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application-gallery">Application Gallery</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Discussions</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datapane">Datapane</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#faqs">FAQs</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#why-vue-please-use-web-components">why Vue? Please use Web Components.</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#is-it-possible-to-integrate-this-with-libraries-like-plotly-or-bokeh">Is it possible to integrate this with libraries like plotly or bokeh?</a></li>
@@ -385,6 +382,10 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pynecone-vs-nicegui">Pynecone vs NiceGUI</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datapane">Datapane</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reactpy">ReactPy</a><ul class="nav section-nav flex-column">
@@ -516,15 +517,6 @@ In this section, we list products that are solving real-world problems and are r
 <p>“NiceGUI: Let any browser be the frontend for your Python code“</p>
 <p>NiceGUI versus JustPy – very informative discussion.</p>
 </section>
-</section>
-<section id="datapane">
-<h2>Datapane<a class="headerlink" href="#datapane" title="Permalink to this heading">#</a></h2>
-<p><a class="reference external" href="https://docs.datapane.com">Datapane</a> can be embedded in Flask or Django.</p>
-<p>I’d be curious to see how it compares with <a class="reference external" href="https://panel.holoviz.org">Panel</a></p>
-<section id="discussion">
-<h3>Discussion<a class="headerlink" href="#discussion" title="Permalink to this heading">#</a></h3>
-<p><a class="reference external" href="https://www.reddit.com/r/Python/comments/125lyru/datapane_build_internal_data_products_in_100/">Datapane - Build internal data products in 100% Python</a></p>
-</section>
 <section id="faqs">
 <h3>FAQs<a class="headerlink" href="#faqs" title="Permalink to this heading">#</a></h3>
 <section id="why-vue-please-use-web-components">
@@ -566,16 +558,25 @@ I think the biggest difference is the rendering approach. Flutter (and hence Fle
 <blockquote>
 <div><p>NiceGUI uses Vue/Quasar for the frontend while Pynecone is build on NextJS- NiceGUI generates HTML/JS/CSS via templates on the fly while Pynceone has an explicit compile step; so NiceGUI can be run with normal “Python” instead of using a command like “pc”</p>
 </div></blockquote>
-<p>w&gt; hile both frameworks use FastAPI for the backend, in NiceGUI you can actually use your own App and simply extend it with NiceGUI to provide additional UI; Pynecone hides FastAPI which makes it harder to provide other API endpoints (for example to serve images from memory instead of files).</p>
+<p>while both frameworks use FastAPI for the backend, in NiceGUI you can actually use your own App and simply extend it with NiceGUI to provide additional UI; Pynecone hides FastAPI which makes it harder to provide other API endpoints (for example to serve images from memory instead of files).</p>
 <blockquote>
 <div><p>NiceGUI can now run in a native window :-)</p>
 </div></blockquote>
 </section>
 </section>
 </section>
+<section id="datapane">
+<h2>Datapane<a class="headerlink" href="#datapane" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://docs.datapane.com">Datapane</a> can be embedded in Flask or Django.</p>
+<p>I’d be curious to see how it compares with <a class="reference external" href="https://panel.holoviz.org">Panel</a></p>
+<section id="discussion">
+<h3>Discussion<a class="headerlink" href="#discussion" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://www.reddit.com/r/Python/comments/125lyru/datapane_build_internal_data_products_in_100/">Datapane - Build internal data products in 100% Python</a></p>
+</section>
+</section>
 <section id="reactpy">
 <h2>ReactPy<a class="headerlink" href="#reactpy" title="Permalink to this heading">#</a></h2>
-<p>ReactPy is a library for building user interfaces in Python without having to write Javascript. ReactPy interfaces are made from components which look and behave similar to those found in ReactJS.</p>
+<p><a class="reference external" href="https://github.com/reactive-python/reactpy">ReactPy</a> is a library for building user interfaces in Python without having to write Javascript. ReactPy interfaces are made from components which look and behave similar to those found in ReactJS.</p>
 <p>In order to maintain full compatibility with all Python packages, <a class="reference external" href="https://www.reddit.com/r/Python/comments/1274w68/comment/jee45m8/?utm_source=share&amp;utm_medium=web2x&amp;context=3">ReactPy is server side rendered</a>. So all Python packages will work exactly as you expect. The only data that gets transmitted to the client is the current HTML document (with a little bit of extra magic).</p>
 <p>We don’t transpile between languages, so Python code gets to stay pure. Our ReactPy hooks and rendering logic are functionally equivalent to ReactJS, except we use Python asyncio to keep things moving.</p>
 <section id="tons-of-backends-to-use">
@@ -801,10 +802,6 @@ but a recent post to reddit showed that Dash can do it all – simple things, Ju
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#non-linkable-anchor-tags">Non-linkable anchor tags:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application-gallery">Application Gallery</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Discussions</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datapane">Datapane</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#faqs">FAQs</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#why-vue-please-use-web-components">why Vue? Please use Web Components.</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#is-it-possible-to-integrate-this-with-libraries-like-plotly-or-bokeh">Is it possible to integrate this with libraries like plotly or bokeh?</a></li>
@@ -814,6 +811,10 @@ but a recent post to reddit showed that Dash can do it all – simple things, Ju
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pynecone-vs-nicegui">Pynecone vs NiceGUI</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datapane">Datapane</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reactpy">ReactPy</a><ul class="nav section-nav flex-column">

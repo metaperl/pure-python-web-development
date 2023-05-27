@@ -86,20 +86,6 @@ Execute custom JS – discussion and link to demo
 
 NiceGUI versus JustPy – very informative discussion.
 
-
-
-## Datapane
-
-
-[Datapane](https://docs.datapane.com) can be embedded in Flask or Django.
-
-I'd be curious to see how it compares with [Panel](https://panel.holoviz.org)
-
-### Discussion
-
-[Datapane - Build internal data products in 100% Python](https://www.reddit.com/r/Python/comments/125lyru/datapane_build_internal_data_products_in_100/)
-
-
 ### FAQs
 
 #### why Vue? Please use Web Components.
@@ -136,14 +122,28 @@ r-trappe [states](https://www.reddit.com/r/Python/comments/127kiep/comment/jefuv
 
 > NiceGUI uses Vue/Quasar for the frontend while Pynecone is build on NextJS- NiceGUI generates HTML/JS/CSS via templates on the fly while Pynceone has an explicit compile step; so NiceGUI can be run with normal "Python" instead of using a command like "pc"
 
-w> hile both frameworks use FastAPI for the backend, in NiceGUI you can actually use your own App and simply extend it with NiceGUI to provide additional UI; Pynecone hides FastAPI which makes it harder to provide other API endpoints (for example to serve images from memory instead of files).
+while both frameworks use FastAPI for the backend, in NiceGUI you can actually use your own App and simply extend it with NiceGUI to provide additional UI; Pynecone hides FastAPI which makes it harder to provide other API endpoints (for example to serve images from memory instead of files).
 
 > NiceGUI can now run in a native window :-)
 
 
+## Datapane
+
+
+[Datapane](https://docs.datapane.com) can be embedded in Flask or Django.
+
+I'd be curious to see how it compares with [Panel](https://panel.holoviz.org)
+
+### Discussion
+
+[Datapane - Build internal data products in 100% Python](https://www.reddit.com/r/Python/comments/125lyru/datapane_build_internal_data_products_in_100/)
+
+
+
+
 ## ReactPy
 
-ReactPy is a library for building user interfaces in Python without having to write Javascript. ReactPy interfaces are made from components which look and behave similar to those found in ReactJS.
+[ReactPy](https://github.com/reactive-python/reactpy) is a library for building user interfaces in Python without having to write Javascript. ReactPy interfaces are made from components which look and behave similar to those found in ReactJS.
 
 In order to maintain full compatibility with all Python packages, [ReactPy is server side rendered](https://www.reddit.com/r/Python/comments/1274w68/comment/jee45m8/?utm_source=share&utm_medium=web2x&context=3). So all Python packages will work exactly as you expect. The only data that gets transmitted to the client is the current HTML document (with a little bit of extra magic).
 
