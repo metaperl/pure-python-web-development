@@ -45,6 +45,14 @@ https://github.com/zauberzeug/nicegui/discussions/21
 
 https://solara.dev/docs/tutorial/streamlit
 
+### Jacob Ferus criticized it
+
+Jacob Ferus reveals [some shocking limitations](https://medium.com/@dreamferus/should-you-build-your-next-app-in-streamlit-b01adc007f1c) in his article - 
+
+> Streamlit is very constrained. Oh, you would like to change the color of a button? Sorry, no way to do it. You want to add some Javascript/HTML/CSS, nope! Do you need a popup? No, not possible. Some would argue you could do some of these things but it will require ugly hacks. My point is, if you would like to do anything that isn’t part of the rather small set of existing options, you’re going to have a bad time. 
+
+He also covers the inefficiency issue that others have noticed.
+
 ## Performance
 
 Python is the second best language for any task and it's rarely the ideal choice for something that needs to run fast in a single process. That being said, there still need to be some minimum levels of responsiveness to remain useable.
