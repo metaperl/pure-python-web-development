@@ -19,6 +19,8 @@ But let's get back to the topic at hand. Glancing over these TODOMVC examples im
 
 [Actual code](https://github.com/widgetti/solara/blob/master/solara/website/pages/examples/utilities/todo.py)
 
+An [in-depth article](https://itnext.io/webapps-in-python-with-solara-a-streamlit-killer-ab6fcc7bf5d7) breaks down TODOMVC and discussing the advantages of Solara over Streamlit.
+
 ## TODOMVC in ReactPy
 
 https://github.com/reactive-python/reactpy/discussions/976
