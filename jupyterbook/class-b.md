@@ -278,6 +278,9 @@ In addition to what you see here, the Streamlit forum has a [show the community]
 SQL Formatter
 
 ### Discussions
+
+[Streamlit-Powered Python Web Apps for Team Research](https://www.youtube.com/watch?v=BUCIu4KwcAw)
+
 https://www.reddit.com/r/Python/comments/lnu1r9/i_made_a_covid19_immunityvaccination_tracker_and/
 
 ### Articles
