@@ -91,6 +91,9 @@ https://docs.pyscript.net/latest/guides/passing-objects.html
 https://docs.pyscript.net/latest/guides/http-requests.html
 
 ### Related Publications
+
+[PyScript Limitations for building data web apps](https://mljar.com/blog/pyscript-limitations/)
+
 “I made an interactive Pandas cheat sheet using PyScript“
 “Using the Azure SDK for Python in Pyodide and PyScript”
 https://www.reddit.com/r/Python/comments/ug1pf6/python_in_html_new_project_by_anaconda_with_all/
