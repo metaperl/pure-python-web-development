@@ -257,6 +257,8 @@ https://streamlit.io/ is very powerful and very popular, but adding features tha
 
 In addition to what you see here, the Streamlit forum has a [show the community](https://discuss.streamlit.io/c/streamlit-examples/9) section that boasts 14 posts per week.
 
+[Streamlit app for doing tarot readings with OpenAI](https://www.reddit.com/r/Python/comments/145t4rg/streamlit_app_for_doing_tarot_readings_with_openai/)
+
 “Made a Streamlit app to show demographic breakdowns by age, race, gender, and education in the biggest 100 US metro areas.”
 
 “Streamlit for Machine Learning Cheat Sheet“
