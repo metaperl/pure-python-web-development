@@ -257,6 +257,8 @@ https://streamlit.io/ is very powerful and very popular, but adding features tha
 
 In addition to what you see here, the Streamlit forum has a [show the community](https://discuss.streamlit.io/c/streamlit-examples/9) section that boasts 14 posts per week.
 
+An impressive [app that memorized all Archaix's knowledge from Youtube](https://archaix.streamlit.app). Archaix is a chronologist with a [youtube channel](https://www.youtube.com/c/archaix138) that boasts 100,000 followers.
+
 [Streamlit meets Headless BI]O(https://medium.com/gooddata-developers/streamlit-meets-headless-bi-cb6196b69671) 
 
 [Streamlit app for doing tarot readings with OpenAI](https://www.reddit.com/r/Python/comments/145t4rg/streamlit_app_for_doing_tarot_readings_with_openai/)
