@@ -157,6 +157,8 @@ ReactPy has official support for the following backends: Flask, FastAPI, Sanic, 
 
 ### Articles
 
+[ReactPy: Will it Dethrone JavaScript as the Top Choice?](https://poletto.dev/reactpy-will-it-dethrone-javascript-as-the-top-choice) 
+
 Getting started with Reactpy - https://www.kdnuggets.com/2023/06/getting-started-reactpy.html
 
 ### Discussions
