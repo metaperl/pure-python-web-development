@@ -273,8 +273,6 @@ An impressive [app that memorized all Archaix's knowledge from Youtube](https://
 
 “I created a Streamlit UI for OpenAI’s Whisper and added some basic scaffolding for transcript summarization“
 
-### Gallery
-
 “Easy Monitoring of dbt Cloud jobs with Streamlit “
 
 “Plotting all public transport in NL livestream using Streamlit”
@@ -290,6 +288,9 @@ SQL Formatter
 https://www.reddit.com/r/Python/comments/lnu1r9/i_made_a_covid19_immunityvaccination_tracker_and/
 
 ### Articles
+
+[How to Embed a Python Streamlit App in WordPress with Replit](https://www.youtube.com/watch?v=bgj-gab_fuc)
+
 “New Streamlit tutorial, 68 pages, 35 minimal app examples, focus on SQL+Streamlit”
 
 “Build Real-time Data Applications Quickly Using Streamlit And Prisma“
