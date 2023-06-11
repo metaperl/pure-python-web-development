@@ -257,6 +257,8 @@ https://streamlit.io/ is very powerful and very popular, but adding features tha
 
 In addition to what you see here, the Streamlit forum has a [show the community](https://discuss.streamlit.io/c/streamlit-examples/9) section that boasts 14 posts per week.
 
+[Streamlit running entirely in WebAssembly (using Pyodide)](https://edit.share.stlite.net) 
+
 [Streamlit audio recorder](https://github.com/stefanrmmr/streamlit_audio_recorder)
 
 An impressive [app that memorized all Archaix's knowledge from Youtube](https://archaix.streamlit.app). Archaix is a chronologist with a [youtube channel](https://www.youtube.com/c/archaix138) that boasts 100,000 followers.
