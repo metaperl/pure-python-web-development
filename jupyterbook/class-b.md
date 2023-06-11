@@ -307,6 +307,7 @@ https://analyticsindiamag.com/streamlit-vs-plotlydash-comparison-with-python-exa
 
 ### Resources
 
+[Streamlit Reddit Channel](https://www.reddit.com/r/StreamlitOfficial/)
 [Streamlit Community Cloud](https://streamlit.io/cloud) - Deploy, manage, and share your apps with the world,
 directly from Streamlit — all for free.
 [Streamlit forum](https://discuss.streamlit.io) 
