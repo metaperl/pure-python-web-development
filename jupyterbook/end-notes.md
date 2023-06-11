@@ -53,6 +53,10 @@ Jacob Ferus reveals [some shocking limitations](https://medium.com/@dreamferus/s
 
 He also covers the inefficiency issue that others have noticed.
 
+### Shiny assessed it
+
+Joe Cheng, in his [pydata nyc talk](https://youtu.be/ijRBbtT2tgc?t=342) explains why Shiny is preferable to Streamlit.
+
 ## Performance
 
 Python is the second best language for any task and it's rarely the ideal choice for something that needs to run fast in a single process. That being said, there still need to be some minimum levels of responsiveness to remain useable.
