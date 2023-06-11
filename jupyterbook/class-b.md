@@ -317,6 +317,8 @@ https://www.reddit.com/r/Python/comments/lnu1r9/i_made_a_covid19_immunityvaccina
 
 ### Articles
 
+[Talk To Your CSV: How To Visualize Your Data With Langchain And Streamlit](https://levelup.gitconnected.com/talk-to-your-csv-how-to-visualize-your-data-with-langchain-and-streamlit-5cb8a0db87e0)
+
 [How to Embed a Python Streamlit App in WordPress with Replit](https://www.youtube.com/watch?v=bgj-gab_fuc)
 
 “New Streamlit tutorial, 68 pages, 35 minimal app examples, focus on SQL+Streamlit”
