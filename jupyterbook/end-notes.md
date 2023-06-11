@@ -55,7 +55,7 @@ He also covers the inefficiency issue that others have noticed.
 
 ### Shiny assessed it
 
-Joe Cheng, in his [pydata nyc talk](https://youtu.be/ijRBbtT2tgc?t=342) explains why Shiny is preferable to Streamlit.
+Joe Cheng, in his [pydata nyc talk](https://youtu.be/ijRBbtT2tgc?t=342) explains why Shiny is preferable to Streamlit. He absolutely torches the "restart and run-all" model of Streamlit.
 
 ## Performance
 

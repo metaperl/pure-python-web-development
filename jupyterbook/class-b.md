@@ -103,7 +103,30 @@ No support for authorization
 
 
 ## Shiny for Python
-Shiny for Python has a clean API and good documentation. Like many class B solutions, it lacks the features for complete web applications – authentication, authorization and sessioning.
+[Shiny for Python](https://shiny.posit.co) has a clean API and good documentation. Like many class B solutions, it lacks the features for complete web applications – authentication, authorization and sessioning.
+
+The quickest way to get started is [shinyapps.io](https://www.shinyapps.io/), which is a hosted service for deploying Shiny applications. With shinyapps.io, you don’t need to set up a server; you just need to make an account on the site and then deploy the application there. Both free and paid tiers of service are available.
+
+Shiny also has an experimental mode called [Shinylive](https://shiny.posit.co/py/docs/shinylive.html) where you deploy to WebAssembly instead of a traditional client/server model. 
+
+I did not like the way that signals were handled in [the CPU demo](https://youtu.be/ijRBbtT2tgc?t=1162) by needing to use `invalidate_later` but I dont have a better approach either.
+
+The [brownian motion example](https://youtu.be/ijRBbtT2tgc?t=1412) was quite impressive. 
+
+### The verdict
+
+As already stated, it lacks the features for complete web applications – authentication, authorization and sessioning. Thus it is Class B.
+
+## Abstracloud
+
+[Abstracloud](https://www.abstracloud.com) reminds me of Gradio but with commercial restrictions. No on second thought, it reminds me of Anvil but with more commercial restrictions. The point is: they are entering the game late but costing more. The pricing model and non-FOSS distribution method seem to be a bit limiting. For instance, comparing their pricing model with Anvil’s, we see that we can have 50,000 data table rows in the free account at Anvil whereas any storage requires a jump up to the paid plan.
+
+### Publications
+https://www.reddit.com/r/Python/comments/wg13qr/lib_that_generates_web_uis_for_your_scripts_they/
+
+###Deliverables
+https://www.reddit.com/r/Python/comments/wg4ml7/i_made_a_simple_weight_tracker_that_displays/
+
 
 ## Htag
 Htag is a very powerful and elegantly implemented pure-python-web-dev solution. It is the most recent solution by a prolific, talented and motivated author. He gained a lot of experience from his previous products, Gtag and Wyc.
@@ -121,6 +144,7 @@ As the author states:
 Yes … the promise is here : it’s a GUI toolkit for building “beautiful” applications for mobile, web, and desktop from a single codebase.
 
 https://github.com/manatlan/htag#readme
+
 ### Demo
 A very impressive and expressive demo once it loads.
 

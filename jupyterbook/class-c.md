@@ -132,13 +132,7 @@ It offers a class-based approach to user interface generation. It operates using
 
 It primarily is good at building user interfaces for personal use. It is far older than Gradio.
 
-## Abstracloud
-Abstracloud reminds me of Gradio but with commercial restrictions. The pricing model and non-FOSS distribution method seem to be a bit limiting. For instance, comparing their pricing model with Anvil’s, we see that we can have 50,000 data table rows in the free account at Anvil whereas any storage requires a jump up to the paid plan.
 
-### Publications
-https://www.reddit.com/r/Python/comments/wg13qr/lib_that_generates_web_uis_for_your_scripts_they/
-###Deliverables
-https://www.reddit.com/r/Python/comments/wg4ml7/i_made_a_simple_weight_tracker_that_displays/
 ## Rapydscript
 https://github.com/atsepkov/RapydScript is a Class C system primarily because it is not Python and it is not Javascript. They do have an impressive set of gallery examples but the mailing list and source code have no activity since May 2021. When one attempts to make a new language, one must first have users as well as libraries and if there is any attrition in either, then the language becomes less desirable over time. We’ve seen it happen with Coffeescript as well as Cappucino and Objective-J. To be sure, Python has warts and Javascript has even more warts but I once saw an IRC chat where someone was arguing about rewriting Emacs in Common Lisp and the other person said: “your opinion is no substitute for millions of lines of working code”. In other words, a perfect language is nothing without libraries an userbase.
 
