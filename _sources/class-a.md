@@ -155,7 +155,11 @@ ReactPy has official support for the following backends: Flask, FastAPI, Sanic, 
 
 
 
+### Articles
 
+[ReactPy: Will it Dethrone JavaScript as the Top Choice?](https://poletto.dev/reactpy-will-it-dethrone-javascript-as-the-top-choice) 
+
+Getting started with Reactpy - https://www.kdnuggets.com/2023/06/getting-started-reactpy.html
 
 ### Discussions
 
@@ -196,7 +200,7 @@ Awesome Panel
 
 ## Atri
 
-Atri *can* be a pure python framework and it meets all Class A requirements. But at the same time, it is not limited to Python.
+[Atri](https://atrilabs.com) *can* be a pure python framework and it meets all Class A requirements. But at the same time, it is not limited to Python.
 
 On the surface Atri reminds me of Anvil (which is built on Skulpt) because of the visual GUI builder. But one difference is the customization of the UI is done via React in Atri but done via Python in Anvil.
 

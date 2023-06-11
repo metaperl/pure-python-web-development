@@ -103,7 +103,30 @@ No support for authorization
 
 
 ## Shiny for Python
-Shiny for Python has a clean API and good documentation. Like many class B solutions, it lacks the features for complete web applications – authentication, authorization and sessioning.
+[Shiny for Python](https://shiny.posit.co) has a clean API and good documentation. Like many class B solutions, it lacks the features for complete web applications – authentication, authorization and sessioning.
+
+The quickest way to get started is [shinyapps.io](https://www.shinyapps.io/), which is a hosted service for deploying Shiny applications. With shinyapps.io, you don’t need to set up a server; you just need to make an account on the site and then deploy the application there. Both free and paid tiers of service are available.
+
+Shiny also has an experimental mode called [Shinylive](https://shiny.posit.co/py/docs/shinylive.html) where you deploy to WebAssembly instead of a traditional client/server model. 
+
+I did not like the way that signals were handled in [the CPU demo](https://youtu.be/ijRBbtT2tgc?t=1162) by needing to use `invalidate_later` but I dont have a better approach either.
+
+The [brownian motion example](https://youtu.be/ijRBbtT2tgc?t=1412) was quite impressive. 
+
+### The verdict
+
+As already stated, it lacks the features for complete web applications – authentication, authorization and sessioning. Thus it is Class B.
+
+## Abstracloud
+
+[Abstracloud](https://www.abstracloud.com) reminds me of Gradio but with commercial restrictions. No on second thought, it reminds me of Anvil but with more commercial restrictions. The point is: they are entering the game late but costing more. The pricing model and non-FOSS distribution method seem to be a bit limiting. For instance, comparing their pricing model with Anvil’s, we see that we can have 50,000 data table rows in the free account at Anvil whereas any storage requires a jump up to the paid plan.
+
+### Publications
+https://www.reddit.com/r/Python/comments/wg13qr/lib_that_generates_web_uis_for_your_scripts_they/
+
+###Deliverables
+https://www.reddit.com/r/Python/comments/wg4ml7/i_made_a_simple_weight_tracker_that_displays/
+
 
 ## Htag
 Htag is a very powerful and elegantly implemented pure-python-web-dev solution. It is the most recent solution by a prolific, talented and motivated author. He gained a lot of experience from his previous products, Gtag and Wyc.
@@ -121,6 +144,7 @@ As the author states:
 Yes … the promise is here : it’s a GUI toolkit for building “beautiful” applications for mobile, web, and desktop from a single codebase.
 
 https://github.com/manatlan/htag#readme
+
 ### Demo
 A very impressive and expressive demo once it loads.
 
@@ -257,6 +281,16 @@ https://streamlit.io/ is very powerful and very popular, but adding features tha
 
 In addition to what you see here, the Streamlit forum has a [show the community](https://discuss.streamlit.io/c/streamlit-examples/9) section that boasts 14 posts per week.
 
+[Streamlit running entirely in WebAssembly (using Pyodide)](https://edit.share.stlite.net) 
+
+[Streamlit audio recorder](https://github.com/stefanrmmr/streamlit_audio_recorder)
+
+An impressive [app that memorized all Archaix's knowledge from Youtube](https://archaix.streamlit.app). Archaix is a chronologist with a [youtube channel](https://www.youtube.com/c/archaix138) that boasts 100,000 followers.
+
+[Streamlit meets Headless BI]O(https://medium.com/gooddata-developers/streamlit-meets-headless-bi-cb6196b69671) 
+
+[Streamlit app for doing tarot readings with OpenAI](https://www.reddit.com/r/Python/comments/145t4rg/streamlit_app_for_doing_tarot_readings_with_openai/)
+
 “Made a Streamlit app to show demographic breakdowns by age, race, gender, and education in the biggest 100 US metro areas.”
 
 “Streamlit for Machine Learning Cheat Sheet“
@@ -267,8 +301,6 @@ In addition to what you see here, the Streamlit forum has a [show the community]
 
 “I created a Streamlit UI for OpenAI’s Whisper and added some basic scaffolding for transcript summarization“
 
-### Gallery
-
 “Easy Monitoring of dbt Cloud jobs with Streamlit “
 
 “Plotting all public transport in NL livestream using Streamlit”
@@ -278,9 +310,17 @@ In addition to what you see here, the Streamlit forum has a [show the community]
 SQL Formatter
 
 ### Discussions
+
+[Streamlit-Powered Python Web Apps for Team Research](https://www.youtube.com/watch?v=BUCIu4KwcAw)
+
 https://www.reddit.com/r/Python/comments/lnu1r9/i_made_a_covid19_immunityvaccination_tracker_and/
 
 ### Articles
+
+[Talk To Your CSV: How To Visualize Your Data With Langchain And Streamlit](https://levelup.gitconnected.com/talk-to-your-csv-how-to-visualize-your-data-with-langchain-and-streamlit-5cb8a0db87e0)
+
+[How to Embed a Python Streamlit App in WordPress with Replit](https://www.youtube.com/watch?v=bgj-gab_fuc)
+
 “New Streamlit tutorial, 68 pages, 35 minimal app examples, focus on SQL+Streamlit”
 
 “Build Real-time Data Applications Quickly Using Streamlit And Prisma“
@@ -293,6 +333,7 @@ https://analyticsindiamag.com/streamlit-vs-plotlydash-comparison-with-python-exa
 
 ### Resources
 
+[Streamlit Reddit Channel](https://www.reddit.com/r/StreamlitOfficial/)
 [Streamlit Community Cloud](https://streamlit.io/cloud) - Deploy, manage, and share your apps with the world,
 directly from Streamlit — all for free.
 [Streamlit forum](https://discuss.streamlit.io) 
