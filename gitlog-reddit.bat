@@ -1,1 +1,1 @@
-git log --pretty=format:"* %cs %s"
+git log --pretty="format:* %%cs %%s"
