@@ -333,6 +333,7 @@ https://analyticsindiamag.com/streamlit-vs-plotlydash-comparison-with-python-exa
 
 ### Resources
 
+[Streamlit Login/ Sign Up Library](https://pypi.org/project/streamlit-login-auth-ui/)
 [Streamlit Reddit Channel](https://www.reddit.com/r/StreamlitOfficial/)
 [Streamlit Community Cloud](https://streamlit.io/cloud) - Deploy, manage, and share your apps with the world,
 directly from Streamlit — all for free.
