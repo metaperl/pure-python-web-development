@@ -198,6 +198,8 @@ Panel is part of [the  impressive Holoviz tool stack](https://holoviz.org). It i
 
 [using MapLibre with ReactiveHTML](https://discourse.holoviz.org/t/issue-using-maplibre-with-reactivehtml/5616/4)
 
+[A tree widget from jsTree](https://discourse.holoviz.org/t/a-tree-widget-from-jstree/1904/11)
+
 ## Atri
 
 [Atri](https://atrilabs.com) *can* be a pure python framework and it meets all Class A requirements. But at the same time, it is not limited to Python.
