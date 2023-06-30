@@ -191,9 +191,8 @@ YC Prototypes #2: Building Magic in 2.4 hours
 ## Panel
 Panel is part of an impressive tool stack. It is focused on making visualization simple and powerful.
 
-Built on Bokeh
-Application Gallery
-Awesome Panel
+### Built on Bokeh
+
 
 ### Application Gallery
 
