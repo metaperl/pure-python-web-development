@@ -189,7 +189,7 @@ Anvil uses skulpt under the hood.
 YC Prototypes #2: Building Magic in 2.4 hours
 
 ## Panel
-Panel is part of an impressive tool stack. It is focused on making visualization simple and powerful.
+Panel is part of [the  impressive Holoviz tool stack](https://holoviz.org). It is focused on making visualization simple and powerful.
 
 ### Built on Bokeh
 
