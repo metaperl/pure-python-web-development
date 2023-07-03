@@ -193,10 +193,17 @@ Panel is part of [the  impressive Holoviz tool stack](https://holoviz.org). It i
 
 ### Built on Bokeh
 
+### Discussions
+
+["Helping a user use 
+plotly graphs
+ and interactivity with Panel"](https://discourse.holoviz.org/t/plotly-figure-not-updating-correctly-from-panel-widgets-connected-using-panel-bind/5628)
 
 ### Application Gallery
 
 [using MapLibre with ReactiveHTML](https://discourse.holoviz.org/t/issue-using-maplibre-with-reactivehtml/5616/4)
+
+[A tree widget from jsTree](https://discourse.holoviz.org/t/a-tree-widget-from-jstree/1904/11)
 
 ## Atri
 
