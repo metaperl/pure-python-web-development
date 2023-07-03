@@ -193,6 +193,11 @@ Panel is part of [the  impressive Holoviz tool stack](https://holoviz.org). It i
 
 ### Built on Bokeh
 
+### Discussions
+
+["Helping a user use 
+plotly graphs
+ and interactivity with Panel"](https://discourse.holoviz.org/t/plotly-figure-not-updating-correctly-from-panel-widgets-connected-using-panel-bind/5628)
 
 ### Application Gallery
 
