@@ -36,3 +36,11 @@ This [Youtube video](https://www.youtube.com/watch?v=Tucr8Ta-kq4) covers the sam
 ## TODOMVC in Shiny
 
 This [Medium article](https://levelup.gitconnected.com/building-a-to-do-app-with-shiny-for-python-e2982a0c2d78) covers [the source code of a TODOMVC app in Shiny](https://gist.github.com/FerusAndBeyond/9c6144bb57f477521e1608f18feefc9f#file-shiny5-py).
+
+
+## TODOMVC in HTag
+
+[Actual code](https://github.com/manatlan/htag/blob/main/examples/todomvc.py)
+
+[DEMO (repl)](https://raw.githack.com/manatlan/htag/main/examples/pyscript_demo.html?115-todomvc.py) in a pyscript/html page.
+
