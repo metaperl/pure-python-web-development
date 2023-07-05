@@ -32,3 +32,7 @@ If you scroll down [this page](https://pynecone.io/docs/library/layout/foreach) 
 ## TODOMVC in Flet
 
 This [Youtube video](https://www.youtube.com/watch?v=Tucr8Ta-kq4) covers the same ground. I've requested a link to source code.
+
+## TODOMVC in Shiny
+
+This [Medium article](https://levelup.gitconnected.com/building-a-to-do-app-with-shiny-for-python-e2982a0c2d78) covers [the source code of a TODOMVC app in Shiny]https://gist.github.com/FerusAndBeyond/9c6144bb57f477521e1608f18feefc9f#file-shiny5-py.
