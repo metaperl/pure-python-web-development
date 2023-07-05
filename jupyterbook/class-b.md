@@ -2,7 +2,31 @@
 
 Class B frameworks are perfect for limited-scope projects, but don't complain when you lack features!
 
+## Htag
+[Htag](https://github.com/manatlan/htag/tree/main) is a very powerful and elegantly implemented pure-python-web-dev solution. It is the most recent solution by a prolific, talented and motivated author. He gained a lot of experience from his previous products, Gtag and Wyc.
 
+The reason it is Class B is because it is a builder. A very flexible and powerful builder with the ability to be run in ALL of following deployment scenarios:
+
+For a desktop app : You can use the PyWebView runner, which will run the UI in a pywebview container (or “ChromeApp runner”, in a local chrome app mode).
+For a web app : You can use the WebHTTP runner, which will run the UI in a web server, and serve the UI on client side, in a browser.
+For a android app : You can use the AndroidApp runner, which will run the UI in a kiwi webview thru tornado webserver, and can be embedded in an apk (recipes)
+For a pyscript app : you can use the PyScript runner, which will run completly in client side
+In fact any display portal which can render html/js/css, whether it be a browser, a pywebview, an android/apk, or anything based on cef, just needs an htag runner for htag to be able to render to it.
+
+As the author states:
+
+Yes … the promise is here : it’s a GUI toolkit for building “beautiful” applications for mobile, web, and desktop from a single codebase.
+
+https://github.com/manatlan/htag#readme
+
+### Demo
+A very impressive and expressive demo once it loads.
+
+### Discussions
+“Using htag to create a **matplotlib** app for desktop, web or mobile”
+“HTag : an IRL mobile app for android : a tricount clone … using py3“
+HTag : A new GUI tookit for web/desktop/android from a single codebaseFirst frontend lib for pyscript ;-)”
+“htag 0.4.7 (a gui/frontend lib which works very well in pyscript)”
 
 ## Taipy
 
@@ -128,31 +152,7 @@ https://www.reddit.com/r/Python/comments/wg13qr/lib_that_generates_web_uis_for_y
 https://www.reddit.com/r/Python/comments/wg4ml7/i_made_a_simple_weight_tracker_that_displays/
 
 
-## Htag
-Htag is a very powerful and elegantly implemented pure-python-web-dev solution. It is the most recent solution by a prolific, talented and motivated author. He gained a lot of experience from his previous products, Gtag and Wyc.
 
-The reason it is Class B is because it is a builder. A very flexible and powerful builder with the ability to be run in ALL of following deployment scenarios:
-
-For a desktop app : You can use the PyWebView runner, which will run the UI in a pywebview container (or “ChromeApp runner”, in a local chrome app mode).
-For a web app : You can use the WebHTTP runner, which will run the UI in a web server, and serve the UI on client side, in a browser.
-For a android app : You can use the AndroidApp runner, which will run the UI in a kiwi webview thru tornado webserver, and can be embedded in an apk (recipes)
-For a pyscript app : you can use the PyScript runner, which will run completly in client side
-In fact any display portal which can render html/js/css, whether it be a browser, a pywebview, an android/apk, or anything based on cef, just needs an htag runner for htag to be able to render to it.
-
-As the author states:
-
-Yes … the promise is here : it’s a GUI toolkit for building “beautiful” applications for mobile, web, and desktop from a single codebase.
-
-https://github.com/manatlan/htag#readme
-
-### Demo
-A very impressive and expressive demo once it loads.
-
-### Discussions
-“Using htag to create a **matplotlib** app for desktop, web or mobile”
-“HTag : an IRL mobile app for android : a tricount clone … using py3“
-HTag : A new GUI tookit for web/desktop/android from a single codebaseFirst frontend lib for pyscript ;-)”
-“htag 0.4.7 (a gui/frontend lib which works very well in pyscript)”
 ## Neutron
 Neutron allows developers to build native Python apps along with CSS and HTML for frontend design. Based on pywebview for it’s native GUI window and JavaScript-Python communication.
 
