@@ -59,7 +59,9 @@ Joe Cheng, in his [pydata nyc talk](https://youtu.be/ijRBbtT2tgc?t=342) explains
 
 ### Panel developed a transition guide
 
-The [Panel project](https://panel.holoviz.org) has developed [a guide on switching from Streamlit to Panel](https://panel.holoviz.org/how_to/streamlit_migration/index.html). In doing so, there was no section explicitly motivating such a switch, but I did notice this in [one section](https://panel.holoviz.org/how_to/streamlit_migration/interactivity.html):
+
+
+The [Panel project](https://panel.holoviz.org) has several articles in which [they compare panel to other frameworks](https://panel.holoviz.org/explanation/index.html#technology-comparisons). Recently, they developed [a guide on switching from Streamlit to Panel](https://panel.holoviz.org/how_to/streamlit_migration/index.html). In doing so, there was no section explicitly motivating such a switch, but I did notice this in [one section](https://panel.holoviz.org/how_to/streamlit_migration/interactivity.html):
 
 Both Streamlit and Panel are reactive frameworks that react when you interact with your application. But they work very differently:
 
