@@ -379,6 +379,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solara-improved-on-it">Solara improved on it</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jacob-ferus-criticized-it">Jacob Ferus criticized it</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shiny-assessed-it">Shiny assessed it</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#panel-developed-a-transition-guide">Panel developed a transition guide</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#performance">Performance</a><ul class="nav section-nav flex-column">
@@ -459,6 +460,22 @@ Transcrypt is <a class="reference external" href="https://may69.com/downgrades-a
 <section id="shiny-assessed-it">
 <h3>Shiny assessed it<a class="headerlink" href="#shiny-assessed-it" title="Permalink to this heading">#</a></h3>
 <p>Joe Cheng, in his <a class="reference external" href="https://youtu.be/ijRBbtT2tgc?t=342">pydata nyc talk</a> explains why Shiny is preferable to Streamlit. He absolutely torches the “restart and run-all” model of Streamlit.</p>
+</section>
+<section id="panel-developed-a-transition-guide">
+<h3>Panel developed a transition guide<a class="headerlink" href="#panel-developed-a-transition-guide" title="Permalink to this heading">#</a></h3>
+<p>The <a class="reference external" href="https://panel.holoviz.org">Panel project</a> has developed <a class="reference external" href="https://panel.holoviz.org/how_to/streamlit_migration/index.html">a guide on switching from Streamlit to Panel</a>. In doing so, there was no section explicitly motivating such a switch, but I did notice this in <a class="reference external" href="https://panel.holoviz.org/how_to/streamlit_migration/interactivity.html">one section</a>:</p>
+<p>Both Streamlit and Panel are reactive frameworks that react when you interact with your application. But they work very differently:</p>
+<p>In Streamlit</p>
+<ul class="simple">
+<li><p>your script is run once when a user visits the page.</p></li>
+<li><p>your script is rerun top to bottom on user interactions.</p></li>
+</ul>
+<p>In Panel</p>
+<ul class="simple">
+<li><p>your script is run once when a user visits the page.</p></li>
+<li><p>only specific, bound functions are rerun on user interactions.</p></li>
+</ul>
+<p>With Panel’s interactive architecture you will be able to develop and maintain larger and more complex apps.</p>
 </section>
 </section>
 <section id="performance">
@@ -550,6 +567,7 @@ Transcrypt is <a class="reference external" href="https://may69.com/downgrades-a
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solara-improved-on-it">Solara improved on it</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jacob-ferus-criticized-it">Jacob Ferus criticized it</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shiny-assessed-it">Shiny assessed it</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#panel-developed-a-transition-guide">Panel developed a transition guide</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#performance">Performance</a><ul class="nav section-nav flex-column">

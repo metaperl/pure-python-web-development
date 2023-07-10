@@ -57,6 +57,25 @@ He also covers the inefficiency issue that others have noticed.
 
 Joe Cheng, in his [pydata nyc talk](https://youtu.be/ijRBbtT2tgc?t=342) explains why Shiny is preferable to Streamlit. He absolutely torches the "restart and run-all" model of Streamlit.
 
+### Panel developed a transition guide
+
+The [Panel project](https://panel.holoviz.org) has developed [a guide on switching from Streamlit to Panel](https://panel.holoviz.org/how_to/streamlit_migration/index.html). In doing so, there was no section explicitly motivating such a switch, but I did notice this in [one section](https://panel.holoviz.org/how_to/streamlit_migration/interactivity.html):
+
+Both Streamlit and Panel are reactive frameworks that react when you interact with your application. But they work very differently:
+
+In Streamlit
+
+- your script is run once when a user visits the page.
+- your script is rerun top to bottom on user interactions.
+
+In Panel
+- your script is run once when a user visits the page.
+- only specific, bound functions are rerun on user interactions.
+
+With Panel's interactive architecture you will be able to develop and maintain larger and more complex apps.
+
+
+
 ## Performance
 
 Python is the second best language for any task and it's rarely the ideal choice for something that needs to run fast in a single process. That being said, there still need to be some minimum levels of responsiveness to remain useable.
