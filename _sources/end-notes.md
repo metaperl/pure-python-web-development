@@ -76,6 +76,16 @@ In Panel
 
 With Panel's interactive architecture you will be able to develop and maintain larger and more complex apps.
 
+Also, [a recent tweet by Marc Skov Madsen](https://twitter.com/MarcSkovMadsen/status/1676958078632353792) mentions a number of advantages:
+
+- integrations to HoloViz, ipywidgets and VTK
+- events and crossfiltering
+-streaming and async
+- possibility to unittest with pytest
+- no “run script top to bottom” or session state limitations
+- works in Jupyter too
+
+And much, much more
 
 
 ## Performance

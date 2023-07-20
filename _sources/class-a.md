@@ -3,6 +3,32 @@
 Class A: Fully-featured, Industrial Strength Rock-solid Products
 In this section, we list products that are solving real-world problems and are ready for production deployment… just download, install and follow the instructions to whip out a solution to your issue PRONTO, because hundreds of other have already done the same.
 
+## Reflex (formerly Pynecone)
+Pynecone  compiles to a traditional React (NextJS flavor) app. Wrapping React components is quite straightforward. The authors had used Streamlit in the past, and found it great to get started with but for more complex apps found it limiting in terms of components, styling, and performance. In Pynecone, the frontend compiles down to a NextJS app, so you have full customizability on how the app looks. Streamlit can also be slow in some cases as it reruns the entire script on user events, whereas in Pynecone only the state deltas are transmitted. Also for performance and SEO nextjs is great.
+
+### Scalability-a-go-go!
+Pynecone has excellent scalability: you can horizontally scale and connect your servers to a Redis instance so they can access the user state. The authors use FastAPI for their Python server behind the scenes for handling frontend events and sending back state deltas.
+
+Also, when running a Pynecone app in production mode, you can use NextJS SSG to prerender the entire frontend to html.
+
+### Reference links
+Official site - https://reflex.dev
+
+github - https://github.com/reflex-dev/reflex
+
+### Application Gallery
+https://pynecone.io/docs/gallery
+
+### Discussion
+
+[Pynecone is now Reflex](https://www.reddit.com/r/Python/comments/1545w7e/pynecone_is_now_reflex_web_apps_in_pure_python/)
+
+https://www.reddit.com/r/Python/comments/zh0pmy/pynecone_web_apps_in_pure_python/
+
+“Show HN Dec 14 2022“ - https://news.ycombinator.com/item?id=33922754
+
+
+
 ## Lona
 
 A distinguishing feature of Lona is that It abstracts web on the DOM level. This way you can build whatever you can think of, and not only use the widgets, the developers provide.
@@ -282,24 +308,6 @@ We are talking real power here. It’s basically a corporate supported version o
 ### Discussions
 “Combining Flet with FastAPI“
 “Python is great for GUI (UI)/Front End Design . If you really want to give your boring Python Script a nice looking User Interface, then you definitely should check out this 30-min Tutorial. A Flutter for Python Library called Flet will be used here. And it is Cross Platformed !“
-
-## Pynecone
-Pynecone  compiles to a traditional React (NextJS flavor) app. Wrapping React components is quite straightforward. The authors had used Streamlit in the past, and found it great to get started with but for more complex apps found it limiting in terms of components, styling, and performance. In Pynecone, the frontend compiles down to a NextJS app, so you have full customizability on how the app looks. Streamlit can also be slow in some cases as it reruns the entire script on user events, whereas in Pynecone only the state deltas are transmitted. Also for performance and SEO nextjs is great.
-
-### Scalability-a-go-go!
-Pynecone has excellent scalability: you can horizontally scale and connect your servers to a Redis instance so they can access the user state. The authors use FastAPI for their Python server behind the scenes for handling frontend events and sending back state deltas.
-
-Also, when running a Pynecone app in production mode, you can use NextJS SSG to prerender the entire frontend to html.
-
-### Reference links
-Official site github
-
-### Application Gallery
-https://pynecone.io/docs/gallery
-
-### Discussion
-https://www.reddit.com/r/Python/comments/zh0pmy/pynecone_web_apps_in_pure_python/
-“Show HN Dec 14 2022“
 
 
 
