@@ -1,5 +1,16 @@
 # Class Other
 
+## Jupyter Notebook only
+
+### anywidget
+
+https://github.com/manzt/anywidget
+
+https://blog.jupyter.org/anywidget-jupyter-widgets-made-easy-164eb2eae102
+
+
+
+
 ## HTML CSS Only
 
 ### PyVibe - produce HTML for use in other frameworks
