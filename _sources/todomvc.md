@@ -42,7 +42,10 @@ This [Youtube video](https://www.youtube.com/watch?v=Tucr8Ta-kq4) covers the sam
 
 ## TODOMVC in Shiny
 
-This [Medium article](https://levelup.gitconnected.com/building-a-to-do-app-with-shiny-for-python-e2982a0c2d78) covers [the source code of a TODOMVC app in Shiny](https://gist.github.com/FerusAndBeyond/9c6144bb57f477521e1608f18feefc9f#file-shiny5-py).
+This [Medium article](https://levelup.gitconnected.com/building-a-to-do-app-with-shiny-for-python-e2982a0c2d78) covers [the source code of a TODOMVC app in Shiny](https://gist.github.com/FerusAndBeyond/9c6144bb57f477521e1608f18feefc9f#file-shiny5-py). Gordon Shotwell
+has also offered [an alternative implementation](https://github.com/metaperl/pure-python-web-development/issues/5#issuecomment-1651668617)
+which he feels is simpler.
+
 
 
 
