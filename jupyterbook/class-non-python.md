@@ -11,6 +11,9 @@ Many people who wish to remain in Django/Flask land [opt for HTMX](https://news.
 
 Through [HTMX](https://htmx.org), a web framework has access to AJAX, CSS Transitions, WebSockets and Server Sent Events directly in HTML, through [attributes](https://htmx.org/reference/#attributes).
 
+[PyHAT](https://github.com/PyHAT-stack/awesome-python-htmx) - collects resources on building websites using
+Python, HTMX and Tailwind-CSS.
+
 Relevant articles:
 * ["A 'No JS' Solution for Dynamic Search in Django"](https://fly.io/blog/a-no-js-solution-for-dynamic-search-in-django/)
 
