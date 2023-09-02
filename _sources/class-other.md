@@ -1,5 +1,8 @@
 # Class Other
 
+Class Other is for things that had no intention of being a complete web framework.
+
+
 ## Jupyter Notebook only
 
 ### anywidget
@@ -9,7 +12,12 @@ https://github.com/manzt/anywidget
 https://blog.jupyter.org/anywidget-jupyter-widgets-made-easy-164eb2eae102
 
 
+## Wrapping Leaflet.js for Python
 
+[Folium](https://github.com/python-visualization/folium) allows one to render maps in pure Python via
+abstraction of the Leaflet.js library.
+
+A related article is https://www.reddit.com/r/Python/comments/15lsla3/how_i_used_python_and_folium_to_map_my_hiking/"
 
 ## HTML CSS Only
 
