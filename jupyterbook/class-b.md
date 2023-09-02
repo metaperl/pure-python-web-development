@@ -2,6 +2,17 @@
 
 Class B frameworks are perfect for limited-scope projects, but don't complain when you lack features!
 
+## Dara
+
+[Dara](https://dara.causalens.com) is a very impressive offering which could easily be Class A but they 
+[have not demonstrated sessions and authorization](https://www.reddit.com/r/Python/comments/1614om5/comment/jxwdzs6/?utm_source=share&utm_medium=web2x&context=3) and [have not responded to numerous other questions](https://github.com/causalens/dara/discussions/58).
+
+The official description of Dara is "Build decision-making apps in Python" using interactive graphs and applications.  
+
+The [documentation](https://dara.causalens.com/docs/category/build-dara-apps) is copious and it looks like they will
+have a huge client base. 
+
+
 ## Htag
 [Htag](https://github.com/manatlan/htag/tree/main) is a very powerful and elegantly implemented pure-python-web-dev solution. It is the most recent solution by a prolific, talented and motivated author. He gained a lot of experience from his previous products, Gtag and Wyc.
 
