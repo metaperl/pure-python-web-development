@@ -12,6 +12,11 @@ The official description of Dara is "Build decision-making apps in Python" using
 The [documentation](https://dara.causalens.com/docs/category/build-dara-apps) is copious and it looks like they will
 have a huge client base. 
 
+## Trame
+
+[Trame](https://kitware.github.io/trame/) offers stunning visualization by seamlessly providing a Python API to a 
+plethora of open source libraries  such as Vuetify, Altair, Vega, deck.gl, VTK, ParaView, and more. It can also be [deployed in a wide number of places](https://kitware.github.io/trame/docs/deploy-pypi.html) from desktop to cloud.
+
 
 ## Htag
 [Htag](https://github.com/manatlan/htag/tree/main) is a very powerful and elegantly implemented pure-python-web-dev solution. It is the most recent solution by a prolific, talented and motivated author. He gained a lot of experience from his previous products, Gtag and Wyc.
