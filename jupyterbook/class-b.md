@@ -39,6 +39,14 @@ A very impressive and expressive demo once it loads.
 HTag : A new GUI tookit for web/desktop/android from a single codebaseFirst frontend lib for pyscript ;-)”
 “htag 0.4.7 (a gui/frontend lib which works very well in pyscript)”
 
+## SimplePyDash
+
+[SimplePyDash](https://github.com/ValerioB88/simple-pydash), according to the author, is a versatile, browser-based dashboard designed for real-time data plotting. With a focus on simplicity, it allows Python developers to easily visualize data streams without complex setup or dependencies.
+
+Although originally developed to facilitate real-time plotting of OpenAI Gym environments for observing agent behavior, the versatility of SimplePyDash extends its utility beyond this use case, making it an excellent tool for many other data visualization scenarios.
+
+Under the hood, SimplePyDash leverages the [FastAPI](https://fastapi.tiangolo.com/) web framework and uses [WebSocket](https://en.wikipedia.org/wiki/WebSocket) for bidirectional communication.
+
 ## Taipy
 
 [Taipy](https://www.taipy.io) is a strong Class B framework. The enterprise version could qualify as Class A because it supports 
