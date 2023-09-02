@@ -17,6 +17,8 @@ https://blog.jupyter.org/anywidget-jupyter-widgets-made-easy-164eb2eae102
 [Folium](https://github.com/python-visualization/folium) allows one to render maps in pure Python via
 abstraction of the Leaflet.js library.
 
+A related article is https://www.reddit.com/r/Python/comments/15lsla3/how_i_used_python_and_folium_to_map_my_hiking/"
+
 ## HTML CSS Only
 
 ### PyVibe - produce HTML for use in other frameworks
