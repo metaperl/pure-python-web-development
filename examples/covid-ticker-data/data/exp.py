@@ -2,8 +2,11 @@ import pandas as pd
 
 from nicegui import ui
 
+chart = None
+
 
 def plot(datums):
+    global chart
     chart = ui.chart({
         'chart': {
             'type': 'spline',
@@ -53,6 +56,7 @@ def example_2():
     data = ticker_and_close('PTON', source)
     plot([data])
 
+
 def example_3():
     """Plot all 3 tickers in CSV file."""
 
@@ -63,8 +67,32 @@ def example_3():
     datums = [ticker_and_close(x, source) for x in "PTON TDOC ZM".split()]
     plot(datums)
 
+
+def plot_selected(selected):
+    source = pd.read_csv('ticker-data.csv')
+    source['Date'] = pd.to_datetime(source['Date'])
+    datums = [ticker_and_close(x, source) for x in selected]
+
+    plot(datums)
+
+
+def example_4():
+    source = pd.read_csv('ticker-data.csv')
+    source['Date'] = pd.to_datetime(source['Date'])
+    all_tickers = source.Ticker.unique()
+    all_tickers_list = all_tickers.tolist()
+    print(f"{all_tickers_list=}")
+
+    ui.select(all_tickers_list, multiple=True, value=all_tickers_list,
+              label='with chips', on_change=lambda e: plot_selected(e.value)
+              ).classes('w-64').props('use-chips')
+
+    plot_selected(all_tickers_list)
+
+
 # toy_example()
 # example_2()
 # example_3()
+example_4()
 
 ui.run()
