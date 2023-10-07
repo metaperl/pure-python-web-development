@@ -53,6 +53,11 @@ Jacob Ferus reveals [some shocking limitations](https://medium.com/@dreamferus/s
 
 He also covers the inefficiency issue that others have noticed.
 
+### Taipy passed on Streamlit as well.
+
+> we created Taipy because we found that Streamlit fell short when it came to production projects. The whole re-running of your entire code when you press a button and having the front and back on the same thread makes any app that is a bit complex unusable. We also wanted to focus on other business needs like proper support for multi-user, Jupyter, and data orchestration.
+> -- [Alyx1337](https://www.reddit.com/r/Python/comments/171dyn9/comment/k3st6ns/?utm_source=share&utm_medium=web2x&context=3)
+
 ### Shiny assessed it
 
 Joe Cheng, in his [pydata nyc talk](https://youtu.be/ijRBbtT2tgc?t=342) explains why Shiny is preferable to Streamlit. He absolutely torches the "restart and run-all" model of Streamlit.

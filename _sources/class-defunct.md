@@ -1,6 +1,20 @@
 # Class Defunct: defunct products
 This section keeps track of products that are no longer maintained and may not address modern web application development concern.
 
+## Datapane
+
+
+[Datapane](https://docs.datapane.com) can be embedded in Flask or Django.
+
+I'd be curious to see how it compares with [Panel](https://panel.holoviz.org)
+
+### Discussion
+
+[Datapane - Build internal data products in 100% Python](https://www.reddit.com/r/Python/comments/125lyru/datapane_build_internal_data_products_in_100/)
+
+
+
+
 ## Dashborg
 It may be a bit harsh to classify Dashborg as defunct. But the slack invite link is not working and the repos do not have recent commit. in fact, the main dashborg product is not FOSS, only the back-end SDKs are. The userbase appears small and there are no documented real-world use cases.
 
