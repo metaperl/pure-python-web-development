@@ -4,15 +4,8 @@ from nicegui import ui
 
 from loguru import logger
 
-import pprint
-
-chart = None
-
-
 def plot(datums):
-    global chart
-
-    chart = ui.chart({
+    ui.chart({
         'chart': {
             'type': 'spline',
         },
@@ -32,13 +25,6 @@ def plot(datums):
     }, type='stockChart', extras=['stock'])
 
 
-def toy_example():
-    data1 = {'name': 'alice', 'data': [31, 148, 33, 68, 75, 43]}
-    data2 = {'name': 'bob', 'data': [3, 28, 7, 5, 8, 3]}
-    data3 = {'name': 'john', 'data': [1, 4, 0, 8, 9, 0]}
-    plot([data1, data2, data3])
-
-
 def ticker_and_close(ticker, df):
     """Return a dictionary suitable for plotting.
 
@@ -51,45 +37,11 @@ def ticker_and_close(ticker, df):
     return data
 
 
-def example_2():
-    """Plot a single ticker in the CSV file."""
-
-    source = pd.read_csv('ticker-data.csv')
-    source['Date'] = pd.to_datetime(source['Date'])
-    all_tickers = source.Ticker.unique()
-
-    data = ticker_and_close('PTON', source)
-    plot([data])
-
-
-def example_3():
-    """Plot all 3 tickers in CSV file."""
-
-    source = pd.read_csv('ticker-data.csv')
-    source['Date'] = pd.to_datetime(source['Date'])
-    all_tickers = source.Ticker.unique()
-
-    datums = [ticker_and_close(x, source) for x in "PTON TDOC ZM".split()]
-    plot(datums)
-
-
-def plot_data_for(selected):
+def plot_selected(selected):
     source = pd.read_csv('ticker-data.csv')
     source['Date'] = pd.to_datetime(source['Date'])
     datums = [ticker_and_close(x, source) for x in selected]
-    return datums
-
-
-def plot_selected(selected):
-    global chart
-
-    logger.debug(f"{selected=}")
-    datums = plot_data_for(selected)
-
-    logger.debug("datums = {}".format(pprint.pformat(datums)))
-
-    chart.options['series'] = datums
-    chart.update()
+    plot(datums)
 
 
 def example_4():
@@ -103,9 +55,8 @@ def example_4():
               label='with chips', on_change=lambda e: plot_selected(e.value)
               ).classes('w-64').props('use-chips')
 
-    plot(plot_data_for(all_tickers_list))
+    # plot_selected(all_tickers_list)
 
-
-# toy_example()
 example_4()
-ui.run(reload=False)
+
+ui.run()

@@ -3,6 +3,33 @@
 Class A: Fully-featured, Industrial Strength Rock-solid Products
 In this section, we list products that are solving real-world problems and are ready for production deployment… just download, install and follow the instructions to whip out a solution to your issue PRONTO, because hundreds of other have already done the same.
 
+## Panel
+Panel is stunning. As a pure Python framework it is powerful with a 
+[huge array of components](https://panel.holoviz.org/reference/index.html). 
+But when you look at [the ecosystem it is a part of](https://holoviz.org),
+it truly becomes mind-blowing.
+The number of display formats is [vast](https://github.com/holoviz/panel/issues/2).
+It makes visualization simple and powerful. Just look at [how simple it is to throw up 
+a working visual analysis with 3 variables](https://panel.holoviz.org/getting_started/build_app.html).
+
+If this were not enough, it can run within Juypyter notebooks or web pages. The Jupyter notebook version updates
+as you edit the code [as shown here](https://panel.holoviz.org/getting_started/core_concepts.html#notebook).
+
+
+### Built on Bokeh
+
+### Discussions
+
+["Helping a user use 
+plotly graphs
+ and interactivity with Panel"](https://discourse.holoviz.org/t/plotly-figure-not-updating-correctly-from-panel-widgets-connected-using-panel-bind/5628)
+
+### Application Gallery
+
+[using MapLibre with ReactiveHTML](https://discourse.holoviz.org/t/issue-using-maplibre-with-reactivehtml/5616/4)
+
+[A tree widget from jsTree](https://discourse.holoviz.org/t/a-tree-widget-from-jstree/1904/11)
+
 ## Reflex (formerly Pynecone)
 Pynecone  compiles to a traditional React (NextJS flavor) app. Wrapping React components is quite straightforward. The authors had used Streamlit in the past, and found it great to get started with but for more complex apps found it limiting in terms of components, styling, and performance. In Pynecone, the frontend compiles down to a NextJS app, so you have full customizability on how the app looks. Streamlit can also be slow in some cases as it reruns the entire script on user events, whereas in Pynecone only the state deltas are transmitted. Also for performance and SEO nextjs is great.
 
@@ -26,6 +53,7 @@ https://pynecone.io/docs/gallery
 https://www.reddit.com/r/Python/comments/zh0pmy/pynecone_web_apps_in_pure_python/
 
 “Show HN Dec 14 2022“ - https://news.ycombinator.com/item?id=33922754
+
 
 
 
@@ -202,22 +230,7 @@ Anvil uses skulpt under the hood.
 
 YC Prototypes #2: Building Magic in 2.4 hours
 
-## Panel
-Panel is part of [the  impressive Holoviz tool stack](https://holoviz.org). It is focused on making visualization simple and powerful.
 
-### Built on Bokeh
-
-### Discussions
-
-["Helping a user use 
-plotly graphs
- and interactivity with Panel"](https://discourse.holoviz.org/t/plotly-figure-not-updating-correctly-from-panel-widgets-connected-using-panel-bind/5628)
-
-### Application Gallery
-
-[using MapLibre with ReactiveHTML](https://discourse.holoviz.org/t/issue-using-maplibre-with-reactivehtml/5616/4)
-
-[A tree widget from jsTree](https://discourse.holoviz.org/t/a-tree-widget-from-jstree/1904/11)
 
 ## Atri
 

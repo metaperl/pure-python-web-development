@@ -4,3 +4,13 @@ numpy
 
 pandas
 nicegui
+traitlets
+loguru
+lona
+lona-picocss
+epyk
+epyk-studio
+
+panel
+hvplot
+numpy
