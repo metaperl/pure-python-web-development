@@ -13,6 +13,10 @@ But let's get back to the topic at hand. Glancing over these TODOMVC examples im
 
 [Actual code](https://github.com/zauberzeug/nicegui/blob/main/examples/todo_list/main.py)
 
+## TODOMVC in Panel
+
+https://discourse.holoviz.org/t/panel-highcharts/2065/6
+
 ## TODOMVC in HTag
 
 [Actual code](https://github.com/manatlan/htag/blob/main/examples/todomvc.py)
