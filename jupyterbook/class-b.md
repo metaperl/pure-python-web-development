@@ -2,6 +2,20 @@
 
 Class B frameworks are perfect for limited-scope projects, but don't complain when you lack features!
 
+## Taipy
+
+[Taipy](https://www.taipy.io) is a strong Class B framework. The enterprise version could qualify as Class A because it supports 
+[authentication and authorization](https://docs.taipy.io/en/release-2.1/manuals/about/).
+
+My one concern is the shorthand for HTML development: can one do full-fledged detailed HTML/CSS development with a Pythonic interface? My skimming of the docs says no, but I could be wrong.
+
+### Resources and discussions
+
+[github link](https://github.com/avaiga/taipy)
+["Taipy: an Open-Source Python Only Web App Builder Library"](https://www.reddit.com/r/Python/comments/13iawcm/taipy_an_opensource_python_only_web_app_builder/)
+
+[Using PySpark with Taipy](https://www.taipy.io/posts/build-visualize-and-launch-big-data-dags)
+
 ## Dara
 
 [Dara](https://dara.causalens.com) is a very impressive offering which could easily be Class A but they 
@@ -52,17 +66,7 @@ Although originally developed to facilitate real-time plotting of OpenAI Gym env
 
 Under the hood, SimplePyDash leverages the [FastAPI](https://fastapi.tiangolo.com/) web framework and uses [WebSocket](https://en.wikipedia.org/wiki/WebSocket) for bidirectional communication.
 
-## Taipy
 
-[Taipy](https://www.taipy.io) is a strong Class B framework. The enterprise version could qualify as Class A because it supports 
-[authentication and authorization](https://docs.taipy.io/en/release-2.1/manuals/about/).
-
-My one concern is the shorthand for HTML development: can one do full-fledged detailed HTML/CSS development with a Pythonic interface? My skimming of the docs says no, but I could be wrong.
-
-### Resources and discussions
-
-[github link](https://github.com/avaiga/taipy)
-["Taipy: an Open-Source Python Only Web App Builder Library"](https://www.reddit.com/r/Python/comments/13iawcm/taipy_an_opensource_python_only_web_app_builder/)
 
 ## Highcharts for Python
 
