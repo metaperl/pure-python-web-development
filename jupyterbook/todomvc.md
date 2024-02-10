@@ -15,7 +15,7 @@ But let's get back to the topic at hand. Glancing over these TODOMVC examples im
 
 ## TODOMVC in Panel
 
-https://discourse.holoviz.org/t/panel-highcharts/2065/6
+https://discourse.holoviz.org/t/state-management-of-a-todo-list/2008/14
 
 ## TODOMVC in HTag
 
