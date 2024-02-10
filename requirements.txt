@@ -14,3 +14,5 @@ epyk-studio
 panel
 hvplot
 numpy
+
+ghp-import
