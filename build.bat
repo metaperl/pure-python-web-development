@@ -1,5 +1,4 @@
 jupyter-book build jupyterbook
-
-python build.py
-
+cd jupyterbook
+ghp-import -n -p -f _build/html
 cd ..
