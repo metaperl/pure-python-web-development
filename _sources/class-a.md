@@ -38,8 +38,20 @@ Pynecone has excellent scalability: you can horizontally scale and connect your 
 
 Also, when running a Pynecone app in production mode, you can use NextJS SSG to prerender the entire frontend to html.
 
+### Compared to NiceGUI
+
+https://www.reddit.com/r/Python/comments/1b7bgwn/comment/ktn7kgd/?utm_source=share&utm_medium=web2x&context=3
+
+### Compared to Streamlit
+
+https://www.reddit.com/r/Python/comments/1b7bgwn/comment/kti7wiq/?utm_source=share&utm_medium=web2x&context=3
+
+
+
 ### Reference links
 Official site - https://reflex.dev
+
+reddit - https://www.reddit.com/r/reflex/
 
 github - https://github.com/reflex-dev/reflex
 
