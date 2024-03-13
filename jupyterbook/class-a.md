@@ -36,16 +36,32 @@ Django can be considered a pure Python web framework. In most cases, one still u
 Javascript. I think the main aim of pure Python web frameworks is to eliminate using another turing-complete language (Javascript).
 Also, there are plenty of libraries that allow one to generate CSS and HTML via Python. 
 
+### Django with Hypergen
+
+[Hypergen](https://github.com/runekaagaard/django-hypergen/tree/main) is a production-ready solution, having been deployed in projects spanning tens of thousands of lines, serving over 100,000 unique users more than 10 million requests.
+
+In hypergen you craft templates using pure Python. Instead of declaring `<p>hi</p>` in an HTML file, simply invoke `p("hi")` within your view. Composing Python functions keeps templates DRY and streamlined. If you've ever written JSX, Hypergen's syntax will feel familiar.
+
+Hypergen has Reactive Liveviews: Effortlessly bridge frontend and backend. Connect browser events like onclick straight to backend actions. With these actions, Django views can instantly refresh the frontend with new HTML, send notifications, and more, all while natively working with Python data types.
+
+It also has Websockets: Hypergen brings realtime to the forefront with Django Channels. Set up is a breeze - quickly establish consumers and instantly react to live events. It's realtime made simple and friendly.
+
+Production Ready: We've deployed Hypergen in projects spanning tens of thousands 
+
 ### Django with HTMX / Unpoly
 
 [HTMX](https://htmx.org/) and [Unpoly](https://unpoly.com/) can both be used with Django to create single-page 
 web applications that are reactive and responsive but without the need to code in Javascript.
 
+
+
+
+
 ### Django and  HTML Over the Wire
 
 The book [Building SPAs with Django and HTML Over the Wire](https://www.packtpub.com/product/building-spas-with-django-and-html-over-the-wire/9781803240190)   teaches how to build a single-page application (SPA) in Django withouts learning a JavaScript rendering framework such as React, Vue, or Angular. Instead you move the logic to Python.
 
-### Django LiveViews
+#### Django LiveViews
 
 [Django LiveViews](https://github.com/Django-LiveView/liveview) is where I learned about the book "Django and  HTML Over the Wire".
 The developer and user community for this project appear to be quite small.
