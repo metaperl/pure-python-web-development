@@ -70,6 +70,7 @@ The developer and user community for this project appear to be quite small.
 
 Flask has [HTMX integration](https://github.com/edmondchuc/flask-htmx)  and can also be used with [Unpoly](https://unpoly.com/).
 
+[Flask-Meld](https://github.com/mikeabrahamsen/Flask-Meld) has not seen updates in 2 years but may still be useable.
 
 ## Reflex (formerly Pynecone)
 Pynecone  compiles to a traditional React (NextJS flavor) app. Wrapping React components is quite straightforward. The authors had used Streamlit in the past, and found it great to get started with but for more complex apps found it limiting in terms of components, styling, and performance. In Pynecone, the frontend compiles down to a NextJS app, so you have full customizability on how the app looks. Streamlit can also be slow in some cases as it reruns the entire script on user events, whereas in Pynecone only the state deltas are transmitted. Also for performance and SEO nextjs is great.

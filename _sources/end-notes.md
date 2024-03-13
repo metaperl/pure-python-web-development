@@ -7,7 +7,9 @@
 I would like to thank [Hasan Sezer Taşan](https://github.com/hasansezertasan) for his suggestions. He made me aware of
 Django LiveViews and Flect and [much more](https://github.com/metaperl/pure-python-web-development/issues?q=author%3Ahasansezertasan).
 
+## Related Resources
 
+The liveview repo has [a Python section](https://github.com/liveviews/liveviews?tab=readme-ov-file#python).
 
 ## Let's talk Streamlit
 
