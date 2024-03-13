@@ -388,9 +388,12 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#django">Django</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#django-with-hypergen">Django with Hypergen</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#django-with-htmx-unpoly">Django with HTMX / Unpoly</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#django-and-html-over-the-wire">Django and  HTML Over the Wire</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#django-liveviews">Django LiveViews</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#django-and-html-over-the-wire">Django and  HTML Over the Wire</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#django-liveviews">Django LiveViews</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flask">Flask</a></li>
@@ -509,6 +512,14 @@ and interactivity with Panel”</a></p>
 <p>Django can be considered a pure Python web framework. In most cases, one still uses CSS and HTML, but one does not use
 Javascript. I think the main aim of pure Python web frameworks is to eliminate using another turing-complete language (Javascript).
 Also, there are plenty of libraries that allow one to generate CSS and HTML via Python.</p>
+<section id="django-with-hypergen">
+<h3>Django with Hypergen<a class="headerlink" href="#django-with-hypergen" title="Link to this heading">#</a></h3>
+<p><a class="reference external" href="https://github.com/runekaagaard/django-hypergen/tree/main">Hypergen</a> is a production-ready solution, having been deployed in projects spanning tens of thousands of lines, serving over 100,000 unique users more than 10 million requests.</p>
+<p>In hypergen you craft templates using pure Python. Instead of declaring <code class="docutils literal notranslate"><span class="pre">&lt;p&gt;hi&lt;/p&gt;</span></code> in an HTML file, simply invoke <code class="docutils literal notranslate"><span class="pre">p(&quot;hi&quot;)</span></code> within your view. Composing Python functions keeps templates DRY and streamlined. If you’ve ever written JSX, Hypergen’s syntax will feel familiar.</p>
+<p>Hypergen has Reactive Liveviews: Effortlessly bridge frontend and backend. Connect browser events like onclick straight to backend actions. With these actions, Django views can instantly refresh the frontend with new HTML, send notifications, and more, all while natively working with Python data types.</p>
+<p>It also has Websockets: Hypergen brings realtime to the forefront with Django Channels. Set up is a breeze - quickly establish consumers and instantly react to live events. It’s realtime made simple and friendly.</p>
+<p>Production Ready: We’ve deployed Hypergen in projects spanning tens of thousands</p>
+</section>
 <section id="django-with-htmx-unpoly">
 <h3>Django with HTMX / Unpoly<a class="headerlink" href="#django-with-htmx-unpoly" title="Link to this heading">#</a></h3>
 <p><a class="reference external" href="https://htmx.org/">HTMX</a> and <a class="reference external" href="https://unpoly.com/">Unpoly</a> can both be used with Django to create single-page
@@ -517,11 +528,11 @@ web applications that are reactive and responsive but without the need to code i
 <section id="django-and-html-over-the-wire">
 <h3>Django and  HTML Over the Wire<a class="headerlink" href="#django-and-html-over-the-wire" title="Link to this heading">#</a></h3>
 <p>The book <a class="reference external" href="https://www.packtpub.com/product/building-spas-with-django-and-html-over-the-wire/9781803240190">Building SPAs with Django and HTML Over the Wire</a>   teaches how to build a single-page application (SPA) in Django withouts learning a JavaScript rendering framework such as React, Vue, or Angular. Instead you move the logic to Python.</p>
-</section>
 <section id="django-liveviews">
-<h3>Django LiveViews<a class="headerlink" href="#django-liveviews" title="Link to this heading">#</a></h3>
+<h4>Django LiveViews<a class="headerlink" href="#django-liveviews" title="Link to this heading">#</a></h4>
 <p><a class="reference external" href="https://github.com/Django-LiveView/liveview">Django LiveViews</a> is where I learned about the book “Django and  HTML Over the Wire”.
 The developer and user community for this project appear to be quite small.</p>
+</section>
 </section>
 </section>
 <section id="flask">
@@ -876,9 +887,12 @@ but a recent post to reddit showed that Dash can do it all – simple things, Ju
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#django">Django</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#django-with-hypergen">Django with Hypergen</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#django-with-htmx-unpoly">Django with HTMX / Unpoly</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#django-and-html-over-the-wire">Django and  HTML Over the Wire</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#django-liveviews">Django LiveViews</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#django-and-html-over-the-wire">Django and  HTML Over the Wire</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#django-liveviews">Django LiveViews</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flask">Flask</a></li>
