@@ -30,6 +30,31 @@ plotly graphs
 
 [A tree widget from jsTree](https://discourse.holoviz.org/t/a-tree-widget-from-jstree/1904/11)
 
+## Django
+
+Django can be considered a pure Python web framework. In most cases, one still uses CSS and HTML, but one does not use
+Javascript. I think the main aim of pure Python web frameworks is to eliminate using another turing-complete language (Javascript).
+Also, there are plenty of libraries that allow one to generate CSS and HTML via Python. 
+
+### Django with HTMX / Unpoly
+
+[HTMX](https://htmx.org/) and [Unpoly](https://unpoly.com/) can both be used with Django to create single-page 
+web applications that are reactive and responsive but without the need to code in Javascript.
+
+### Django and  HTML Over the Wire
+
+The book [Building SPAs with Django and HTML Over the Wire](https://www.packtpub.com/product/building-spas-with-django-and-html-over-the-wire/9781803240190)   teaches how to build a single-page application (SPA) in Django withouts learning a JavaScript rendering framework such as React, Vue, or Angular. Instead you move the logic to Python.
+
+### Django LiveViews
+
+[Django LiveViews](https://github.com/Django-LiveView/liveview) is where I learned about the book "Django and  HTML Over the Wire".
+The developer and user community for this project appear to be quite small.
+
+## Flask
+
+Flask has [HTMX integration](https://github.com/edmondchuc/flask-htmx)  and can also be used with [Unpoly](https://unpoly.com/).
+
+
 ## Reflex (formerly Pynecone)
 Pynecone  compiles to a traditional React (NextJS flavor) app. Wrapping React components is quite straightforward. The authors had used Streamlit in the past, and found it great to get started with but for more complex apps found it limiting in terms of components, styling, and performance. In Pynecone, the frontend compiles down to a NextJS app, so you have full customizability on how the app looks. Streamlit can also be slow in some cases as it reruns the entire script on user events, whereas in Pynecone only the state deltas are transmitted. Also for performance and SEO nextjs is great.
 

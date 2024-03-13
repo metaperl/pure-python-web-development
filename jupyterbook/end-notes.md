@@ -1,5 +1,14 @@
 # End Notes
 
+## Acknowledgements
+
+### Hasan Sezer Taşan
+
+I would like to thank [Hasan Sezer Taşan](https://github.com/hasansezertasan) for his suggestions. He made me aware of
+Django LiveViews and Flect and [much more](https://github.com/metaperl/pure-python-web-development/issues?q=author%3Ahasansezertasan).
+
+
+
 ## Let's talk Streamlit
 
 Streamlit is by far the most widely used pure Python web application framework. But it has serious drawbacks:
