@@ -5,9 +5,13 @@ Class B frameworks are perfect for limited-scope projects, but don't complain wh
 ## Taipy
 
 [Taipy](https://www.taipy.io) is a strong Class B framework. The enterprise version could qualify as Class A because it supports 
-[authentication and authorization](https://docs.taipy.io/en/release-2.1/manuals/about/).
+[authentication and authorization](https://docs.taipy.io/en/latest/manuals/auth/).
 
-My one concern is the shorthand for HTML development: can one do full-fledged detailed HTML/CSS development with a Pythonic interface? My skimming of the docs says no, but I could be wrong.
+
+
+### Code Gallery
+
+- Taipy-Chess, A chess visualization tool, based on 20,000 games - https://www.reddit.com/r/Python/comments/1bhkxnb/introducing_taipychess_a_chess_visualization_tool/
 
 ### Resources and discussions
 
