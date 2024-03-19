@@ -104,6 +104,14 @@ https://www.reddit.com/r/Python/comments/ujicyq/i_tested_pyscript_and_you_can_li
 https://bas.codes/posts/pyscript-todo
 ### Built on pyodide
 
+## FastUI
+
+[FastUI](https://github.com/pydantic/FastUI) is a product directly from the Pydantic team in its early stages.
+
+## Flect
+
+[Flect](https://github.com/Chaoyingz/flect) is also based on Pydantic. It leverages folder structure for routing 
+leading to less code to do the same thing as FastUI.
 
 ## UiDOm
 UIdom official repo
