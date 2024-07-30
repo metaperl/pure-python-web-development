@@ -2,7 +2,18 @@
 
 ![](pure-python-header.png)
 
-This guide is designed to help you find a pure Python web application development solution *fast*. If you want theory, see the “Theoretical Introduction” section below. Otherwise just jump right to the practical guide and choose what works for you.
+## Practical section of this guide is OUT OF DATE and SUPERCEDED
+
+This guide **was** designed to help you find a pure Python web application development solution *fast*. 
+
+The theoretical section is still useful to motivate pure python frameworks but the other parts of this guide are supplanted by 
+this discussion forum:
+
+https://github.com/metaperl/pure-python-web-development/discussions
+
+There is a thread here for each specific framework.
+
+
 
 ## Theoretical Introduction
 Welcome to 100% pure python web development. Sayonara to the HTML/JS/CSS soup. The driving concept behind 100% pure Python web development was captured long before the WWW existed in Chapter 4 of the classic software engineering text “Structure and Interpretation of Computer Programs”:
